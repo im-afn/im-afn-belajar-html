@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form </title>
+  <link rel="stylesheet" href="../CSS/style_form_input.css" />
+</head>
+
+<body>
+  <div class="formbg">
+    <h1>Element form</h1>
+    <p>Tag digunakan untukmembuat formulir HTML sebagai input pengguna,</p>
+
+    <p>
+      Contoh: <br />Formulir html dengan dua bidang input dan satu tombol
+      kirim
+    </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      Klik tombol "Kirim" dan data formulir akan dikirim ke halaman di Server
+      disebut "action_page.php".
+    </p>
+
+    <hr />
+
+    <h2>Attribut form</h2>
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>accept-charset</b>="UTF-8"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan karakter encoding yang akan digunakan saat
+      data formulir dikirimkan ke server. Karakter encoding adalah cara untuk
+      mewakili karakter teks dalam bentuk biner yang dapat dipahami oleh
+      komputer.
+    </p>
+
+    <form action="/action_page.php" accept-charset="utf-8">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form <b>action</b>="/submit-form.php" method="post">< /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan URL atau alamat ke mana data formulir akan
+      dikirimkan setelah formulir tersebut disubmit.
+    </p>
+
+    <form action="/action_page.php" accept-charset="utf-8">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>autocomplete</b>="off" /
+          "on"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol apakah browser harus menyediakan fitur
+      pengisian otomatis (autofill) untuk formulir. Fitur autofill ini
+      memungkinkan browser untuk mengingat nilai-nilai yang dimasukkan
+      pengguna pada formulir sebelumnya dan menawarkan opsi untuk mengisi
+      formulir dengan nilai-nilai tersebut secara otomatis saat pengguna
+      mengunjungi kembali halaman yang sama atau serupa.
+    </p>
+
+    <form action="/action_page.php" method="get" autocomplete="on">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="email">Email:</label><br />
+      <input type="text" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>enctype</b>="multipart/form-data"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan cara encoding (pengkodean) dari data yang
+      akan dikirimkan ketika formulir disubmit. Ini terutama relevan ketika
+      metode POST digunakan untuk mengirimkan data formulir yang mungkin
+      mengandung file.
+    </p>
+
+    <form action="/action_page_binary.asp" method="post" enctype="multipart/form-data">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      1. application/x-www-form-urlencoded: Ini adalah nilai default. Data
+      formulir dikodekan dalam format URL-encoded sebelum dikirim. Ini berarti
+      spasi dikodekan sebagai +, dan karakter khusus lainnya dikodekan sebagai
+      %xx, di mana xx adalah representasi heksadesimal dari kode karakter
+      ASCII. <br />
+      2. multipart/form-data: Biasanya digunakan ketika formulir mengandung
+      elemen input type="file". Data formulir dan file yang dipilih akan
+      dikirimkan sebagai bagian-bagian terpisah. Ini memungkinkan file-file
+      untuk dikirimkan melalui HTTP POST. <br />
+      3. text/plain: Data formulir dikirimkan dalam format teks mentah tanpa
+      pengkodean tambahan. Ini lebih jarang digunakan dan tidak sering
+      disarankan, karena pengkodean data dalam bentuk URL-encoded atau
+      multipart/form-data biasanya lebih berguna.
+    </p>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" <b>method</b>="post" / "get"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan metode HTTP yang akan digunakan saat
+      mengirimkan data formulir ke server. Metode yang paling umum digunakan
+      adalah GET dan POST.
+    </p>
+
+    <form action="/action_page.php" method="post" target="_blank">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <p>
+      1. GET: Metode ini mengirimkan data formulir sebagai bagian dari URL.
+      Data dikirim sebagai query string yang dapat dilihat oleh pengguna dan
+      disimpan dalam riwayat peramban. Metode GET biasanya digunakan untuk
+      permintaan yang sederhana dan ketika tidak sensitif terhadap keamanan
+      atau privasi, seperti pencarian. <br />
+      2. POST: Metode ini mengirimkan data formulir sebagai bagian dari tubuh
+      permintaan HTTP. Data tidak ditampilkan di URL dan tidak tersimpan di
+      riwayat peramban. Metode POST sering digunakan ketika pengguna
+      mengirimkan data sensitif atau data yang lebih besar.
+    </p>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>name</b>="registrationForm"><br />
+          < input type="text" <b>name</b>="username"><br />
+            < input type="password" <b>name</b>="password"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberi nama pada formulir. Nama ini digunakan untuk
+      mengidentifikasi formulir saat data dikirimkan ke server. Setiap elemen
+      formulir (seperti input, select, atau textarea) juga memiliki atribut
+      name yang digunakan untuk memberi nama pada elemen tersebut. Ketika
+      formulir disubmit, data dari setiap elemen formulir akan dikirimkan ke
+      server dengan menggunakan nama elemen tersebut.
+    </p>
+    <p>
+      Dalam contoh di atas, elemen form diberi nama "registrationForm", dan
+      dua elemen input diberi nama "username" dan "password" masing-masing.
+      Ketika formulir ini disubmit, data dari input "username" dan "password"
+      akan dikirimkan ke server dengan menggunakan nama tersebut.
+    </p>
+
+    <form name="myForm" action="/action_page.php" method="get">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="button" onclick="formSubmit()" value="Send form data!" />
+    </form>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>novalidate</b> > < /form>
+      </li>
+    </ul>
+
+    <p>
+      adalah atribut boolean yang digunakan untuk menonaktifkan validasi
+      bawaan browser pada formulir sebelum pengirimannya ke server.
+    </p>
+
+    <p>
+      Secara default, browser akan melakukan validasi terhadap input pada
+      formulir sebelum mengizinkan pengirimannya ke server. Validasi ini
+      mencakup pemeriksaan apakah input yang diberikan oleh pengguna sesuai
+      dengan aturan yang ditentukan, seperti validasi keharusan, tipe data,
+      atau pola tertentu. <br /><br />
+      Namun, dengan menambahkan atribut novalidate pada elemen < form>, Anda
+        dapat mematikan validasi bawaan browser ini. Ini berguna jika Anda ingin
+        melakukan validasi secara khusus di sisi server atau menggunakan
+        mekanisme validasi yang disediakan oleh JavaScript.
+    </p>
+
+    <form action="/action_page.php" novalidate>
+      <label for="email">Enter your email:</label><br />
+      <input type="email" id="email" name="email" /><br /><br />
+      <input type="submit" />
+    </form>
+
+    <hr />
+
+    <ul>
+      <li>
+        < form action="/submit-form" method="post" <b>target</b>="_blank" /
+          "_self" / "_parent" / "_top"> < /form>
+      </li>
+    </ul>
+
+    <p>
+      digunakan untuk menentukan di mana respon dari pengiriman formulir akan
+      ditampilkan setelah formulir tersebut disubmit
+    </p>
+
+    <p>
+      1. _blank: Respon dari pengiriman formulir akan ditampilkan di jendela
+      atau tab baru. <br />
+      2. _self: Respon dari pengiriman formulir akan ditampilkan di jendela
+      atau browsing context yang sama. Ini adalah perilaku default jika target
+      tidak ditentukan. <br />
+      3. _parent: Respon dari pengiriman formulir akan ditampilkan di browsing
+      context yang mengandung elemen iframe, atau di jendela induk jika
+      formulir tersebut berada dalam iframe. <br />
+      4. _top: Respon dari pengiriman formulir akan ditampilkan di jendela
+      paling atas (top-level browsing context).
+    </p>
+  </div>
+
+  <script src="../JS/script_form_input.js"></script>
+</body>
+
+</html>

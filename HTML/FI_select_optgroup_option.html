@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Optgroup Option</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element select</h1>
+
+    <p>
+      Digunakan untuk membuat daftar dropdown dalam formulir web. Ini memungkinkan pengguna untuk memilih satu opsi dari
+      daftar opsi. Elemen select biasanya digunakan bersama dengan elemen option untuk menentukan opsi yang
+      tersedia dalam menu dropdown.
+    </p>
+
+    <form action="/submit" method="post">
+      <label for="makanan">Pilih Makanan:</label>
+      <select id="makanan" name="makanan">
+        <option value="nasi_goreng">Nasi Goreng</option>
+        <option value="mie_goreng">Mie Goreng</option>
+        <option value="sate_ayam">Sate Ayam</option>
+        <option value="rendang">Rendang</option>
+      </select>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <br><br>
+    <hr>
+
+    <h2>Attribut select</h2>
+
+    <ul>
+      <li>
+        < select name="cars" <b>autofocus</b>>< /select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan bahwa sebuah dropdown list harus secara otomatis mendapatkan fokus saat halaman dimuat.
+    </p>
+
+    <select name="cars" autofocus>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select name="cars" <b>disabled</b>>< /select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan sebuah dropdown list, yang berarti pengguna tidak dapat memilih atau berinteraksi
+      dengan pilihan yang ada di dalamnya.
+    </p>
+
+    <select name="cars" disabled>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select id="cars" name="carlist" <b> form</b>="carform">< /select>
+      </li>
+    </ul>
+
+    <p>
+      Daftar turun bawah yang terletak di luar formulir (tetapi masih merupakan bagian dari formulir): Digunakan untuk
+      menghubungkan elemen input ke formulir mana elemen tersebut akan dikirimkan ketika formulir tersebut
+    </p>
+
+    <form action="/action_page.php" id="carform">
+      <label for="fname">Firstname:</label><br>
+      <input type="text" id="fname" name="fname">
+      <input type="submit">
+    </form>
+    <br>
+
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="carlist" form="carform">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select name="cars" <b>multiple</b> > select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memungkinkan pengguna untuk memilih lebih dari satu opsi dari daftar dropdown. Ketika atribut
+      multiple ditambahkan, pengguna dapat memilih beberapa opsi dengan menahan tombol Ctrl (di Windows) atau Command
+      (di macOS) saat mengklik opsi-opsi yang diinginkan.
+    </p>
+
+    <select name="cars" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select id="cars" <b>name</b>="cars">< /select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan nama atau identifikasi kepada elemen dropdown list
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select id="cars" name="cars" <b>required</b>> < /select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menandai bahwa sebuah dropdown list harus dipilih sebelum formulir dapat disubmit.
+    </p>
+
+    <form action="/submit" method="post">
+      <label for="cars">Pilih Mobil:</label>
+      <select id="cars" name="cars" required>
+        <option value="">Pilih mobil...</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+      </select><br><br>
+      <button type="submit">Kirim</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < select name="cars" <b> size</b>="4">< /select>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jumlah baris yang akan ditampilkan dalam dropdown list secara default.
+    </p>
+
+    <select name="cars" size="2">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <br><br>
+    <hr>
+
+    <h1>Element optgroup</h1>
+
+    <p>
+      digunakan dalam HTML untuk mengelompokkan opsi dalam elemen select. Ini memungkinkan Anda untuk membuat
+      struktur hierarkis dalam elemen dropdown. Misalnya, jika Anda memiliki opsi yang terkait atau berkaitan satu
+      sama lain, Anda dapat menempatkannya dalam grup yang sama dengan menggunakan tag optgroup.
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label><br>
+
+      <select name="cars" id="cars">
+
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <hr>
+
+    <h2>Attribut optgroup</h2>
+
+    <ul>
+      <li>
+        < optgroup label="German Cars" <b>disabled</b>>< /optgroup>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan seluruh grup opsi. Ini berarti pengguna tidak dapat memilih opsi apa pun dari grup
+      yang dinonaktifkan tersebut.
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars" disabled>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < optgroup <b>label</b>="German Cars">< /optgroup>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan label atau judul untuk grup opsi yang ditampilkan dalam elemen < select>. Label ini
+        biasanya muncul di atas atau di depan grup opsi tersebut
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element Option</h1>
+
+    <p>
+      Digunakan dalam kombinasi dengan elemen select untuk membuat daftar pilihan dalam formulir web. Setiap tag option
+      mewakili satu opsi dalam daftar.
+    </p>
+
+    <p>
+      Jika sebuah elemen select tidak memiliki elemen option di dalamnya, maka dropdown tersebut akan kosong dan
+      pengguna tidak akan memiliki opsi untuk dipilih. Ini akan membuat elemen select tidak berfungsi dengan baik dalam
+      formulir web.
+    </p>
+
+    <select id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="opel">Opel</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <p>
+      Anda juga bisa menambahkan atribut selected ke salah satu tag <option> untuk membuat opsi tersebut terpilih secara
+        default:
+    </p>
+
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab" selected>Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut select</h2>
+
+    <ul>
+      <li>
+        < option value="volvo" <b>disabled</b>>Volvo< /option>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan opsi tertentu dalam elemen select. Ketika sebuah opsi dinonaktifkan, pengguna tidak
+      dapat memilihnya, dan opsi tersebut tidak akan ditampilkan sebagai pilihan yang dapat dipilih dalam dropdown.
+    </p>
+
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars">
+      <option value="volvo" disabled>Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="vw">VW</option>
+      <option value="audi">Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < optgroup <b>label</b>="Swedish Cars">< /optgroup>
+      </li>
+    </ul>
+
+    <p>
+      Sebenarnya tidak diperlukan, Namun jika Anda merasa perlu untuk menambahkan label secara eksplisit, Anda dapat
+      menggunakan tag optgroup. Tag optgroup memiliki atribut label yang digunakan untuk memberikan label
+    </p>
+
+    <select name="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < option value="saab" <b>selected</b>>Saab< /option>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menandai sebuah opsi sebagai pilihan awal (terpilih secara default) dalam elemen select. Ini
+      memungkinkan Anda untuk menentukan opsi mana yang harus dipilih secara otomatis ketika halaman dimuat atau
+      formulir ditampilkan.
+    </p>
+
+    <label for="cars">Choose a car:</label>
+
+    <select id="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="vw">VW</option>
+      <option value="audi" selected>Audi</option>
+    </select>
+
+    <hr>
+
+    <ul>
+      <li>
+        < option <b>value</b>="volvo">Volvo< /option>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan nilai yang akan dikirim ke server ketika pengguna memilih opsi tersebut. Nilai ini
+      dapat berupa teks, angka, atau nilai lainnya yang akan digunakan untuk mengidentifikasi pilihan yang dipilih dalam
+      formulir.
+    </p>
+
+    <form action="/action_page.php">
+      <label for="cars">Choose a car:</label>
+
+      <select id="cars" name="cars">
+        <option value="volvo">Volvo XC90</option>
+        <option value="saab">Saab 95</option>
+        <option value="mercedes">Mercedes SLK</option>
+        <option value="audi">Audi TT</option>
+      </select>
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+
+</html>

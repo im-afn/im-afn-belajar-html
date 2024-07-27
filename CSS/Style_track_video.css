@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.allbg {
+  background-color: rgb(228, 255, 222);
+  padding: 2rem;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+video::cue {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5;
+  padding: 0.2em;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}

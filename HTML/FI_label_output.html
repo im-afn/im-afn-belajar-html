@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>label output</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element label</h1>
+
+    <p>
+      < <b>label</b> for="username">Nama Pengguna:< /<b>label</b>><br>
+          < input type="text" id="username" name="username">
+    </p>
+
+    <p>
+      Digunakan untuk mendefinisikan label untuk elemen < input>, < textarea>, < select>, atau < button>. Ini adalah
+              cara untuk menghubungkan teks dengan elemen formulir, membuat formulir lebih mudah diakses dan ramah
+              pengguna.
+    </p>
+
+    <p>
+      Dalam contoh ini, elemen < label> "Nama Pengguna:" dihubungkan dengan elemen < input> menggunakan atribut for,
+          yang sesuai dengan atribut id dari input. Ketika pengguna mengklik teks label, bidang input yang terkait akan
+          fokus atau diaktifkan.
+    </p>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut label</h2>
+
+    <ul>
+      <li>
+        < label <b>for</b>="username">Username:< /label>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menunjukkan id dari elemen formulir yang terkait dengan label tersebut. Ini memungkinkan Anda
+      untuk mengaitkan label dengan elemen formulir tertentu,
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < input type="text" id="username" name="username" <b>form</b>="myForm">
+      </li>
+    </ul>
+
+    <p>
+      digunakan untuk menentukan formulir mana yang akan digunakan oleh elemen input, seperti < input> atau < button>.
+    </p>
+
+    <form id="myForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" form="myForm">
+    </form>
+
+    <form action="/action_page.php" id="form1">
+      <input type="radio" id="html" name="fav_language" value="HTML"><br>
+      <input type="radio" id="css" name="fav_language" value="CSS">
+      <label for="css">CSS</label><br>
+      <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+      <label for="javascript">JavaScript</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <label form="form1" for="html">HTML</label>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element output</h1>
+
+    <p>
+      digunakan untuk menampilkan hasil perhitungan atau hasil dari skrip JavaScript. Biasanya digunakan bersama dengan
+      elemen-elemen seperti < input>, < select>, atau < button> untuk menampilkan hasil dari aksi pengguna.
+    </p>
+
+    <p>
+      < <b>output</b> name="x" for="a b">< /<b>output</b>>
+    </p>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50">
+      +<input type="number" id="b" value="25">
+      =<output name="x" for="a b"></output>
+    </form>
+
+    <br><br>
+
+    <form oninput="result.value = parseInt(x.value) + parseInt(y.value)">
+      <input type="number" id="x" name="x" value="0">
+      +
+      <input type="number" id="y" name="y" value="0">
+      =
+      <output name="result" for="x y">0</output>
+    </form>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut output</h2>
+
+    <ul>
+      <li>
+        < output name="x" <b>for</b>="a b">< /output>
+      </li>
+    </ul>
+
+    <p>
+      Menentukan hubungan antara hasil perhitungan, dan elemen yang digunakan dalam perhitungan.for
+    </p>
+
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" value="50">
+      +<input type="number" id="b" value="25">
+      =<output name="x" for="a b"></output>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < <b>form</b> action="/action_page.php" id="numform" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          < /<b>form </b>>
+      </li>
+    </ul>
+
+    <p>
+      Elemen < output> yang terletak di luar formulir (tetapi masih merupakan bagian dari formulir):
+    </p>
+
+    <form action="/action_page.php" id="numform" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      <input type="range" id="a" name="a" value="50">
+      + <input type="number" id="b" name="b" value="25">
+    </form>
+
+    <p>Elemen output di bawah ini berada di luar formulir, tetapi masih merupakan bagian darinya..</p>
+
+    <output form="numform" id="x" name="x" for="a+b"></output>
+
+    <hr>
+
+    <ul>
+      <li>
+        < output <b> name</b>="result">0< /output>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan nama ke elemen tersebut. Nama ini dapat digunakan untuk merujuk ke elemen tersebut
+      menggunakan JavaScript atau saat mengirim data formulir.
+    </p>
+
+    <form oninput="result.value = parseInt(x.value) + parseInt(y.value)">
+      <input type="number" id="x" name="x" value="0">
+      +
+      <input type="number" id="y" name="y" value="0">
+      =
+      <output name="result">0</output>
+    </form>
+
+
+
+
+  </div>
+</body>
+
+</html>

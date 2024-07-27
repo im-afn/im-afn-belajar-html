@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input</title>
+  <link rel="stylesheet" href="../CSS/style_form_input.css">
+</head>
+<body>
+  
+  <div class="inputbg">
+    <h1>Element input</h1>
+    <p>
+      Element ini menentukan bidang input tempat pengguna dapat memasukan data,
+      element dapat ditampilkan dalam beberapa cara tergantung pada atribut type
+    </p>
+
+    <p><b>Macam-macam input type</b></p>
+
+    <p>
+      <ul>
+        <li>input type="button"</li>
+        <li>input type="checkbox"</li>
+        <li>input type="color"</li>
+        <li>input type="date"</li>
+        <li>input type="datetime-local"</li>
+        <li>input type="email"</li>
+        <li>input type="email"</li>
+        <li>input type="hidden"</li>
+        <li>input type="image"</li>
+        <li>input type="month"</li>
+        <li>input type="number"</li>
+        <li>input type="password"</li>
+        <li>input type="radio"</li>
+        <li>input type="range"</li>
+        <li>input type="reset"</li>
+        <li>input type="search"</li>
+        <li>input type="submit"</li>
+        <li>input type="tel"</li>
+        <li>input type="text" (default value)</li>
+        <li>input type="time"</li>
+        <li>input type="url"</li>
+        <li>input type="week"</li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <h3>Contoh input type botton</h3>
+    <p>Tombol di bawah ini mengaktifkan fungsi JavaScript saat diklik.</p>
+    <form>
+      <input type="button" value="Click me" onclick="msg()">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type checkbox</h3>
+    <p>Menampilkan kotak centang berbentuk persegi, di gunakan untuk memungkinkan pengguna memilih satu atau bebrapa opsi dari sejumlah pilihan terbatas</p>
+
+    <form action="/action_page.php">
+      <input type="checkbox" id="vehicle1" name="vehicle1" value="Sepeda">
+      <label for="vehicle1"> Saya memiliki sepeda</label><br>
+      <input type="checkbox" id="vehicle2" name="vehicle2" value="Mobil">
+      <label for="vehicle2"> Saya memiliki mobil</label><br>
+      <input type="checkbox" id="vehicle3" name="vehicle3" value="Perahu">
+      <label for="vehicle3"> Saya memiliki perahu</label><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type color</h3>
+    <p>Menberikan pilihan warna</p>
+
+    <form action="/action_page.php">
+      <label for="favcolor">Pilih warna favorit Anda:</label>
+      <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+      <input type="submit">
+    </form>
+    
+    <hr>
+
+    <h3>Contoh input type date</h3>
+    <p>Menampilkan pemilihan tanggal, nilai yang di hasilkan tahun, bulan, hari</p>
+
+    <form action="/action_page.php">
+      <label for="birthday">Ulang tahun kamu kapan?</label><br><br>
+      <input type="date" id="birthday" name="birthday">
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type datetime lokal</h3>
+    <p>Menampilkan pemilihan tanggal, nilai yang di hasilkan tahun, bulan, hari dan waktu</p>
+
+    <form action="/action_page.php">
+      <label for="birthdaytime">Kapan kamu ulang tahun dan jam berapa</label><br><br>
+      <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type email</h3>
+    <p>menampilkan bidang untuk alamat email, nilai input secara otomatis divalidasi untuk memastikannya benar format alamat email</p>
+
+    <h4>Tampilkan bidang email (hanya mengizinkan satu alamat email):</h4>
+    <form action="/action_page.php">
+      <label for="email">Masukkan email Anda: </label><br>
+      <input type="email" id="email" name="email">
+      <input type="submit">
+    </form>
+
+    <h4>Tampilkan bidang email (memungkinkan beberapa alamat email). Pisahkan setiap alamat email dengan koma:</h4>
+    <form action="/action_page.php">
+      <form for="emails">Masukkan alamat email:</form>
+      <input type="email" id="emails" name="emails" multiple>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type file</h3>
+    <p>Menampilkan bidang pemilihan file dan tombol untuk unggah file</p>
+    <h4>Tampilkan bidang pilih file yang memungkinkan hanya satu file yang akan dipilih:</h4>
+    <form action="/action_page.php">
+      <label for="myfile">Select a file:</label><br>
+      <input type="file" id="myfile" name="myfile"><br><br>
+      <input type="submit">
+    </form>
+
+    <h4>Tampilkan bidang pilih file yang memungkinkan beberapa file:</h4>
+    <form action="/action_page.php">
+      <label for="myfile">Select files:</label><br>
+      <input type="file" id="myfile" name="myfile" multiple><br><br>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <h3>Contoh input type hidden</h3>
+    <p>Bidang input tersembunyi, bidang tersembunyi memungkinkan pengembang web menyertakan data yang tidak dapat di lihat atau di modifikasi oleh pengguna saat formulir di kirimkan,  bidang tersembunyi sering menyimpan catatn database apa yang perlu diperbaharui saat formulir di kirimkan</p>
+    <p>Jangan gunakan input tersembunyi sebagai bentuk keamanan</p>
+
+    <form action="/action_page.php">
+      <label for="fname">Nama depan:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="hidden" id="custId" name="custId" value="3487">
+      <input type="submit" value="Submit">
+    </form>
+    
+    <p><strong>Note:</strong> Bidang tersembunyi tidak ditampilkan kepada pengguna, tetapi data dikirim saat formulir dikirimkan.</p>
+
+    <hr>
+
+    <h3>Contoh input type image</h3>
+    <p>Menjadikan gambar sebagai tombol kirim, jalur ke gambar di tentukan dalam atribut src</p>
+
+    <form action="/action_page.php">
+      <label for="fname">Nama depan: </label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Nama belakang: </label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="image" src="../Gambar/img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <p><b>Note:</b>  Input type="image" mengirimkan koordinat X dan Y dari klik yang mengaktifkan tombol gambar.</p>
+    
+    <hr>
+
+    <h3>Contoh input type month</h3>
+    <p>Mendefinisikan kontrol bulan dan tahun</p>
+
+    <p>Jika browser mendukungnya, pemilih tanggal muncul saat memasuki bidang input.</p>
+
+    <form action="/action_page.php">
+      <label for="bdaymonth">Ulang tahun (bulan dan tahun):</label><br>
+      <input type="month" id="bdaymonth" name="bdaymonth"><br><br>
+      <input type="submit">
+    </form>
+    
+    <hr>
+
+    <h3>Contoh input type number</h3>
+    <p>Mendefinisikan bidang untuk memasukan angka, anda juga dapat mengatur batasan pada nomer yang akan di terima</p>
+
+    <form action="/action_page.php">
+      <label for="quantity">Kuantitas (antara 1 dan 7):</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" max="7">
+      <input type="submit">
+    </form>
+    
+    <hr>
+
+    <h3>Contoh input type password</h3>
+    <p>Menampilkan bilah box input untuk memasukan kata sandi</p>
+
+    <label for="password">Kata sandi</label>
+    <input type="password" id="passSaya" value="ImamArifinGanteng">
+
+    <p>Klik tombol untuk melihat kata sandi dalam bidang kata sandi.</p>
+    <p>Isi kata sandi kemudian klik tombol tekan tombol</p>
+    <button onclick="fungsiPass()">Tekan Tombol</button>
+
+    <p id="Tampilpass"></p>
+
+    <hr>
+
+    <h3>Contoh input type range</h3>
+    <p>Element di gunakan untuk memilih nilai dari rentang tertentu</p>
+
+    <input type="range" id="rangeSaya" value="60">
+
+    <p>Klik tombol untuk mendapatkan nilai hasil penggeser.</p>
+    <p>Geser range kemudian klik tekan tombol untuk melihat nilai</p>
+    <button onclick="fungsiRange()">Tekan tombol</button>
+    <p id="Tampilrange"></p>
+
+    <hr>
+
+    <h3>Contoh input type radio</h3>
+    <p>Element ini meungkinkan pengguna memilih satu opsi dari beberapa pilihan.</p>
+    <p>Pilih apakah kamu pria atau wanita, kamu dapat klik tombol pria dan wanita atau langsung klik lingkaran radio</p>
+    
+    <input type="radio" id="Pria" value="male"> Pria<br>
+    <input type="radio" id="Wanita" value="male"> Wanita<br>
+    <br>
+    <button onclick="fungsiRadio()">Pria</button>
+    <button onclick="fungsiRadio2()">Wanita</button>
+
+    <hr>
+
+    <h3>Contoh input type reset</h3>
+    <p>Element ini di gunakan untuk mengembalikan nilai-nilai atau mereset ataupun mengkosongkan ketika tombol di klik</p>
+    <p>Klik tombol tekan tombol untuk melihat sandi</p>
+    <p>tulis sandi yang anda inginkan, klik timbolreset sandi untuk mereset sandi</p>
+
+    <label for="password">Kata sandi:</label><br>
+    <input type="password" id="passSaya1" value="ImamArifinGanteng">
+    <br><br>
+    <button onclick="fungsiPass1()">Tekan Tombol</button>
+    <input type="reset" value="Reset Sandi" onclick="resetPassword()">
+    <p id="Tampilpass1"></p>
+
+    <hr>
+
+    <h3>Contoh input type search</h3>
+    <p>Element di gunakan untuk pengguna mengetik di dalam kotak pencarian</p>
+    <p>Klik tombol untuk mendapatkan teks placeholder dari bidang pencarian. </p>
+
+    <label for="search">Search:</label><br>
+    <input type="search" id="search" name="search"placeholder="Search for something.." ><br><br>
+    <input type="submit" value="Cari" onclick="fungsiSearch()" >
+    
+    <p id="demoser"></p>
+
+    <hr>
+
+    <h3>Contoh input type submit</h3>
+    <p>Element yang di gunakan untuk membbuat tmbol submit ketika tombol di klik formulir akan di kirimkan</p>
+    <p>Isi kolom nama user dan password kemudian tekan submit untuk melihat hasil</p>
+
+    <label for="password">Nama User:</label><br>
+    <input type="text" id="submitSaya1" value="mamAr123">
+    <br>
+    <label for="password">Kata sandi:</label><br>
+    <input type="password" id="submitSaya" value="ImamArifinGanteng">
+    <br><br>
+    <input type="submit" value="Submit" onclick="fungsiSubmit()" >
+   
+    <p id="Tampilsubmit"></p>
+
+    <hr>
+
+    <h3>Contoh input type text</h3>
+    <p>Di gunakan untukmembuat sebuah input box, pengguna dapat memasukan teks, ini input type yang paling umum dan dari semua input type ini adalah input type default</p>
+    <p>Klik tombol "Coba" untuk mendapatkan teks di bidang teks.</p>
+
+    <label for="">Coba ketik sesuatu :</label><br>
+    <input type="text" id="myText" value="Some text...">
+    <br><br>
+    <button onclick="fungsiText()">Coba</button>
+
+    <p id="demotext"></p>
+
+    <hr>
+
+    <h3>Contoh input type time</h3>
+    <p>Di gunakan untuk membuat sebuah input box, pengguna dapat memasukan waktu</p>
+
+    <label for="meeting-time">Jam berapa sekoalah:</label>
+    <input type="time" id="waktusekolah" name="meeting-time">
+    <button onclick="waktuSekolah()">Kirim</button>
+    <p id="Lihatjam"></p>
+
+    <h3>Contoh input type url</h3>
+    <p>Digunakan untuk membuat input box dengan type URL, pengguna dapat memasukan url situs web yang di inginkan</p>
+
+    <label for="website">Masukkan URL situs web:</label><br>
+    <input type="url" id="urlweb" name="website"><br><br>
+    <button onclick="fungsiUrlweb()">Telusuri URL</button>
+
+    <hr>
+
+    <h3>Contoh input type week</h3>
+    <p>Digunakan untuk membuat sebuah input box, pengguna dapat memilih minggu dan tahun</p>
+    <p> Catatan: elemen input dengan type="week" tidak didukung di IE11, Firefox, atau Safari.</p>
+
+    <input type="week" id="weeksaya" value="">
+    <button onclick="fungsiWeek()">Klik</button>
+    <p id="demoweek"></p>
+
+    <br><br>
+
+    <h2>Attribut input</h2>
+
+    <ul>
+      <li>< input type="file" <b>accept</b>=".jpg, .jpeg, .png"></li>
+      < input type="file" <b>accept</b>="image/*"><br>
+      < input <b>accept</b>="file_extension|audio/*|video/*|image/*|media_type">
+    </ul>
+    
+    <p>Digunakan untuk menentukan jenis file yang diterima oleh server untuk input file</p>
+    <p>Accept membatasi pemilihan file hanya pada gambar dengan ekstensi .jpg, .jpeg, dan .png.</p>
+    <p>Untuk yang "image/*"dan lainnya Ini menerima file gambar apa pun. tetapi anda juga dapat memilih lebih spesifik seperti yang pertama</p>
+
+    <form action="/action_page.php">
+      <label for="img">Select image:</label><br>
+      <input type="file" id="img" name="img" accept="image/*"><br><br>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< img src="gambar.jpg" <b>alt</b>="Deskripsi singkat tentang gambar"></li>
+    </ul>
+
+    <p>Digunakan untuk memberikan teks alternatif untuk elemen media, seperti gambar atau video, berguna jika elemen media tersebut tidak dapat ditampilkan atau untuk membantu pengguna yang menggunakan pembaca layar.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="image" src="../Gambar/img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <p>Coba rusakkan file gambarnya akan muncul deskripsi singkat tentang gambar</p>
+
+    <hr>
+
+    <ul>
+      <li> < input type="password" name="password" <b>autocomplete</b>="on"> </li>
+      < input <b>autocomplete</b>="on|off|type-of-value">
+    </ul>
+
+    <p> digunakan untuk mengaktifkan atau menonaktifkan autocomplete yaitu menyarankan mengisi otomatis atau tidak kolom input berdasarkan entri pengguna sebelumnya.</p>
+    <p>on: Mengaktifkan autocomplete untuk kolom input. <br>
+      off: Menonaktifkan autocomplete untuk kolom input.</p>
+
+      <p>Contoh di bawah ini adalah autocmplete yang di aktifkan dan kolom password merekomendasikan password baru yang acak</p>
+
+      <form action="/action_page.php">
+         <label for="username">Username:</label><br>
+         <input type="text" id="username" name="username"autocomplete="new-password" autocomplete="on"><br>
+         <label for="password">Password:</label><br>
+         <input type="password" id="password" name="password" autocomplete="new-password"><br><br>
+         <input type="submit">
+        </form>
+
+        <p>Contoh di bawah ini autocomplete yang di nonaktifkan</p>
+        
+        <form action="/action_page.php">
+         <label for="username">Username:</label><br>
+         <input type="text" id="username" name="username"autocomplete="off" ><br>
+         <label for="password">Password:</label><br>
+         <input type="password" id="password" name="password" autocomplete="off" ><br><br>
+         <input type="submit">
+        </form>
+
+        <hr>
+
+        <ul>
+          <li>
+            < input type="text" id="name" name="name"<b>autofocus</b>></li>
+        </ul>
+
+        <p>Untuk menentukan bahwa suatu elemen input harus secara otomatis fokus saat halaman dimuat,  elemen input tersebut akan langsung siap untuk menerima input dari pengguna tanpa pengguna harus mengklik pada elemen tersebut.</p>
+
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" ><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <p>Refresh halaman maka kolom name akan otomatis siap untuk di isi tanpa harus mengarahkan cursor, tapi saat ini autofocus aku nonaktifkan ubah codingan untuk mengaktifkan</p>
+
+        <hr>
+
+        <ul>
+          <li>< input type="checkbox" id="myCheckbox" name="myCheckbox" <b>checked></b></li>
+        </ul>
+
+        <p>digunakan untuk menentukan bahwa sebuah elemen input seperti checkbox atau radio button harus awalnya dipilih atau dicentang saat halaman dimuat.
+        <br><br>
+        Contohnya, jika Anda memiliki sebuah checkbox dan ingin checkbox tersebut awalnya tercentang saat halaman dimuat, </p>
+
+        <form action="/action_page.php">
+          <input type="checkbox" name="vehicle1" value="Bike">
+          <label for="vehicle1"> I have a bike</label><br>
+          <input type="checkbox" name="vehicle2" value="Car">
+          <label for="vehicle2"> I have a car</label><br>
+          <input type="checkbox" name="vehicle3" value="Boat" checked>
+          <label for="vehicle3"> I have a boat</label><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <p>Saat halaman di muat atau di refreh maka i have a boat akan tercentang</p>
+
+        <hr>
+
+        <ul>
+          <li>< input type="text" id="myInput" name="myInput" <b>dirname</b>="rtl" / "ltr"> </li>
+        </ul>
+
+        <p>Digunakan untuk menentukan arah teks yang akan dimasukkan oleh pengguna. Ini berguna dalam kasus bahasa-bahasa yang ditulis dari kanan ke kiri seperti bahasa Arab.</p>
+
+        <p>ltr: Mewakili penulisan dari kiri ke kanan. <br>
+          rtl: Mewakili penulisan dari kanan ke kiri.</p>
+
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" dirname="ltr">
+          <input type="submit" value="Submit">
+        </form>
+
+        <hr>
+
+        <ul>
+          <li>< button type="button" <b>disabled></b></> </li>
+        </ul>
+
+        <p>Digunakan dalam untuk menonaktifkan atau menjadikan elemen tidak dapat diakses atau diinteraksi oleh pengguna. Ini digunakan pada elemen input, tombol, atau elemen lainnya yang tidak perlu diakses atau digunakan.
+        <br><br>
+        Contohnya, jika Anda memiliki sebuah tombol yang tidak aktif dan tidak dapat diklik, Anda dapat menggunakan atribut disabled seperti ini:</p>
+        
+        <form action="/action_page.php">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" disabled><br><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <p>Input di atas yang last name tidak dapat di akses</p>
+
+        <hr>
+
+        <ul>
+          <li> <<b> form</b> action="/action_page.php" id="form1">  < /<b>form> </b> </li>
+          </ul>
+
+          <p>lihat juga penjelasan form di awal pelajaran</p>
+
+          <p>Bidang input yang terletak di luar formulir HTML (tetapi masih merupakan bagian dari formulir):</p>
+
+          <p>Contoh di bawah ini menggunakan form</p>
+
+          <form action="/action_page.php" id="form1">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+
+          <p>Contoh di bawah ini tidak menggunakan form</p>
+
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" form="form1">
+          <input type="submit" value="Submit">
+          
+          <hr>
+
+          <ul>
+            <li>< button type="submit" <b>formaction</b>="/custom_action">Submit< button/> </li>
+          </ul>
+
+          <p>action ini sebelumnya juga sudah ada penjelasanya di dalam attribut form</p>
+
+          <p>Digunakan untuk menentukan URL atau endpoint ke mana data formulir akan dikirim ketika tombol formulir diklik.</p>
+
+          <p>Contoh anda memiliki formulir yang menggunakan URL aksi default, tetapi ingin mengirimkan data ke URL yang berbeda ketika tombol khusus dalam formulir tersebut diklik. Anda dapat menggunakan formaction pada tombol tersebut</p>
+
+          <form action="/default_action" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+            
+            <button type="submit">Submit ke Aksi Default</button>
+            <button type="submit" formaction="/custom_action">Submit ke Aksi Kustom</button>
+        </form>
+
+        <hr>
+
+        <ul>
+          <li>
+            < form action="/submit" method="post" <mark>enctype="application/x-www-form-urlencoded" </mark>> < /form> <br>
+            < form action="/submit" method="post" <mark>enctype="multipart/form-data"</mark>> < /form> <br>
+            < form action="/submit" method="post" <mark> enctype="text/plain"</mark>> < /form>
+         </li>
+        </ul>
+
+        <p>Ini sudah ada di dalam attribut form sebelumnya, ini sebagai tambahan agar lebih memahami fungsi attribut ini</p>
+
+        <p>Digunakan untuk menentukan jenis encoding yang akan digunakan ketika data formulir dikirim ke server. 
+        <br><br>
+        Encoding adalah proses mengonversi data menjadi format yang sesuai untuk pengiriman melalui jaringan, seperti URL encoding atau multipart/form-data untuk mengirim file.</p>
+
+        <p><b>Default (application/x-www-form-urlencoded):</b> Ini adalah nilai default untuk formenctype. Data formulir dikodekan dalam format URL-encoded dan dikirim dalam badan permintaan </p>
+
+        <p><b>Multipart/form-data:</b> Digunakan ketika formulir mengandung file upload. Data formulir dikirim dalam format multipart MIME. </p>
+
+        <p><b>Text/plain: </b>Data formulir dikirimkan dalam format teks polos, tanpa pengkodean tambahan. Ini berguna untuk menguji atau debugging.</p>
+
+        <form action="/action_page_binary.asp" method="post">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          
+          <input type="submit" value="Kirim">
+          <input type="submit" formenctype="multipart/form-data" value="Kirim sebagai Multipart/form-data">
+        </form>
+
+        <hr>
+
+        <ul>
+          <li>
+          < form action="/submit" method="post" <mark>formmethod="post"</mark>>< /form>
+          < form action="/submit" method="get" <mark>formmethod="get"</mark> >< /form>
+          </li>
+        </ul>
+
+        <p>Lihat juga penjelasan di dalam attribut form</p>
+
+        <p>Digunakan untuk menentukan metode HTTP yang akan digunakan ketika data formulir dikirim ke server. Metode HTTP yang umum digunakan adalah POST dan GET.</p>
+
+        <p><b>POST:</b>Metode ini digunakan ketika Anda ingin mengirim data formulir ke server dengan memasukkan data ke dalam badan permintaan HTTP. Ini cocok untuk pengiriman data yang sensitif atau besar.</p>
+
+        <p><b>GET:</b>Metode ini digunakan ketika Anda ingin mengirim data formulir sebagai bagian dari URL, yang terlihat oleh pengguna. Ini cocok untuk permintaan yang dapat disematkan dan dapat dibagikan.</p>
+        
+        <form action="/action_page.php" method="get" target="_blank">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit">
+          <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+
+        <hr>
+
+        <ul>
+          <li>
+            < button type="submit" <mark>formnovalidate</mark> >Batal (tanpa validasi)< /button>
+          </li>
+        </ul>
+
+        <p>Lihat juga penjelasan yang telah lewat pada attribut form</p>
+
+        <p>Digunakan pada elemen < button> dalam suatu formulir untuk memberi tahu browser untuk mengabaikan validasi formulir saat tombol tersebut ditekan.</p>
+
+        <form action="/submit" method="post">
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+          <button type="submit">Kirim</button>
+          <button type="submit" formnovalidate>Batal (tanpa validasi)</button>
+        </form>
+
+        <p>
+          Tombol pertama akan memicu validasi formulir sebelum data dikirimkan ke server <br><br>
+          Tombol kedua, yang memiliki atribut formnovalidate, akan mengabaikan validasi dan mengirimkan data formulir langsung ke server saat ditekan
+        </p>
+
+        <hr>
+
+        <ul>
+          <li>
+            < form action="/submit" method="post" <mark>target="_blank" / "_self" / "_parent" "_top" </mark>> < /form>
+          </li>
+        </ul>
+
+        <p>Lihat penjelasan yang telah lewat di dalam attribut form</p>
+
+        <p>Berguna untuk mengontrol di mana respons dari formulir akan ditampilkan, seperti membuka respons dalam jendela baru atau memuatnya ke dalam frame tertentu dalam halaman.</p>
+
+        <p>Lihat penjelasan "_blank" "_self" "_parent" "_top" pada penjelasan yang telah lewat </p>
+        
+        <form action="/submit" method="post" target="_blank">
+          <label for="email">Alamat Email:</label>
+          <input type="email" id="email" name="email" required>
+          <br><br>
+          <button type="submit">Kirim</button>
+       </form>
+
+       <p>Contoh di atas akan ditampilkan dalam jendela atau tab baru</p>
+
+       <hr>
+
+       <ul>
+        <li> < input type="text" style=" height : 30px ;"> </li><br> <b>(height) </b>
+       </ul>
+      
+       <p>
+        Digunakan untuk membuat kontrol formulir yang memungkinkan pengguna memasukkan data. Biasanya digunakan untuk masukan teks, kotak centang, tombol radio, tombol, dll. Namun, tinggi elemen ini biasanya dikontrol melalui CSS, tapi juga bisa di kontrol di dalam html nya.
+       </p>
+
+       <input type="text" style="height: 30px;">
+
+       <p>Di atas adalah input yang di ubah ukuranya</p>
+       <br>
+       <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="image" src="../Gambar/img_submit.gif" alt="Submit" width="85" height="35">
+      </form>
+
+      <p>Di atas adalah tombol submit yang di ubah ukuranya</p>
+
+      <hr>
+
+     <ul>
+      <li>
+        <<b> datalist</b>><br>
+          < option value="Chrome"><br>
+          < option value="Firefox"><br>
+          < option value="Opera"><br>
+        <<b>/datalist</b>>
+      </li>
+     </ul>
+
+     <p> Elemen < datalist> berisi opsi yang bisa dipilih oleh pengguna saat mereka memasukkan data ke dalam input.</p>
+
+     <form action="/action_page.php" method="get">
+      <label for="browser">Pilih makanan favorit Anda:</label> <br>
+      <input list="makanan" name="browser"><br><br>
+      <datalist id="makanan">
+        <option value="Nasi Goreng">
+        <option value="Pizza">
+        <option value="Sushi">
+        <option value="Bakso">
+        <option value="Spaghetti">
+      </datalist>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="number" id="age" name="age" <b>max</b>="100"></li>
+    </ul>
+
+    <p>Digunakan dalam elemen input dengan tipe number, date, atau datetime-local. Atribut ini menentukan nilai tertinggi yang diperbolehkan untuk input tersebut.</p>
+
+    <form action="/action_page.php">
+      <label for="datemax">Masukkan tanggal sebelum tanggal 1980-01-01:</label><br>
+      <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      <input type="submit">
+    </form>
+<br><br>
+    <form action="/action_page.php">
+      <label for="age">Masukkan umur anda:</label><br>
+      <input type="number" id="age" name="age" max="100"><br><br>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username" name="username"<b>maxlength</b>="20"> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen input untuk menentukan jumlah maksimum karakter yang dapat dimasukkan oleh pengguna. Atribut ini biasanya digunakan dengan elemen input tipe text, password, dan textarea. </p>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" maxlength="10"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+
+    <p>Hanya 100 kata</p>
+    <form action="">
+      <label for="message">Pesan:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" maxlength="100"></textarea>
+    </form>
+
+    <hr>
+
+    <ul></b>
+      <li>< input type="number" id="quantity" name="quantity" <b>min</b>="1"> </li>
+    </ul>
+
+    <p>Atribut min digunakan dalam elemen input dengan tipe number, date, datetime-local, time, dan range. Atribut ini menentukan nilai terendah yang diperbolehkan untuk input tersebut. </p>
+
+    <form action="/action_page.php">
+
+      <label for="datemin">Masukkan tanggal setelah 2000-01-01:</label><br>
+      <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    
+      <label for="quantity">Kuantitas (antara 1 dan 5):</label><br>
+      <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+    
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="file" id="files" name="files"<b> multiple></b> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen input tipe file. Ketika atribut ini ditambahkan, itu mengizinkan pengguna untuk memilih beberapa file sekaligus saat memilih file untuk diunggah, jika tidak menggunakan multiple, dapat memiliH tapi terbatas dan file sebelumnya di timpa </p>
+
+    <form action="/action_page.php">
+      <label for="files">Select files:</label><br>
+      <input type="file" id="files" name="files" multiple><br><br>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username"<b>name</b>="username"> </li>
+    </ul>
+
+    <p>Digunakan untuk menentukan nama dari data yang akan dikirimkan ke server saat formulir dikirim. Ini adalah bagian penting dari membuat formulir HTML karena nama ini adalah yang digunakan oleh server untuk mengidentifikasi dan memproses data yang dikirim oleh pengguna.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="email" id="email" name="email"<b>pattern</b>="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"> </li>
+    </ul>
+
+    <p>Memungkinkan Anda untuk menentukan pola (pattern) regular expression yang harus cocok dengan nilai input sebelum formulir dapat disubmit. Hal ini berguna untuk memvalidasi apakah data yang dimasukkan oleh pengguna sesuai dengan format yang diinginkan sebelum dikirim ke server.</p>
+
+    <form action="/submit-form" method="post" onsubmit="return validateForm()">
+      <label for="password">Password (Minimal 8 karakter, minimal satu huruf besar, satu huruf kecil, dan satu angka):</label><br>
+      <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username" name="username"<b> placeholder</b>="Masukkan username Anda..."> </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menyediakan teks contoh atau petunjuk kepada pengguna tentang jenis data yang diharapkan atau format yang diinginkan. Ini membantu pengguna memahami apa yang diharapkan dari mereka saat mereka memasukkan data ke dalam input.
+    </p>
+
+    <form action="/action_page.php">
+      <label for="phone">Enter a phone number:</label><br><br>
+      <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+      <small>Format: 123-45-678</small><br><br>
+      <input type="submit">
+    </form>
+    
+    <hr>
+
+    <ul>
+      <li> < input type="button"<b> popovertarget</b>="myheader" value="Click me!"></li>
+    </ul>
+
+    <p>Digunakan untuk menampilkan informasi tambahan saat pengguna mengarahkan kursor mereka ke suatu elemen atau saat elemen tersebut ditekan. Popover biasanya berisi konten yang membantu menjelaskan atau memberikan detail tambahan tentang elemen yang terkait.</p>
+
+    <p> Biasanya, penggunaan popover atau tooltip diimplementasikan menggunakan JavaScript dan CSS, atau menggunakan framework seperti Bootstrap yang menyediakan komponen siap pakai untuk popover.</p>
+
+    <button popover-target="myPopover">Show Popover</button>
+
+    <div id="myPopover" class="popover" style="display: none;">
+      This is a popover content.
+    </div>
+
+    <hr>
+
+    <ul>
+      <li> < button popover-target="myPopover"<b> popover-target-action</b>="show">Show Popover</b></li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tindakan yang harus dilakukan ketika elemen target popover diaktifkan atau diinteraksi. Ini bisa berupa menampilkan atau menyembunyikan popover, memicu aksi tertentu, atau menyesuaikan perilaku popover sesuai dengan preferensi pengguna. <br><br> Ini bisa berarti popover akan muncul saat tombol diklik atau ketika kursor mouse mengarahkan ke tombol, tergantung pada konfigurasi atau perilaku popover yang ditetapkan.
+    </p>
+
+    <button popover-target="myPopover" popover-target-action="show">Show Popover</button>
+
+    <div id="myPopover" class="popover" style="display: none;">
+      This is a popover content.
+    </div>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="name" name="name" value="John Doe"<b> readonly></b> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen input untuk membuat input hanya bisa dibaca (read-only), yang berarti pengguna tidak dapat mengubah nilai input tersebut secara langsung. </p>
+    <p>Meskipun nilai input tidak dapat diubah melalui antarmuka pengguna, nilai tersebut masih bisa diubah secara dinamis melalui JavaScript. Jadi, atribut readonly hanya mencegah penggunaan dari antarmuka pengguna saja.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="country">Country:</label>  <br>
+      <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <br>
+    <label for="name">Nama:</label><br>
+    <input type="text" id="name" name="name" value="John Doe" readonly>
+
+    <hr>
+
+    <ul>
+      <li> < input type="text" id="username" name="username"<b> required</b>> </li>
+    </ul>
+
+    <p>Digunakan untuk menandakan bahwa bidang input tersebut harus diisi sebelum formulir dapat disubmit. Ini memastikan bahwa pengguna memberikan data yang diperlukan sebelum mengirimkan formulir, dan sering digunakan untuk mencegah pengiriman formulir kosong atau dengan data yang tidak lengkap. </p>
+
+    <form action="/action_page.php">
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" required>
+      <input type="submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username" name="username"<b> size</b>="50"> </li>
+    </ul>
+
+    <p>Digunakan untuk menentukan lebar visual dari elemen input dalam karakter. Ini berguna untuk mengontrol lebar input pada tampilan, tetapi tidak membatasi jumlah karakter yang dapat dimasukkan oleh pengguna. </p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" size="50"><br><br>
+      <label for="pin">PIN:</label>
+      <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< img <b>src</b>="gambar.jpg" alt="Deskripsi Gambar"> </li>
+    </ul>
+
+    <p>digunakan dalam elemen < img> untuk menentukan sumber (source) dari gambar yang akan ditampilkan.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <input type="image" src="../Gambar/img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="number" id="points" name="points"<b>step</b>="3"> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen input tipe number, range, dan datetime-local untuk menentukan increment (penambahan) atau decrement (pengurangan) nilai saat pengguna berinteraksi dengan input. Ini memungkinkan Anda untuk menentukan langkah atau interval tertentu di mana nilai dapat bertambah atau berkurang. </p>
+
+    <p>Melangkah 2 langkag:</p>
+    <form action="/action_page.php">
+    <label for="quantity">Jumlah Barang:</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="100" step="2">
+    <input type="submit">
+    </form>
+    <br>
+
+    <p>Melangkah 5 langkag:</p>
+    <form action="/action_page.php">
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="100" step="5">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input<b> type</b>="text" id="username" name="username"> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen < input> untuk menentukan jenis kontrol input yang akan ditampilkan. Ini adalah atribut wajib yang memberi tahu browser tentang jenis data yang akan dimasukkan oleh pengguna dan tampilan antarmuka yang sesuai akan ditampilkan.</p>
+
+    <p><b>Lihat pada contoh-contoh di pelajaran sebelumnya tentang jenis-jenis input</b></p>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username" name="username"<b> value</b>="JohnDoe"> </li>
+    </ul>
+
+    <p>Digunakan dalam elemen input untuk menentukan nilai awal dari input tersebut. Nilai yang ditentukan dalam atribut value akan ditampilkan di dalam input saat halaman dimuat, dan pengguna dapat memodifikasinya sesuai kebutuhan.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>< input type="text" id="username" name="username" style="width: 200px;"> </li><br> <b>(width)</b>
+    </ul>
+
+    <p> Untuk mengontrol lebar visual elemen input, lebih sering digunakan atribut CSS seperti width.Namun, jika Anda ingin memberikan lebar awal pada elemen input, Anda dapat menggunakan atribut style atau atribut CSS dalam elemen tersebut.</p>
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+      <input type="image" src="../Gambar/img_submit.gif" alt="Submit" width="48" height="48">
+    </form>
+
+
+
+
+<br><br><br><br>
+  </div>
+
+  <script src="../JS/script_form_input.js"></script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>audio source</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element audio</h1>
+
+    <p>
+      Audio adalah elemen HTML yang digunakan untuk menyematkan file audio ke dalam halaman web. Dengan menggunakan
+      elemen audio, Anda dapat memutar audio secara langsung di dalam browser tanpa perlu menggunakan pemutar audio
+      eksternal.
+    </p>
+
+    <p>
+      Klik tombol putar untuk memutar suara:
+    </p>
+
+    <audio controls>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut audio</h2>
+
+    <ul>
+      <li>
+        < <b> audio</b> controls autoplay><br>
+          < source src="audio.mp3" type="audio/mpeg"><br>
+            < /<b> audio</b>>
+      </li>
+    </ul>
+
+    <p>
+      Adalah atribut boolean yang, jika disertakan, akan memulai pemutaran audio secara otomatis begitu halaman dimuat,
+      tanpa memerlukan interaksi pengguna tambahan.
+    </p>
+
+    <p>
+      Namun, penting untuk diingat bahwa penggunaan atribut autoplay bisa jadi mengganggu pengalaman pengguna terutama
+      jika audio dimainkan secara tiba-tiba tanpa permintaan atau keinginan pengguna.
+    </p>
+
+    <p>
+      untuk sebagai contoh ini saya nonaktifkan, tambahkan y pada autoplay untuk mengaktifkan
+    </p>
+
+    <audio controls autopla>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <ul>
+      <li>
+        < <b>audio</b> controls><br>
+          < source src="audio.mp3" type="audio/mpeg"><br>
+            < /<b>audio</b>>
+      </li>
+    </ul>
+
+    <p>
+      Adalah atribut boolean yang, jika disertakan, akan menampilkan kontrol pemutar audio standar di browser untuk
+      mengontrol pemutaran audio.
+    </p>
+
+    <audio controls>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <ul>
+      <li>
+        < audio controls <b> loop</b>> <br>
+          < source src="audio.mp3" type="audio/mpeg"><br>
+            < /audio>
+      </li>
+    </ul>
+
+    <p>
+      Atribut loop pada elemen audio adalah atribut boolean yang, jika disertakan, akan membuat audio diputar berulang
+      kali (loop) secara otomatis setelah selesai diputar satu kali. Dengan kata lain, audio akan terus diputar ulang
+      tanpa henti sampai pengguna menghentikannya secara manual atau navigasi diubah.
+    </p>
+
+    <audio controls loop>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio controls loop>
+      <source src="../Audio/horse.ogg" type="audio/ogg">
+      <source src="../Audio/horse.ogg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <ul>
+      <li>
+        < audio controls <b> muted</b>> <br>
+          < source src="audio.mp3" type="audio/mpeg"><br>
+            < /audio>
+      </li>
+    </ul>
+
+    <p>
+      Adalah atribut boolean yang, jika disertakan, akan membisukan audio secara otomatis saat pemutaran dimulai. Dengan
+      kata lain, audio tidak akan mengeluarkan suara sampai pengguna mengaktifkan kembali suaranya.
+    </p>
+
+    <audio controls muted>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr>
+
+    <ul>
+      <li>
+        < audio controls <b> preload</b>="auto"> <br>
+          < source src="audio.mp3" type="audio/mpeg"> <br>
+            < /audio>
+
+      </li>
+    </ul>
+
+    <p>
+      Adalah atribut yang mengontrol bagaimana browser memuat file audio sebelum pengguna mulai memutarnya. Atribut ini
+      membantu mengatur keseimbangan antara penggunaan data/bandwidth dan pengalaman pengguna dalam hal seberapa cepat
+      audio mulai diputar.
+    </p>
+
+    <audio controls preload="none">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+    </audio>
+
+    <ol>
+      <li>none: Browser tidak akan memuat audio sebelum pengguna memulainya. Ini menghemat bandwidth dan data, tetapi
+        mungkin menyebabkan penundaan saat pengguna memulai pemutaran.</li>
+      <li>metadata: Browser hanya akan memuat metadata (seperti durasi dan ukuran file) dari audio. Ini memberikan
+        sedikit informasi kepada pengguna tanpa memuat seluruh file.</li>
+      <li>auto: Browser akan mencoba memuat seluruh audio, bahkan sebelum pengguna mulai memutarnya. Ini memastikan
+        pemutaran cepat tetapi menggunakan lebih banyak bandwidth dan data.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < audio controls <b> src</b>="audio.mp3">< /audio>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan sumber file audio yang akan diputar. Ini adalah salah satu cara untuk menyematkan file
+      audio ke dalam halaman web. Saat menggunakan atribut src, Anda tidak perlu menggunakan elemen source yang
+      terpisah.
+    </p>
+
+    <audio src="../Audio/Jadilah Legenda.mp3" controls></audio>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element source</h1>
+
+    <p>
+      Digunakan untuk menentukan beberapa sumber media untuk elemen multimedia seperti audio dan video. Elemen ini
+      memungkinkan browser untuk memilih dan memutar sumber yang didukung oleh browser tersebut.
+    </p>
+
+    <p>
+      Tag source> dalam HTML digunakan untuk menentukan beberapa sumber media untuk elemen seperti video>, audio>,
+      dan picture>. Tag ini sangat berguna untuk menyediakan berbagai format atau versi konten media agar
+      kompatibel dengan berbagai browser dan perangkat.
+    </p>
+
+    <audio controls>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/ogg">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+
+    <hr>
+
+    <h2>Attribut source</h2>
+
+    <ul>
+      <li>
+        < source <b>media</b>="(min-width:650px)" srcset="img_pink_flowers.jpg">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan kondisi media tertentu di mana sumber ini akan digunakan. Ini memungkinkan Anda untuk
+      memberikan berbagai sumber media berdasarkan kondisi seperti lebar layar, orientasi perangkat, resolusi, atau
+      jenis perangkat.
+    </p>
+
+    <p>
+      dalam HTML digunakan untuk menentukan kondisi media query yang harus dipenuhi agar sumber media tersebut
+      digunakan. Atribut ini biasanya digunakan dalam konteks elemen picture> untuk gambar responsif, tetapi juga dapat
+      digunakan dengan elemen video> dan audio>.
+    </p>
+
+    <audio controls>
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg" media="(min-width: 600px)">
+      <source src="../Audio/Jadilah Legenda.mp3" type="audio/mpeg" media="(max-width: 599px)">
+    </audio>
+
+    <p>
+      Atribut media pada tag source> memungkinkan Anda untuk menyediakan sumber media yang lebih fleksibel dan responsif
+      berdasarkan kondisi media query. Ini meningkatkan pengalaman pengguna dengan memastikan mereka mendapatkan versi
+      konten yang paling sesuai dengan perangkat mereka.
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < source <b>src</b>="horse.ogg" type="audio/ogg">
+      </li>
+    </ul>
+
+    <p>
+      Atribut src pada tag source> dalam HTML digunakan untuk menentukan URL dari file media yang akan digunakan.
+      Atribut ini sangat penting karena menunjuk langsung ke sumber media seperti video, audio, atau gambar yang ingin
+      Anda sajikan dalam elemen video>, audio>, atau picture>.
+    </p>
+
+    <audio controls>
+      <source src="../Audio/horse.ogg" type="audio/ogg">
+      <source src="../Audio/horse.ogg" type="audio/mpeg">
+    </audio>
+
+    <hr>
+
+    <ul>
+      <li>
+        < source <b>srcset</b>="image-large.jpg" media="(min-width: 800px)">
+      </li>
+    </ul>
+
+    <p>
+      Atribut srcset pada tag source> dalam HTML digunakan untuk menentukan beberapa sumber gambar dengan berbagai
+      resolusi dan ukuran. Atribut ini biasanya digunakan dalam konteks elemen picture> untuk mendukung gambar
+      responsif, tetapi juga dapat digunakan langsung dalam elemen img>.
+    </p>
+
+    <picture>
+      <source media="(min-width:650px)" srcset="../Gambar/img_pink_flowers.jpg">
+      <source media="(min-width:465px)" srcset="../Gambar/img_white_flower.jpg">
+      <img src="../Gambar/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+    </picture>
+
+    <hr>
+
+    <ul>
+      <li>
+        < source src="horse.ogg" <b>type</b>="audio/ogg">
+      </li>
+    </ul>
+
+    <p>
+      dalam HTML digunakan untuk menentukan tipe MIME (Multipurpose Internet Mail Extensions) dari sumber media yang
+      ditunjukkan oleh atribut src atau srcset. Menyediakan tipe MIME membantu browser untuk menentukan apakah mereka
+      dapat memproses dan memutar file media yang ditentukan.
+    </p>
+
+    <p>
+      Dengan menggunakan atribut type, Anda dapat memastikan bahwa file media yang tepat dipilih dan digunakan oleh
+      browser
+    </p>
+
+    <audio controls>
+      <source src="../Audio/horse.ogg" type="audio/ogg">
+      <source src="../Audio/horse.ogg" type="audio/mpeg">
+    </audio>
+
+    <p>
+      Common media types
+      <br><br>
+      For video: <br>
+      video/ogg
+      video/mp4
+      video/webm
+      <br>
+      For audio: <br>
+      audio/ogg
+      audio/mpeg
+    </p>
+
+  </div>
+</body>
+
+</html>

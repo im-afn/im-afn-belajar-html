@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formatting HTML</title>
+  <link rel="stylesheet" href="../CSS/style_formatting.css">
+
+</head>
+
+<body>
+
+  <h3>Element abbr</h3>
+  <p>
+    DI bawah ini adalah tag "abbr" di gunakan untuk mendefinisikan singkatan
+    atau akronim, seperti "HTML", "CSS", "Dr.", "ASAP", "ATM".
+  </p>
+  <p>
+    Ini adalah <abbr title="World Health Organization">WHO</abbr> yang berdiri
+    pada tahun 1948.
+  </p>
+
+  <hr>
+
+  <h3>Element address</h3>
+  <p>
+    Di gunakan untuk memberikan informasi kontak penulis atau pemilik dokumen
+    atau artikel, Informasi kontak dapat berupa email, URL, No telepon, Media
+    Sosial dll. Teks dalam element ini biasanya dirender dalam huruf miring
+  </p>
+  <address>
+    Written by <a href="mailto:arifinppu@gmail.com">Imam Arifin</a>.<br />
+    Visit us at:<br />
+    Example.com<br />
+    Box 564, Disneyland<br />
+    USA
+  </address>
+
+  <hr>
+
+  <h3>Element b</h3>
+  <p>
+    Di gunakan unutuk membuat teks menjadi tebal
+  </p>
+  <p>
+    Contoh: "Tulisan <b>tebal</b> ini adalah contoh dari elemet b"
+  </p>
+
+  <h3>Element bdi</h3>
+  <p>
+    BDI adalah singkatan Bi-Directional isolasi.Tag ini mengisolasi bagian
+    teks yang mungkin diformat dalam arah yang berbeda dari teks lain di
+    luarnya.Elemen ini berguna saat menyematkan konten buatan pengguna dengan
+    konten yang tidak diketahui arah teks.
+  </p>
+  <ul>
+    <li>User <bdi>Imam</bdi>: 60 points</li>
+    <li>User <bdi>Arifin</bdi>: 80 points</li>
+    <li>User <bdi>MamAr</bdi>: 90 points</li>
+  </ul>
+
+  <hr>
+
+  <h3>Element bdo</h3>
+  <p>
+    BDO adalah singkatan dari Bi-Directional Override, Element ini digunakan untuk mengganti atau membalik arah teks
+  </p>
+  <p>
+    Contoh:<br>
+    This paragraph will go left-to-right.<br>
+    <bdo dir="rtl">This paragraph will go right-to-left.
+  </p>
+
+  <b>Attribut bdo</b>
+
+  <ul>
+    <li>
+      < bdo <b> dir</b>="rtl">< /bdo>
+    </li>
+    <li>
+      < bdo <b>dir</b>="ltr">< /bdo>
+    </li>
+  </ul>
+
+  <p>
+    "ltr": Ini menandakan arah kiri ke kanan, yang merupakan arah standar untuk sebagian besar teks dalam bahasa yang
+    ditulis dari kiri ke kanan, seperti bahasa Indonesia atau bahasa Inggris.
+    <br><br>
+    "rtl": Ini menandakan arah kanan ke kiri, yang biasanya digunakan untuk bahasa yang ditulis dari kanan ke kiri,
+    seperti bahasa Arab atau bahasa Ibrani.
+  </p>
+
+  <hr>
+
+  <h3>Element blockquote</h3>
+  <p>
+    Element ini di gunakan untuk menentukan bagian yang di kutip dari sumber lain, seperti website atau yang selainya,
+    dan bagian yang di dalam blockquote akan menjorok ke tengah tetapi dapat diperbaiki dengan css
+  </p>
+  <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works
+    in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+  </blockquote>
+
+  <b>Attribut blockquote</b>
+
+  <ul>
+    <li>
+      < blockquote <b>cite</b>="https://www.contoh.com/sumber-kutipan">
+        < /blockquote>
+    </li>
+  </ul>
+
+  <p>
+    Atribut cite pada tag blockquote> dalam HTML digunakan untuk menambahkan URL yang merujuk ke sumber kutipan yang
+    dikutip dalam blok kutipan. Ini membantu dalam memberikan referensi atau sumber asli dari kutipan yang disertakan
+    dalam blok kutipan tersebut.
+  </p>
+
+  <hr>
+
+  <h3>Element cite</h3>
+  <p>
+    Element ini di gunakan untuk mendefinisikan judul karya seseorang (misalnya buku, puisi, lagu, film, lukisan,
+    patung, dll) nama seseorang bukanlah judul sebuah karya, teks di dalam elemnt ini biasanya di render dengan huruf
+    miring tetapi dapat di ubah dengan css
+  </p>
+  <img src="../Gambar/img_the_scream.jpg" width="220" height="277" alt="The Scream">
+  <p>
+    <cite>Gambar menjerit</cite> Di buat oleh Edward Munc pada tahun 1893.
+  </p>
+
+  <hr>
+
+  <h3>Element code</h3>
+  <p>
+    Element ini biasanya di guanakan untuk mendefinisikan beberapa kode komputer, biasanya font di dalamnya ditampilkan
+    dalam bentuk monospace
+  </p>
+  <p>
+    Tag HTML <code>button</code> tmendefinisakn tombol yang dapat diklik.
+  </p>
+  <p>
+    properti CSS <code>background-color</code> mendefinisikan warna latar belakang suatu element.
+  </p>
+
+  <hr>
+
+  <h3>Element del </h3>
+  <p>
+    Element di gunakan untuk teks yang telah di hapus dari dokumen biasanya mencoret teks yang telah di hapus tersebut
+  </p>
+  <p>
+    Contoh: <br> Warna faforit saya adalah <del>biru</del> <ins>hijau</ins>!
+  </p>
+
+  <b>Attribut del</b>
+
+  <ul>
+    <li>
+      < del <b>cite</b>="URL">Deleted text< /del>
+    </li>
+  </ul>
+
+  <p>
+    Atribut cite pada elemen del> digunakan untuk menentukan URL yang menjelaskan alasan penghapusan atau memberikan
+    informasi lebih lanjut tentang teks yang dihapus. Atribut ini bersifat opsional dan memberikan konteks atau
+    referensi untuk penghapusan tersebut.
+  </p>
+  <p>Berikut adalah teks yang dihapus dari dokumen:</p>
+  <del cite="http://contoh.com/alasan-penghapusan">Teks ini telah dihapus.</del>
+
+  <ul>
+    <li>
+      < del <b>datetime</b>="W3C-DATETIME">Teks yang dihapus< /del>
+    </li>
+  </ul>
+
+  <p>
+    Atribut datetime pada elemen HTML del> digunakan untuk menentukan waktu dan tanggal ketika teks dihapus. Atribut ini
+    berguna untuk mencatat kapan perubahan dilakukan, sehingga memberikan konteks lebih lanjut mengenai penghapusan teks
+    tersebut.
+  </p>
+  <p>
+  <p>Berikut adalah teks yang dihapus dari dokumen:</p>
+  <del datetime="2024-05-24T14:30:00Z">Teks ini telah dihapus.</del>
+  </p>
+
+  <hr>
+
+  <h3>Element dfn</h3>
+  <p>
+    Element ini adalah singkatan dari "element definisi" yaitu mendefinisikan istilah yang akan di definisikan dan
+    induk tag terdekat juga harus berisi definisi / penjelasan untuk istilah tersebut
+  </p>
+  <p>
+    Contoh: <br> <dfn>HTML</dfn> adalah bahasa markup standar untuk membuat halaman web.
+  </p>
+
+  <hr>
+
+  <h3>Element em</h3>
+  <p>
+    Element ini di gunakan untuk memberikan penekanan pada teks biasanya ditampilkan dalam huruf miring
+  </p>
+  <p>Kamu <em>harus</em> cepat</p>
+  <p>kita <em>tidak bisa</em> hidup seperti ini</p>
+
+  <hr>
+
+  <h3>Element i</h3>
+  <p>
+    Element ini di gunakan untuk menandai teks yang berangkat dari prosa normal dalam dokumen, biasanya di tampilkan
+    dalam huruf miring, tag ini sering di gunakan untuk menunjukan istilah teknis, frasa dari bahasa lain, pemikiran,
+    nama kapal dll
+  </p>
+  <p>
+    <i> Lorem ipsum </i> adalah teks pengisi paling populer dalam sejarah.
+  </p>
+  <p>
+    <i>RMS Titanic</i>,sebuah kapal uap mewah, tenggelam pada 15 April 1912 setelah menabrak gunung es.
+  </p>
+
+  <hr>
+
+  <h3>Element ins</h3>
+  <p>
+    Elemetn ini di gunakan untuk memasukan teks ke dalam dokumen, biasanya menggaris bawahi teks yang di sisipkan atau
+    di masukkan
+  </p>
+  <p>Warna faforit saya adalah <del>biru</del> <ins>hijau</ins>!</p>
+
+  <b>Attribut ins</b>
+
+  <ul>
+    <li>
+      < ins <b>cite</b>="URL">Teks yang ditambahkan< /ins>
+    </li>
+  </ul>
+
+  <p>
+    Atribut cite pada elemen HTML ins> digunakan untuk menentukan URL yang menjelaskan alasan atau memberikan informasi
+    lebih lanjut tentang teks yang ditambahkan. Atribut ini mirip dengan penggunaan cite pada elemen del>, tetapi dalam
+    konteks penambahan teks.
+  </p>
+  <p>Berikut adalah teks yang ditambahkan ke dokumen:</p>
+  <ins cite="http://contoh.com/alasan-penambahan">Teks ini telah ditambahkan.</ins>
+
+  <ul>
+    <li>
+      < ins <b>datetime</b>="W3C-DATETIME">Teks yang ditambahkan< /ins>
+    </li>
+  </ul>
+
+  <p>
+    Atribut datetime pada elemen HTML ins> digunakan untuk menentukan waktu dan tanggal ketika teks ditambahkan. Atribut
+    ini berguna untuk mencatat kapan penambahan dilakukan, memberikan konteks lebih lanjut mengenai penambahan teks
+    tersebut.
+  </p>
+  <p>Berikut adalah teks yang ditambahkan ke dokumen:</p>
+  <ins datetime="2024-05-24T14:30:00Z">Teks ini telah ditambahkan.</ins>
+
+  <hr>
+
+  <h3>Element kbd</h3>
+  <p>
+    Element ini di gunakan untuk menentukan teks sebagai input keyboard dalam dokumen konten di dalamnya di tanpilkan
+    dalam font monospace
+  </p>
+  <p>Tekan <kbd>Ctrl</kbd> + <kbd>C</kbd> untuk menyalin teks (Windows).</p>
+  <p>Tekan <kbd>Cmd</kbd> + <kbd>C</kbd> untuk menyalin teks (Mac OS).</p>
+
+  <hr>
+
+  <h3>Element mark</h3>
+  <p>
+    Element ini di gunakan untuk menyorot bagian teks, menyorot bagian teks yang harus di tandai atau memberikan tanda
+    pada teks
+  </p>
+  <p>Contoh: <br>Jangan lupa membeli <mark>susu</mark> hari ini.</p>
+
+  <hr>
+
+  <h3>Element meter</h3>
+  <p>
+    Element meter di gunakan untuk menampilkan pengukur, tidak unruk menampilkan kemajuan atau progres tapi menampilkan
+    pengukuran
+  </p>
+  <label for="disk_c">Penggunaan memori C:</label>
+  <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br <label for="disk_d">Penggunaan memori D:</label>
+  <meter id="disk_d" value="0.6">60%</meter>
+  <p></p>
+
+  <b>Attribut meter</b>
+
+  <ul>
+    <li>
+      < meter <b>form</b>="form_id" ...>...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut form pada elemen HTML meter> digunakan untuk mengaitkan elemen meter> dengan satu atau lebih formulir. Ini
+    berguna ketika elemen meter> tidak berada di dalam elemen form> yang sama, tetapi Anda ingin elemen meter> tersebut
+    dikaitkan dengan formulir tertentu.
+  </p>
+  <form id="myForm">
+    <label for="progress">Progres Pekerjaan:</label> <br>
+    <meter id="progress" min="0" max="100" value="70"></meter>
+  </form>
+  <!-- Elemen <meter> di luar <form> tetapi terhubung dengan form -->
+  <meter form="myForm" min="0" max="100" value="70"></meter>
+
+  <ul>
+    <li>
+      < meter min="min_value" max="max_value" low="low_value" <b>high</b>="high_value" optimum="optimum_value"
+        value="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut high pada elemen HTML meter> digunakan untuk menentukan nilai batas atas dari rentang "tinggi" pada suatu
+    pengukuran. Atribut ini membantu mengkategorikan nilai dalam berbagai rentang, seperti rendah, optimum, dan tinggi.
+    Nilai yang lebih tinggi dari nilai yang ditentukan oleh high akan dianggap dalam rentang tinggi.
+  </p>
+  <p>Kemajuan proyek:</p>
+  <meter min="0" max="100" low="30" high="70" optimum="50" value="85">85%</meter>
+
+  <ul>
+    <li>
+      < meter min="min_value" max="max_value" <b>low</b>="low_value" high="high_value" optimum="optimum_value"
+        value="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut low pada elemen HTML meter> digunakan untuk menentukan nilai batas atas dari rentang "rendah" pada suatu
+    pengukuran. Atribut ini membantu mengkategorikan nilai dalam berbagai rentang, seperti rendah, optimum, dan tinggi.
+    Nilai yang lebih rendah atau sama dengan nilai yang ditentukan oleh low akan dianggap dalam rentang rendah.
+  </p>
+  <p>Kemajuan proyek:</p>
+  <meter min="0" max="100" low="30" high="70" optimum="50" value="25">25%</meter>
+
+  <ul>
+    <li>
+      < meter min="min_value" <b>max</b>="max_value" value="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut max pada elemen HTML meter> digunakan untuk menentukan nilai maksimum dari rentang pengukuran yang
+    ditampilkan oleh elemen meter>. Nilai ini menetapkan batas atas dari skala yang digunakan untuk mengukur dan
+    menampilkan data.
+  </p>
+  <p>Kemajuan proyek:</p>
+  <meter min="0" max="100" value="75">75%</meter>
+
+  <ul>
+    <li>
+      < meter <b>min</b>="min_value" max="max_value" value="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut min pada elemen HTML meter> digunakan untuk menentukan nilai minimum dari rentang pengukuran yang
+    ditampilkan oleh elemen meter>. Nilai ini menetapkan batas bawah dari skala yang digunakan untuk mengukur dan
+    menampilkan data.
+  </p>
+  <p>Progres pembelajaran:</p>
+  <meter min="0" max="100" value="20">20%</meter>
+
+  <ul>
+    <li>
+      < meter min="min_value" max="max_value" low="low_value" high="high_value" <b>optimum</b>="optimum_value"
+        value="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut optimum pada elemen HTML meter> digunakan untuk menentukan nilai yang dianggap paling ideal atau optimum
+    dalam rentang pengukuran yang ditampilkan oleh elemen meter>. Nilai ini menunjukkan titik di mana pengukuran
+    dianggap paling baik atau paling diinginkan.
+  </p>
+  <p>Kemajuan proyek:</p>
+  <meter min="0" max="100" low="30" high="70" optimum="50" value="45">45%</meter>
+
+  <ul>
+    <li>
+      < meter min="min_value" max="max_value" <b>value</b>="current_value">...< /meter>
+    </li>
+  </ul>
+
+  <p>
+    Atribut value pada elemen HTML meter> digunakan untuk menentukan nilai saat ini dari pengukuran yang ditampilkan
+    oleh elemen meter>. Atribut ini menunjukkan posisi nilai saat ini dalam rentang yang ditentukan oleh atribut min dan
+    max
+  </p>
+  <p>Progres penyelesaian tugas:</p>
+  <meter min="0" max="100" value="75">75%</meter>
+
+  <p>
+    Rentang minimum (min) adalah 0. <br>
+    Rentang maksimum (max) adalah 100. <br>
+    Rentang "rendah" (low) adalah dari 0 hingga 30. <br>
+    Rentang "optimum" (optimum) adalah sekitar 50. <br>
+    Rentang "tinggi" (high) adalah dari 70 hingga 100. <br>
+    Nilai saat ini (value) adalah 45, yang berada dalam rentang "optimum". <br>
+  </p>
+
+  <hr>
+
+  <h3>Element pra</h3>
+  <p>
+    Element ini menunukan teks yang telah di format sebelumnya, font dalam element ini di tampilkan dengan lebar tetap,
+    dan mempertahankan spasi jeda baris pada teks, teks akan di tampilkan persis seperti ysng tertulis dalam kode sumber
+    html
+  </p>
+  <pre>
+      Teks dalam elemen pre
+      ditampilkan dalam huruf lebar tetap
+      dan mempertahankan
+      baik spasi maupun
+      pemisahan baris
+   </pre>
+
+  <hr>
+
+  <h3>Element progress</h3>
+  <p>
+    Element ini di gunakan untuk menampilkan kemajuan atau progres dalam penyelesaian tugas, element ini tidak cocok
+    untuk menampilkan pengukuran, seperti pengukuran memori atau selainya, gunakan teks denangan javascript
+  </p>
+  <label for="file">Progres pengunduhan:</label>
+  <progress id="file" value="32" max="100"> 32% </progress>
+  <p></p>
+
+  <b>Attribut progress</b>
+
+  <ul>
+    <li>
+      < progress value="current_value" <b>max</b>="max_value">Fallback text< /progress>
+    </li>
+  </ul>
+
+  <p>
+    Atribut max pada elemen HTML progress> digunakan untuk menentukan nilai maksimum dari kemajuan yang ditampilkan oleh
+    elemen progress>. Nilai ini menetapkan batas atas dari skala yang digunakan untuk merepresentasikan kemajuan proses.
+  </p>
+  <p>Proses pengunduhan:</p>
+  <progress value="70" max="100">70% selesai</progress>
+
+  <ul>
+    <li>
+      < progress <b>value</b>="current_value" max="max_value">Fallback text< /progress>
+    </li>
+  </ul>
+
+  <p>
+    Atribut value pada elemen HTML progress> digunakan untuk menentukan nilai saat ini dari kemajuan yang ditampilkan
+    oleh elemen progress>. Nilai ini menentukan sejauh mana proses tersebut telah berlangsung dalam skala yang
+    ditentukan oleh atribut max.
+  </p>
+  <p>Proses pengunduhan:</p>
+  <progress value="70" max="100">70% selesai</progress>
+  <p>
+    Nilai saat ini (value) adalah 70. <br>
+    Nilai maksimum (max) adalah 100.
+  </p>
+
+  <hr>
+
+  <h3>Element q</h3>
+  <p>Element ini di gunakan untuk menyisipkan atau menandai kutipan singkat</p>
+  <p>Tujuan WWF adalah untuk:
+    <q>Membangun masa depan di mana orang hidup selaras dengan alam.</q>
+    Kami berharap mereka berhasil.
+  </p>
+
+  <b>Attribut q</b>
+
+  <ul>
+    <li>
+      < q <b>cite</b>="URL_sumber">Teks kutipan< /q>
+    </li>
+  </ul>
+
+  <p>
+    Atribut cite pada elemen HTML q> digunakan untuk menentukan URL atau alamat sumber eksternal dari kutipan yang
+    ditandai oleh elemen q>. Ini membantu dalam memberikan referensi atau informasi tambahan tentang sumber kutipan.
+  </p>
+  <p>Dalam pidatanya yang terkenal, Martin Luther King Jr. mengatakan <q cite="https://www.contoh.com/pidato">Saya
+      memiliki impian</q>.</p>
+
+  <hr>
+
+  <h3>Element rp</h3>
+  <p>
+    Element ini di guanakn untuk memberikan tanda kurung di sekitar teks ruby untuk di tampilkan oleh browser yang
+    tidak mendukung anotasi ruby
+  </p>
+  <ruby>
+    A <rp>(</rp>
+    <rt>B</rt>
+    <rp>)</rp>
+  </ruby>
+
+  <hr>
+
+  <h3>Element rt</h3>
+  <p>
+    Element ini di gunakan untuk mendefinisikan penjelasan atau pengucapan karakter (untuk tipografi asia timur) dalam
+    anotasi ruby
+  </p>
+
+  <ruby>
+    A <rt> B </rt>
+  </ruby>
+
+  <hr>
+
+  <h3>Element ruby</h3>
+  <p>
+    Anotasi ruby adalah teks tambahan kecil yang di lampirkan pada teks utama untuk menunjukan pengucapan atau arti
+    dari karakter yang sesuai. Jenis ini anotasi sering di gunakan dalam publikasi jepang
+  </p>
+  <p>
+    Digunakan bersama dengan rt dan rp, Elemen ruby terdiri dari satu atau lebih karakter yang membutuhkan penjelasan
+    atau pengucapan dan elemen yang memberikan informasi tersebut
+  </p>
+  <p>
+    Dan element rp opsional yang mendefinisikan apa yang harus di tampilkan untuk browser yang tidak mendukung anotasi
+    ruby
+  </p>
+
+  <ruby>
+    A <rt> B </rt>
+  </ruby>
+  <br><br>
+  <ruby>
+    漢 <rt> ㄏㄢˋ </rt>
+  </ruby>
+
+  <hr>
+
+  <h3>Element s</h3>
+  <p>
+    Di gunakan untuk menandai teks yang tidak lagi benar, akurat atau relevan. Teks akan di tampilkan dengan garis
+    melaluinya atau mencoret teks, Tag tidak boleh digunakan untuk teks yang di hapus dalam dokumen, dunakan tag del
+    untuk itu
+  </p>
+  <p><s>Hanya tersisa 50 tiket!</s></p>
+  <p>TERJUAL HABIS!</p>
+
+  <hr>
+
+  <h3>Element samp</h3>
+  <p>
+    Element ini di gunakan untuk menentukan output sampel dari program komputer. Konten di dalamnya di tampilkan dalam
+    font monoscape default browser. Tag ini tidak di gunakan lagi, namun dimungkinkan untuk mencapai efek yang lebih
+    kaya dengan menggunakan css
+  </p>
+  <p>Pesan dari komputer saya:</p>
+  <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+  <hr>
+
+  <h3>Element small</h3>
+  <p>
+    Element ini di gunakan untuk menampilkan teks yang lebuh kecil (seperti hak cipta dan komentar sampingan lainya)
+  </p>
+  <p>Ini adalah beberapa teks normal.</p>
+  <p><small>Ini adalah beberapa teks yang lebih kecil.</small></p>
+
+  <hr>
+
+  <h3>Element strong</h3>
+  <p>
+    Elemen ini digunakan untuk menentukan teks dengan kepentingan yang kuat atau teks penting. konten di dalamnya
+    biasanya ditampilkan dalam huruf tebal
+  </p>
+  <p>Teks ini normal.</p>
+  <p><strong>Teks ini penting!</strong></p>
+
+  <hr>
+
+  <h3>Elemen sub</h3>
+  <p>
+    Elemen ini di gunakan untuk mendefinisikan teks supscript. Teks subscript muncul setengah karakter di bawah garis
+    normal, kadang-kadang diberikan dlam font yang lebih kecil. Teks subscript dapat digunakan untuk rumus kimia,
+  </p>
+  <p>Teks ini berisi teks <sub>subscript</sub> text.</p>
+  <p>Teks ini berisi teks<sup>superscript</sup> text.</p>
+  <p>H<sub>2</sub>O</p>
+
+  <hr>
+
+  <h3>Element sup</h3>
+  <p>
+    Elemen ini di gunakan untuk mendefinisikan teks supscript. Teks subscript muncul setengah karakter di bawah garis
+    normal, kadang-kadang diberikan dlam font yang lebih kecil. Teks subscript dapat digunakan untuk memberi catatan
+    kaki
+  </p>
+  <p>Teks ini berisi teks <sub>subscript</sub> text.</p>
+  <p>Teks ini berisi teks<sup>superscript</sup> text.</p>
+  <p>WWW <sup>[1]</sup></p>
+
+  <hr>
+
+  <h3>Element template</h3>
+  <p>
+    Element ini di gunakan untuk menyimpan bebrapa konten yang akan di sembunyikan, yaitu sebagai wadah HTML yang di
+    sembunyikan dari pengguna saat halaman di muat, konten di dalamnya dapatr di render menggunakan javascript
+  </p>
+  <p>
+    Klik tombol di bawah ini untuk menampilkan konten tersembunyi dari elemen template.
+  </p>
+  <button onclick="showContent()">Show hidden content</button>
+
+  <template>
+    <h2>Flower</h2>
+    <img src="../Gambar/img_white_flower.jpg" width="214" height="204">
+  </template>
+
+  <hr>
+
+  <h3>Element time</h3>
+  <p>
+    Element ini di gunakan untuk menterjemahkan waktu menjadi format yang dapat di baca mesin sehungga browser dapat
+    menawarkan untuk menambahkan pengingat tanggal melalui kalender pengguna, dan mesin telusur dapat menghasilkan hasil
+    pencarian yang lebih cerdas
+  </p>
+  <p>Buka dari pukul <time>10:00</time> hingga <time>21:00</time> setiap hari kerja.
+  </p>
+  <p>
+    Saya berkencan <time datetime="2008-02-14 20:00">Di hari kasih sayang</time>.
+  </p>
+  <p>
+    <b>Note:</b> Elemen waktu tidak ditampilkan sebagai sesuatu yang istimewa di salah satu browser utama.
+  </p>
+
+  <b>Attribut time</b>
+
+  <ul>
+    <li>
+      < time datetime="nilai_waktu">Teks waktu< /time>
+    </li>
+  </ul>
+
+  <p>
+    Atribut datetime pada elemen HTML time> digunakan untuk memberikan mesin waktu untuk waktu atau tanggal yang
+    ditampilkan. Ini membantu dalam konteks dan dalam proses parsing informasi waktu oleh mesin pencari, pembaca layar,
+    dan aplikasi lainnya.
+  </p>
+  <p>
+    Artikel ini diterbitkan pada <time datetime="2024-05-28">28 Mei 2024</time>.
+  </p>
+
+  <hr>
+
+  <h3>Element var</h3>
+  <p>
+    Element ini di gunakan untuk menentukan bebrapa teks sebagai variabel dalam dokumen, Tag juga digunakan untuk
+    mendefinisikan variabel dalam pemrogaman atau dalam espresi matematika, konten di dalamnya biasanya ditampilkan
+    dalam huruf miring, tag ini tidak di gunakan lagi namun di mungkinkan untuk mencapai efek yang lebih kaya dengan
+    menggunakan CSS
+  </p>
+  <p>
+    Luas segitiga adalah: 1/2 x <var>b</var> x <var>h</var>, di mana <var>b</var> alasnya, dan <var>h</var> dan
+    tingginya
+  </p>
+
+  <hr>
+
+  <h3>Element wbr</h3>
+  <p>
+    (Word Break Opportunity) Menentukan dimana dalam teks akan ok untuk menambahkan baris istirahat, ketika sebuah kata
+    terlalu panjang, browser mungkin merusaknya di tempat yang salah, anda dapat menambahkan elemnt ini untuk menambah
+    peluang jeda kata
+  </p>
+  <p>
+    Cobalah untuk mengecilkan jendela browser, untuk melihat bagaimana kata yang sangat panjang di Paragraf di bawah
+    ini akan memecahkan:
+  </p>
+  <p>
+    Ini adalah kata
+    yangsangatsangatsangatsangatsangatsangatsangatsangatsangatsangatsangatsangatsangatsangatsangat<wbr>panjang yang akan break di tempat-tempat tertentu<wbr>ketikjendelabrowserdkecilkan
+  </p>
+
+  <script src="../JS/script_formatting.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element Button</h1>
+
+    <p>
+      Digunakan untuk membuat tombol yang bisa diklik pada halaman web. Ini memungkinkan pengguna untuk melakukan
+      berbagai tindakan saat tombol diklik. Berikut contoh penggunaannya:
+    </p>
+
+    <button>Klik Saya</button>
+
+    <br>
+    <br>
+    <hr>
+
+    <h2>Attribut button</h2>
+
+    <ul>
+      <li>
+        < button <b> autofocus</b> >Klik Saya< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan apakah tombol tersebut harus mendapatkan fokus secara otomatis ketika halaman dimuat.
+    </p>
+
+    <button autofocus>Klik Saya</button>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button <b>disabled</b> >Klik Saya< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan atau membuat tombol tidak dapat diakses atau di klik oleh pengguna. Ketika atribut
+      ini ditambahkan, tombol akan tetap ada di halaman, tetapi pengguna tidak akan bisa melakukan interaksi dengannya.
+      <br><br>
+      Disabled juga bisa diatur melalui JavaScript.
+    </p>
+
+    <button disabled>Klik Saya</button>
+
+    <hr>
+
+    <ul>
+      <li>
+        < <b>form</b> id="myForm" action="/submit" method="post"><br>
+          < input type="text" name="username"><br>
+            < button <b>form</b>="myForm">Kirim</> <br>
+            < /<b>form</b>>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan formulir mana yang akan di-submit ketika tombol tersebut ditekan. Ini berguna ketika
+      tombol tersebut berada di luar formulir yang ingin Anda kirimkan.
+      <br><br>
+      form juga dapat diatur secara dinamis melalui JavaScript. Misalnya:
+    </p>
+
+    <form id="myForm" action="/submit" method="post">
+      <input type="text" name="username">
+      <button form="myForm">Kirim</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < form id="myForm" <b>action</b>="/default_action" method="post"><br>
+          < input type="text" name="username"><br>
+            < button form="myForm" <b>formaction</b>="/custom_action">Kirim< /button>
+                < /form>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan URL atau lokasi yang akan dituju ketika tombol tersebut ditekan, menggantikan aksi
+      formulir yang telah ditentukan.
+    </p>
+
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="/action_page2.php">Submit to another page</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button form="myForm" <b>formenctype</b>="multipart/form-data">Submit< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jenis enkripsi yang akan digunakan saat data formulir dikirimkan ke server melalui
+      tombol tersebut.
+    </p>
+
+    <p>
+      <b>application/x-www-form-urlencoded:</b> Ini adalah jenis default dari enkripsi formulir. Data formulir
+      dikirimkan sebagai string URL-encoded, di mana karakter non-alphanumeric dikodekan sebagai persentase dari ASCII.
+      Ini cocok untuk mengirimkan data formulir yang sederhana.
+    </p>
+
+    <p>
+      <b>multipart/form-data:</b> Ini digunakan ketika formulir mengandung file yang akan diunggah. Data formulir
+      dikirimkan dalam beberapa bagian terpisah, termasuk bagian untuk file-file yang diunggah. Ini cocok untuk
+      pengiriman formulir yang mengandung data biner, seperti gambar, file audio, atau file video.
+    </p>
+
+    <p>
+      <b>text/plain:</b> Ini adalah jenis enkripsi yang paling sederhana. Data formulir dikirimkan sebagai teks biasa,
+      tanpa ada encoding tambahan. Ini cocok untuk situasi di mana Anda ingin data formulir mudah dibaca oleh manusia,
+      seperti ketika melakukan debug atau pengujian.
+    </p>
+
+    <form action="/action_page_binary.asp" method="post">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname" value="Ståle"><br><br>
+      <button type="submit">Kirim dengan pengkodean karakter</button><br><br>
+      <button type="submit" formenctype="text/plain">Kirim tanpa pengkodean karakter</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < form id="myForm" action="/submit" <b>method</b>="post"><br>
+          < input type="text" name="username"><br>
+            < button form="myForm" <b>formmethod</b>="get">Submit (GET)< /button> <br>
+                < button form="myForm" <b>formmethod</b>="post">Submit (POST)< /button> <br>
+                    < /form>
+      </li>
+    </ul>
+
+    <p>
+      Menentukan metode HTTP yang akan digunakan saat formulir yang terkait dengan tombol tersebut dikirimkan. Ini
+      memungkinkan Anda untuk menentukan metode pengiriman formulir yang berbeda tergantung pada tombol mana yang
+      ditekan pengguna.
+    </p>
+
+    <p>
+      GET: <br>
+      - Data dikirimkan sebagai bagian dari URL. <br>
+      - Data terlihat dalam URL, karena disertakan di dalam string query setelah tanda tanya (?). <br>
+      - Jumlah data yang dapat dikirimkan terbatas karena keterbatasan panjang URL. <br>
+      - Cocok untuk permintaan yang tidak mengubah data di server (misalnya, pencarian atau permintaan halaman). <br>
+      - Data dapat disimpan dalam cache browser atau ditandai sebagai bookmark. <br>
+    </p>
+
+    <p>
+      POST: <br>
+      - Data dikirimkan dalam tubuh permintaan HTTP. <br>
+      - Data tidak terlihat di URL. <br>
+      - Tidak ada batasan panjang data yang dapat dikirimkan. <br>
+      - Cocok untuk permintaan yang mengubah atau menambahkan data di server (misalnya, pengiriman formulir atau
+      pengiriman data sensitif). <br>
+      - Data tidak disimpan dalam cache browser dan tidak bisa ditandai sebagai bookmark.
+    </p>
+
+    <form action="/action_page.php" method="get" target="_blank">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="submit">Submit</button>
+      <button type="submit" formmethod="post">Submit using POST</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button form="myForm" aria-busy="<b>formnovalidate</b> ">Submit< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan validasi formulir Saat tombol ditekan, formulir akan dikirimkan ke server tanpa
+      melalui validasi yang biasanya dilakukan oleh browser.
+    </p>
+
+    <form action="/action_page.php" method="get">
+      <label for="email">Enter your email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+      <button type="submit">Submit</button>
+      <button type="submit" formnovalidate>Submit without validation</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan di mana respons dari pengiriman formulir akan ditampilkan setelah formulir dikirimkan.
+      Ini memungkinkan Anda untuk menentukan apakah respon akan ditampilkan di jendela baru, jendela yang sama, atau di
+      suatu iframe.
+    </p>
+
+    <p>
+      1 _self: Respon akan ditampilkan di jendela atau tab yang sama di mana formulir itu sendiri berada (default) <br>
+      2 _blank: Respon akan ditampilkan di jendela atau tab baru. <br>
+      3 _parent: Respon akan ditampilkan di frame parent dari frame tempat formulir itu berada (jika ada). <br>
+      4 _top: Respon akan ditampilkan di jendela yang sama seperti _blank, tetapi jika formulir ada di dalam frame, itu
+      akan membuat respon ditampilkan di jendela paling atas. <br>
+      5 iframe_name: Respon akan ditampilkan di dalam iframe dengan nama yang ditentukan.
+    </p>
+
+    <form action="/action_page.php" method="get">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname"><br><br>
+      <button type="submit">Submit</button>
+      <button type="submit" formtarget="_blank">Submit to a new window/tab</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button type="submit" <b>name</b>="submit_button" value="cancel">Cancel< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan nama kepada tombol ketika data formulir dikirimkan ke server
+    </p>
+
+    <form action="/submit" method="post">
+      <button type="submit" name="submit_button" value="save">Save</button>
+      <button type="submit" name="submit_button" value="cancel">Cancel</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button <b>type</b>="submit">Submit< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tipe dari sebuah tombol. Nilai yang umum untuk atribut ini adalah "submit", "reset",
+      dan "button".
+    </p>
+
+    <form action="/submit" method="post">
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+      <button type="button" onclick="myFunction()">Click Me</button>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < button type="submit" <b>value</b>="save">Save< /button>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan teks atau nilai yang akan dikirimkan ke server saat tombol diklik dalam sebuah
+      formulir. Nilai ini sering kali digunakan bersama dengan atribut type="submit" untuk menentukan teks yang akan
+      muncul pada tombol submit.
+    </p>
+
+    <form action="/submit" method="post">
+      <button type="submit" value="save">Save</button>
+      <button type="submit" value="cancel">Cancel</button>
+    </form>
+
+  </div>
+</body>
+
+</html>

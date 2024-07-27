@@ -1,0 +1,47 @@
+.col-1 {
+  background-color: lightblue;
+}
+
+.col-2 {
+  background-color: lightgreen;
+}
+
+.col-3 {
+  background-color: lightcoral;
+}
+
+.col-all {
+  background-color: lightgray;
+}
+
+.col-span {
+  background-color: lightgray;
+}
+
+.col-unique {
+  background-color: lightblue;
+}
+
+.col1 {
+  background-color: lightblue;
+}
+
+.col2 {
+  background-color: lightgreen;
+}
+
+.col3 {
+  background-color: lightcoral;
+}
+
+table .tab1 {
+  width: 100%;
+}
+
+colgroup.colgroup-span-2 {
+  background-color: lightgray;
+}
+
+colgroup.colgroup-span-3 {
+  background-color: lightblue;
+}

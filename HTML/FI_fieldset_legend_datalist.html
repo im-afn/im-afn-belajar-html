@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fieldset legend datalist</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element Fieldset</h1>
+
+    <p>
+      Digunakan untuk mengelompokkan elemen-elemen terkait dalam sebuah formulir, dan sering dipasangkan dengan tag <
+        legend>, yang memberikan judul untuk < fieldset>. Ini membantu dalam mengorganisir dan membangun struktur
+          formulir, terutama ketika ada beberapa input yang saling terkait. Membantu dalam pengelompokkan dan penyusunan
+          yang lebih baik dari elemen-elemen formulir, meningkatkan pengalaman pengguna dan memudahkan pengembangan dan
+          pemeliharaan halaman web.
+    </p>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <br><br>
+
+    <form>
+      <fieldset>
+        <legend>Informasi Kontak</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- Input terkait lainnya dapat ditempatkan di sini -->
+      </fieldset>
+    </form>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut fieldset</h2>
+
+    <ul>
+      <li>
+        < fieldset <b> disabled</b>>< /fieldset>
+      </li>
+    </ul>
+
+    <p>
+      digunakan untuk menonaktifkan atau mengunci semua elemen dalam grup < fieldset>, termasuk elemen-elemen formulir
+        di dalamnya. Ini berguna ketika Anda ingin mengizinkan atau melarang pengguna untuk mengubah atau memasukkan
+        data ke dalam grup formulir tertentu.
+    </p>
+
+    <form>
+      <form action="/action_page.php">
+        <fieldset disabled>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < <b>form</b> id="form1" action="/submit_form1"> <br>
+          < fieldset form="form1"> <br><br>
+            < -- isi --> <br><br>
+              < /fieldset> <br>
+                < /<b>form</b>>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan formulir mana yang akan mengelola data yang dikirimkan oleh elemen-elemen yang berada
+      di dalam < fieldset>. Ini berguna ketika Anda ingin mengelompokkan elemen formulir dalam sebuah < fieldset> tetapi
+          ingin data yang dikirim oleh elemen-elemen tersebut ditangani oleh formulir yang berbeda.
+    </p>
+
+    <form id="form1" action="/submit_form1">
+      <fieldset form="form1">
+        <legend>Informasi Kontak</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- Input terkait lainnya -->
+      </fieldset>
+    </form>
+
+    <form id="form2" action="/submit_form2">
+      <fieldset form="form2">
+        <legend>Informasi Alamat</legend>
+        <label for="alamat">Alamat:</label>
+        <input type="text" id="alamat" name="alamat"><br><br>
+        <label for="kota">Kota:</label>
+        <input type="text" id="kota" name="kota"><br><br>
+        <!-- Input terkait lainnya -->
+      </fieldset>
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < fieldset <b> data-name</b>="contact">< /fieldset>
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML, tag
+      fieldset tidak memiliki atribut name. Ini karena elemen fieldset digunakan untuk mengelompokkan elemen-elemen
+      formulir terkait dalam satu unit logis, dan biasanya tidak perlu diberi nama.
+
+      Namun, jika Anda ingin menambahkan metadata tambahan ke dalam fieldset, Anda dapat menggunakan atribut data-*,
+      yang memungkinkan Anda menambahkan data kustom ke elemen HTML tanpa mempengaruhi perilaku atau penampilan
+      default. Berikut adalah contoh penggunaan atribut data-*:
+    </p>
+
+    <form>
+      <fieldset data-name="contact">
+        <legend>Informasi Kontak</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- Input terkait lainnya -->
+      </fieldset>
+    </form>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element Legend</h1>
+
+    <p>
+      Dalam HTML digunakan untuk memberikan judul atau keterangan untuk sebuah grup elemen dalam tag fieldset. Ini
+      membantu dalam memberikan konteks dan informasi tambahan tentang isi grup tersebut.
+    </p>
+
+    <form>
+      <fieldset>
+        <legend>Informasi Kontak</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <!-- Input lainnya -->
+      </fieldset>
+    </form>
+
+    <br><br>
+
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element Datalist</h1>
+
+    <p>
+      Digunakan untuk menyediakan daftar opsi atau nilai yang dapat dipilih oleh pengguna dalam sebuah input teks. Ini
+      sering digunakan dengan input teks untuk memberikan saran atau pilihan kepada pengguna saat mereka mengetik.
+    </p>
+
+    <label for="browser">Pilih browser favorit:</label>
+    <input list="browsers" id="browser" name="browser" autocomplete="off">
+    <datalist id="browsers">
+      <option value="Chrome">
+      <option value="Firefox">
+      <option value="Safari">
+      <option value="Edge">
+      <option value="Opera">
+    </datalist>
+
+  </div>
+
+</body>
+
+</html>

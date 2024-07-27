@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Video</title>
+  <link rel="stylesheet" href="../CSS/Style_track_video.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element track</h1>
+
+    <p>
+      Tag track> dalam HTML digunakan untuk menambahkan teks pelengkap ke media video> dan audio>, seperti teks
+      terjemahan, keterangan, atau deskripsi tambahan. Tag ini membantu meningkatkan aksesibilitas dan pemahaman konten
+      media.
+    </p>
+
+    <p>
+      Memberikan subtitle pada video
+    </p>
+
+    <video controls>
+      <source src="../Video/Fotografi.mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+      <track src="../Subtitles/Subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish Subtitles">
+      <track src="../Subtitles/Caption_en.vtt" kind="captions" srclang="en" label="English Captions" default>
+    </video>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut track</h2>
+
+    <ul>
+      <li>
+        < track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English" <b> default</b>>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan track teks (seperti subtitle atau captions) yang akan ditampilkan secara default ketika
+      video mulai diputar. Jika elemen track> memiliki atribut default, browser akan memilih track tersebut dan
+      menampilkannya secara otomatis tanpa intervensi pengguna.
+    </p>
+
+    <video controls>
+      <source src="../Video/Fotografi.mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles" default>
+      <track src="../Subtitles/Subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish Subtitles">
+      <track src="../Subtitles/Caption_en.vtt" kind="captions" srclang="en" label="English Captions">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < track src="fgsubtitles_en.vtt" <b>kind</b>="subtitles" srclang="en" label="English">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jenis track teks yang akan ditampilkan, seperti subtitles, captions, descriptions, atau
+      chapters. Ini membantu browser dalam menentukan cara terbaik untuk menampilkan dan mengintegrasikan teks tersebut
+      dengan konten video.
+    </p>
+
+    <ol>
+      <li>subtitles: Digunakan untuk teks yang mewakili dialog atau narasi yang diperdengarkan dalam video.</li>
+      <li>captions: Digunakan untuk teks yang menyediakan transkripsi dari dialog atau narasi yang terdengar, bersamaan
+        dengan informasi tambahan seperti suara latar atau suara offscreen.</li>
+      <li>descriptions: Digunakan untuk teks yang menyediakan deskripsi audiovisual dari konten video, biasanya
+        digunakan untuk audiens dengan gangguan penglihatan.</li>
+      <li>chapters: Digunakan untuk teks yang menyediakan informasi tentang bab atau bagian tertentu dari video.</li>
+    </ol>
+
+    <video controls>
+      <source src="../Video/Fotografi.mp4" type="video/mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+      <track src="../Subtitles/Caption_en.vtt" kind="captions" srclang="en" label="English Captions">
+      <track src="../Subtitles/description_en.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+      <track src="../Subtitles/chapters_en.vtt" kind="chapters" srclang="en" label="English Chapters">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < track src="subtitles_en.vtt" kind="subtitles" srclang="en" <b>label</b>="English Subtitles">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan label deskriptif yang menjelaskan konten dari track teks yang terkait. Label ini akan
+      ditampilkan kepada pengguna sebagai pilihan untuk memilih track teks yang mereka inginkan, jika diperlukan.
+    </p>
+
+    <p>
+      Ini memungkinkan pengguna untuk memilih track teks yang sesuai dengan preferensi bahasa atau konten yang mereka
+      inginkan.
+    </p>
+
+    <video controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+      <track src="../Subtitles/Subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish Subtitles">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < source <b>src</b>="video.mp4" type="video/mp4">
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML digunakan untuk menentukan lokasi file yang berisi teks atau data tambahan yang akan ditampilkan
+      bersama dengan video. Atribut ini mengarahkan browser ke file yang berisi teks subtitle, caption, atau data
+      tambahan lainnya yang akan ditampilkan kepada pengguna.
+    </p>
+
+    <video controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+      <track src="../Subtitles/Subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish Subtitles">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < track src="subtitles_en.vtt" kind="subtitles" <b>srclang</b>="en" label="English Subtitles">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan kode bahasa dari teks yang terdapat dalam track tersebut. Ini memberikan informasi
+      kepada browser tentang bahasa yang digunakan dalam track teks, sehingga browser dapat menampilkan teks dengan
+      tepat sesuai dengan preferensi pengguna.
+    </p>
+
+    <p>
+      Nilai atribut srclang adalah kode bahasa dua huruf yang diambil dari standar ISO 639-1, seperti "en" untuk bahasa
+      Inggris, "es" untuk bahasa Spanyol, dan sebagainya.
+    </p>
+
+    <video controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <track src="../Subtitles/Subtitles_en.vtt" kind="subtitles" srclang="en" label="English Subtitles">
+      <track src="../Subtitles/Subtitles_es.vtt" kind="subtitles" srclang="es" label="Spanish Subtitles">
+    </video>
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element video</h1>
+
+    <p>
+      Digunakan untuk menanamkan video atau audio ke dalam halaman web
+    </p>
+
+    <video width="320" height="240" controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <p>
+      Elemen video> adalah cara yang sangat berguna untuk menyertakan konten multimedia dalam halaman web Anda. Dengan
+      menggunakan tag ini, Anda dapat menanamkan video ke dalam halaman Anda dengan mudah, memberikan pengalaman yang
+      lebih kaya kepada pengguna Anda.
+    </p>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut video</h2>
+
+    <ul>
+      <li>
+        < video controls <b>autoplay</b>> <br>
+          < source src="movie.mp4" type="video/mp4"> <br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML digunakan untuk menentukan apakah video akan diputar secara otomatis saat halaman dimuat. Jika autoplay
+      disetel, video akan mulai diputar begitu halaman dimuat, tanpa memerlukan tindakan tambahan dari pengguna.
+    </p>
+
+    <p>
+      Atribut autoplay memungkinkan video untuk diputar secara otomatis saat halaman dimuat. Namun, penggunaan harus
+      diperhatikan dengan baik untuk memastikan pengalaman pengguna yang baik dan menghindari gangguan yang tidak
+      diinginkan.
+    </p>
+
+    <video width="320" height="240" controls autoplay>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video <b>controls</b>>
+          < source src="movie.mp4" type="video/mp4">
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML digunakan untuk menampilkan kontrol pemutaran video secara default ketika video ditampilkan di halaman
+      web. Ini termasuk tombol play, pause, volume, dan kontrol lainnya yang memungkinkan pengguna untuk mengontrol
+      pemutaran video.
+    </p>
+
+    <p>
+      Memulai dan menghentikan pemutaran video dengan tombol play/pause. <br>
+      Mengatur volume suara. <br>
+      Memajukan atau mundurkan video. <br>
+      Menampilkan waktu pemutaran saat ini dan durasi total video. <br>
+    </p>
+
+    <p>
+      <b>Dengan controls;</b>
+    </p>
+
+    <video width="320" height="240" controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <p>
+      <b>Tanpa controls;</b>
+    </p>
+
+    <video width="320" height="240">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls width="640" <b>height</b>="360"> <br>
+          < source src="movie.mp4" type="video/mp4"> <br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tinggi (height) dari area yang ditempati oleh video dalam piksel. Ini memungkinkan
+      pengembang web untuk mengatur ukuran vertikal dari area yang ditempati oleh video di halaman web.
+    </p>
+
+    <video width="320" height="240" controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b>width</b>="640" height="360"> <br>
+          < source src="movie.mp4" type="video/mp4"> <br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan lebar (width) dari area yang ditempati oleh video dalam piksel. Ini memungkinkan
+      pengembang web untuk mengatur ukuran horizontal dari area yang ditempati oleh video di halaman web.
+    </p>
+
+    <video width="320" height="240" controls>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b>loop</b>> <br>
+          < source src="movie.mp4" type="video/mp4"><br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan apakah video akan diputar ulang (looping) secara otomatis setelah mencapai akhir. Jika
+      loop disetel, video akan diputar dari awal lagi begitu mencapai akhirnya.
+    </p>
+
+    <video controls loop>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <p>
+      Gunakan loop dengan bijak dan hanya untuk konten yang memang sesuai dengan konsep desain halaman web Anda.
+      <br><br>
+      Berikan opsi kepada pengguna untuk mengontrol pengulangan video, misalnya dengan tombol "Putar ulang" yang
+      diperlihatkan setelah video selesai diputar.
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b>muted</b>> <br>
+          < source src="movie.mp4" type="video/mp4"> <br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan apakah audio dari video akan dibisukan secara default saat video dimuat. Jika muted
+      disetel, audio dari video akan dibisukan dan tidak akan terdengar oleh pengguna.
+    </p>
+
+    <video controls muted>
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b>poster</b>="video-poster.jpg"> <br>
+          < source src="movie.mp4" type="video/mp4"><br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan gambar poster yang akan ditampilkan sebelum video dimainkan atau diunduh. Gambar poster
+      ini biasanya adalah gambar statis yang mewakili konten video dan memberikan preview visual kepada pengguna sebelum
+      video dimulai.
+    </p>
+
+    <p>
+      Digunakan untuk menentukan gambar poster yang akan ditampilkan sebelum video dimainkan atau diunduh. Gambar poster
+      ini biasanya adalah gambar statis yang mewakili konten video dan memberikan preview visual kepada pengguna sebelum
+      video dimulai.
+    </p>
+
+    <video controls poster="../Gambar/nature.jpg" width="100" height="auto">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b>preload</b>="auto"> <br>
+          < source src="movie.mp4" type="video/mp4"><br>
+            < /video>
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML digunakan untuk menentukan apakah video akan dimuat (preloaded) secara otomatis saat halaman dimuat.
+      Ini memungkinkan pengembang web untuk mengontrol kapan video akan dimuat ke dalam cache browser, baik sebelum
+      video diputar atau hanya ketika pengguna memilih untuk memutarnya.
+    </p>
+
+    <ol>
+      <li>none: Menunjukkan bahwa video tidak akan dimuat secara otomatis. Video hanya akan dimuat ketika pengguna
+        memilih untuk memutarnya.</li>
+      <li>metadata: Menunjukkan bahwa hanya metadata video (seperti durasi, ukuran, dll.) yang akan dimuat secara
+        otomatis. Konten video sebenarnya tidak akan dimuat sampai pengguna memilih untuk memutarnya.</li>
+      <li>auto: Menunjukkan bahwa seluruh video akan dimuat secara otomatis saat halaman dimuat.</li>
+    </ol>
+
+    <video controls preload="none">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/mp4">
+      <source src="../Video/Air Terjun Alam.mp4" type="video/ogg">
+    </video>
+
+    <hr>
+
+    <ul>
+      <li>
+        < video controls <b> src</b>="video.mp4">< /video>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan URL atau path file dari sumber video yang akan dimuat dan diputar oleh elemen video
+      tersebut.
+    </p>
+
+    <p>
+      Dengan menggunakan atribut ini, Anda dapat menyediakan video untuk ditampilkan kepada pengguna pada halaman web
+      Anda.
+    </p>
+
+    <video src="../Video/Fotografi.mp4" controls></video>
+
+  </div>
+
+</body>
+
+</html>

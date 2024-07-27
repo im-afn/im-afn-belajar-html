@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>canvas figcaption figure picture svg</title>
+  <link rel="stylesheet" href="../CSS/style_I_canvas_figcaption_figure_picture_svg_style.css">
+</head>
+
+<body>
+
+  <h1>Element canvas</h1>
+
+  <p>
+    canvas adalah elemen HTML yang menyediakan ruang gambar dinamis di halaman web. Ini memungkinkan Anda untuk
+    membuat dan menggambar grafik, animasi, dan visualisasi lainnya secara dinamis menggunakan JavaScript.
+  </p>
+
+  <p>
+    adalah alat yang kuat untuk membuat gambar dinamis dan interaktif di halaman web Anda. Dengan menggabungkan elemen
+    canvas dengan JavaScript, Anda dapat membuat berbagai jenis proyek kreatif dan interaktif yang memperkaya pengalaman
+    pengguna Anda.
+  </p>
+
+  <canvas id="myCanvas1" width="300" height="150" style="border:1px solid rgb(216, 83, 83)"></canvas>
+  <br><br>
+  <canvas id="myCanvas" width="300" height="150"></canvas>
+
+  <br><br>
+
+  <hr>
+
+  <h2>Attribut canvas</h2>
+
+  <ul>
+    <li>
+      < canvas id="myCanvas2" width="200" <b>height</b>="200" style="border:1px solid"></>
+    </li>
+  </ul>
+
+  <p>
+    Digunakan untuk menentukan tinggi dari area gambar di dalam elemen tersebut. Ini adalah atribut opsional yang dapat
+    digunakan untuk menentukan ukuran vertikal dari elemen canvas.
+  </p>
+  <canvas id="myCanvas2" width="200" height="200" style="border:1px solid"></canvas>
+
+  <hr>
+
+  <ul>
+    <li>
+      < canvas id="myCanvas" <b>width</b>="800" height="600"></>
+    </li>
+  </ul>
+
+  <p>
+    Digunakan untuk menentukan lebar dari area gambar di dalam elemen tersebut. Ini adalah atribut opsional yang
+    digunakan untuk menentukan ukuran horizontal dari elemen canvas.
+  </p>
+
+  <canvas id="myCanvas3" width="200" height="200" style="border:1px solid"></canvas>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element figcaption</h1>
+
+  <p>
+    figcaption adalah bagian dari elemen figure dan digunakan untuk menyediakan deskripsi atau keterangan untuk elemen
+    figure tersebut. Elemen figure biasanya digunakan untuk mengelompokkan konten media (seperti gambar, ilustrasi,
+    grafik, video, dan lainnya) bersama dengan keterangan yang sesuai.
+  </p>
+
+  <p>
+    Elemen
+    figcaption dapat berisi teks atau elemen HTML lainnya, seperti paragraf, link, atau elemen lainnya yang diperlukan
+    untuk keterangan yang sesuai.
+  </p>
+
+  <figure>
+    <img src="../Gambar/pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+
+  <div class="figcaption1">
+    <figure>
+      <img src="../Gambar/pic_trulli.jpg" alt="Trulli" style="width:100%">
+      <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+    </figure>
+  </div>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element figure</h1>
+
+  <p>
+    Digunakan untuk mengelompokkan konten media, seperti gambar, ilustrasi, diagram, audio, atau video, bersama dengan
+    keterangan yang relevan yang disediakan menggunakan elemen < figcaption>.
+  </p>
+
+  <p>
+    < <b>figure</b>><br>
+      < img src="pic_trulli.jpg" alt="Trulli" style="width:100%"><br>
+        < figcaption>Fig.1 - Trulli, Puglia, Italy.</><br>
+        < / <b>figure</b> >
+  </p>
+
+  <figure>
+    <img src="../Gambar/pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+
+  <div class="figcaption1">
+    <figure>
+      <img src="../Gambar/pic_trulli.jpg" alt="Trulli" style="width:100%">
+      <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
+    </figure>
+  </div>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element picture</h1>
+  <ul>
+    <li>
+      < <b>picture</b> >
+        < source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+          < /<b>picture</b>>
+    </li>
+  </ul>
+
+  <p>
+    Picture adalah elemen HTML yang digunakan untuk menyediakan sumber gambar alternatif dengan resolusi dan format yang
+    berbeda untuk situasi tampilan yang berbeda. Ini memungkinkan pengembang web untuk memberikan gambar yang optimal
+    sesuai dengan ukuran layar dan kemampuan perangkat pengguna.
+  </p>
+
+  <picture>
+    <source media="(min-width:650px)" srcset="../Gambar/img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="../Gambar/img_white_flower.jpg">
+    <img src="../Gambar/img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+  </picture>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element svg</h1>
+
+  <p>
+    svg adalah elemen HTML yang digunakan untuk menambahkan grafik vektor ke halaman web. SVG (Scalable Vector Graphics)
+    adalah format gambar XML yang mendefinisikan grafik dengan menggunakan metode vektor, yang berarti gambar-gambar
+    tersebut dapat diperbesar atau diperkecil tanpa kehilangan kualitas.
+  </p>
+
+
+  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <rect x="10" y="20" width="30" height="100" fill="#ff0000" />
+    <rect x="60" y="50" width="30" height="70" fill="#00ff00" />
+    <rect x="110" y="80" width="30" height="40" fill="#0000ff" />
+  </svg>
+
+  <br>
+
+  <svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+
+    <br><br>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+      <path fill="#ff0000" d="M10,10 L50,10 L50,50 L10,50 Z" />
+      <path fill="#00ff00" d="M60,60 L100,60 L100,100 L60,100 Z" />
+      <path fill="#0000ff" d="M110,110 L150,110 L150,150 L110,150 Z" />
+    </svg>
+
+    <br><br>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="40" fill="none" stroke="#0074d9" stroke-width="4">
+        <animate attributeName="r" from="10" to="40" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="stroke-opacity" from="1" to="0" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </svg>
+
+    <br><br>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+      <text x="10" y="50" font-family="Arial" font-size="30" fill="#ff5733" stroke="#333" stroke-width="1">Hello,
+        SVG!</text>
+      <text x="10" y="50" font-family="Arial" font-size="30" fill="#ff5733" stroke="#333" stroke-width="1"
+        transform="translate(3,3)">Hello, SVG!</text>
+    </svg>
+
+    <br><br>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#0074d9" stroke-width="20" />
+      <circle cx="100" cy="100" r="80" fill="none" stroke="#ff4136" stroke-width="20" stroke-dasharray="0, 502">
+        <animate attributeName="stroke-dasharray" from="0, 502" to="376, 502" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </svg>
+
+    <br><br>
+
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+
+
+
+
+
+
+
+
+
+</body>
+<script src="../JS/I_canvas_figcaption_figure_picture_svg.js"></script>
+
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tr th td</title>
+</head>
+
+<body>
+
+  <h1>Element tr</h1>
+
+  <p>
+    Elemen tr> dalam HTML digunakan untuk mendefinisikan baris dalam sebuah tabel. Setiap elemen tr> dapat berisi satu
+    atau lebih elemen sel, seperti td> untuk sel data atau th> untuk sel header.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Nama</th>
+      <th>Usia</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table border="1">
+    <tr>
+      <th>Name:</th>
+      <td>John Doe</td>
+    </tr>
+    <tr>
+      <th>Email:</th>
+      <td>john.doe@example.com</td>
+    </tr>
+    <tr>
+      <th>Phone:</th>
+      <td>123-45-678</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element th</h1>
+
+  <p>
+    Elemen th> dalam HTML digunakan untuk mendefinisikan sel header dalam sebuah tabel. Sel header biasanya terletak di
+    bagian atas kolom atau di awal baris tabel dan digunakan untuk memberikan konteks atau judul untuk kolom atau baris
+    tersebut. Isi dari elemen th> secara default ditampilkan dengan teks yang tebal dan terpusat.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <hr>
+
+  <h2>Attribut th</h2>
+
+  <ul>
+    <li>
+      < th <b>abbr</b>="Make">Toy manufacturer< /th>
+    </li>
+  </ul>
+
+  <p>
+    Atribut abbr pada elemen th> digunakan untuk menyediakan versi singkat dari isi sel header, yang dapat berguna untuk
+    beberapa jenis aplikasi atau alat bantu, seperti pembaca layar atau tabel yang perlu disesuaikan untuk layar yang
+    lebih kecil.
+  </p>
+
+  <p>
+    Atribut abbr membantu menjelaskan singkatan atau memberikan konteks tambahan yang mungkin tidak terlihat langsung
+    dalam tampilan tabel tetapi dapat diakses oleh teknologi asistif atau aplikasi yang memerlukan informasi tersebut.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th abbr="Identifier">ID</th>
+      <th abbr="Full Name">Nama Lengkap</th>
+      <th abbr="Job Position">Posisi</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>John Doe</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Jane Smith</td>
+      <td>Pengembang</td>
+    </tr>
+  </table>
+
+  <p>
+    Atribut abbr pada elemen th> menyediakan teks singkat atau penjelasan tambahan yang dapat digunakan oleh teknologi
+    asistif untuk memberikan konteks yang lebih baik bagi pengguna.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      < th <b>colspan</b>="3">Data Karyawan< /th>
+    </li>
+  </ul>
+
+  <p>
+    Atribut colspan pada elemen th> digunakan untuk menentukan jumlah kolom yang harus digabung menjadi satu sel header.
+    Ini berguna ketika Anda ingin membuat judul tabel yang mencakup beberapa kolom.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th colspan="3">Data Karyawan</th>
+    </tr>
+    <tr>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Posisi</th>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>John Doe</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <td>002</td>
+      <td>Jane Smith</td>
+      <td>Pengembang</td>
+    </tr>
+  </table>
+
+  <p>
+    Atribut colspan memungkinkan Anda untuk membuat sel header atau data yang mencakup beberapa kolom dalam tabel,
+    memberikan fleksibilitas dalam desain tabel Anda.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      < td <b>headers</b>="nama">John Doe< /td> <br>
+          < td <b>headers</b>="umur">30< /td>
+    </li>
+  </ul>
+
+  <table border="1">
+    <tr>
+      <th id="nama" headers="nama kolom">Nama</th>
+      <th id="umur" headers="umur kolom">Umur</th>
+    </tr>
+    <tr>
+      <td headers="nama">John Doe</td>
+      <td headers="umur">30</td>
+    </tr>
+    <tr>
+      <td headers="nama">Jane Smith</td>
+      <td headers="umur">25</td>
+    </tr>
+  </table>
+
+  <p>
+    atribut headers pada elemen th> digunakan untuk menentukan id dari satu atau beberapa elemen th> lain yang menjadi
+    kepala dari sel header tersebut dalam tabel. Ini membantu dalam membuat hubungan yang jelas antara sel-sel header
+    dan data dalam tabel yang kompleks.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      < th <b>colspan</b>="2">Nilai< /th>
+    </li>
+  </ul>
+
+  <p>
+    Atribut rowspan pada elemen th> atau td> digunakan untuk menentukan jumlah baris yang harus digabung menjadi satu
+    sel.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th rowspan="2">Nama</th>
+      <th colspan="2">Nilai</th>
+    </tr>
+    <tr>
+      <th>Matematika</th>
+      <th>Fisika</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>90</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>95</td>
+      <td>88</td>
+    </tr>
+  </table>
+
+  <p>
+    Atribut rowspan pada elemen th> membantu untuk menggabungkan beberapa baris menjadi satu sel header, sehingga
+    memberikan fleksibilitas dalam desain tabel Anda.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      < th <b>scope</b>="col">Nama< /th>
+    </li>
+  </ul>
+
+  <p>
+    Atribut scope pada elemen th> digunakan untuk menentukan cakupan (scope) dari sel header dalam sebuah tabel. Ini
+    membantu dalam memberikan informasi kepada pembaca layar atau teknologi asistif tentang apakah sel header ini
+    mencakup baris (row), kolom (column), atau seluruh tabel (table).
+  </p>
+
+  <table border="1">
+    <tr>
+      <th scope="col">Nama</th>
+      <th scope="col">Usia</th>
+      <th scope="col">Posisi</th>
+    </tr>
+    <tr>
+      <th scope="row">John Doe</th>
+      <td>30</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <th scope="row">Jane Smith</th>
+      <td>25</td>
+      <td>Pengembang</td>
+    </tr>
+  </table>
+
+  <p>
+    Dalam contoh sebelumnya, atribut scope digunakan untuk memberikan informasi tentang cakupan sel header dalam tabel.
+    Sel header yang merupakan kepala kolom menggunakan scope="col" karena seluruh kolom di bawahnya adalah bagian dari
+    kolom yang sama. Sedangkan sel header yang merupakan kepala baris menggunakan scope="row" karena seluruh baris di
+    sebelah kanannya adalah bagian dari baris yang sama.
+  </p>
+
+  <ol>
+    <li>row: Menandakan bahwa sel header mencakup satu atau beberapa baris dalam tabel.</li>
+    <li>col: Menandakan bahwa sel header mencakup satu atau beberapa kolom dalam tabel.</li>
+    <li>rowgroup: Menandakan bahwa sel header merupakan bagian dari grup baris dalam tabel.</li>
+    <li>colgroup: Menandakan bahwa sel header merupakan bagian dari grup kolom dalam tabel.</li>
+    <li>auto: Menandakan bahwa browser akan menentukan cakupan secara otomatis berdasarkan konteks tabel.</li>
+  </ol>
+
+  <br><br>
+
+  <hr>
+
+  <h1>Element td</h1>
+
+  <p>
+    Tag td> digunakan untuk merepresentasikan sel data individual dalam sebuah tabel HTML.
+  </p>
+
+  <p>
+    td> merupakan singkatan dari “table data” dan berperan penting dalam membuat tabel terstruktur dan terorganisir di
+    halaman web.
+  </p>
+
+  <p>
+    Tag td> dalam HTML digunakan untuk mendefinisikan sel dalam tabel. Singkatan dari "table data," td> biasanya berada
+    di dalam elemen tr> (table row) yang pada gilirannya berada di dalam elemen table>. Berikut adalah beberapa detail
+    dan contoh penggunaannya:
+  </p>
+
+  <table border="1">
+    <tr>
+      <td>Data 1</td>
+      <td>Data 2</td>
+      <td>Data 3</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table border="1">
+    <tr>
+      <th>Nama</th>
+      <th>Usia</th>
+      <th>Posisi</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>Pengembang</td>
+    </tr>
+  </table>
+
+  <p>
+    Dengan menggunakan elemen <td>, Anda dapat membuat tabel yang berisi berbagai data yang disusun dalam baris dan
+      kolom.
+  </p>
+
+  <br>
+
+  <hr>
+
+  <h2>Attribut td</h2>
+
+  <ul>
+    <li>
+      < td <b>colspan</b>="2">Jane Smith< /td>
+    </li>
+  </ul>
+
+  <p>
+    Atribut colspan pada elemen td> digunakan untuk menentukan jumlah kolom yang harus digabung menjadi satu sel dalam
+    sebuah tabel.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Nama</th>
+      <th>Usia</th>
+      <th>Posisi</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>30</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <td colspan="2">Jane Smith</td>
+      <td>25</td>
+    </tr>
+  </table>
+
+  <p>
+    Dengan menggunakan atribut colspan, Anda dapat membuat tabel yang lebih fleksibel dalam hal tata letak, memungkinkan
+    Anda untuk menggabungkan beberapa kolom menjadi satu sel data.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      < td <b>headers</b>="nama">John Doe< /td>
+    </li>
+  </ul>
+
+  <p>
+    Atribut headers pada elemen td> digunakan untuk mengidentifikasi satu atau lebih elemen th> yang terkait dengan sel
+    data ini. Atribut ini meningkatkan aksesibilitas tabel dengan membantu teknologi asistif (seperti pembaca layar)
+    memahami hubungan antara sel data dan sel header.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th id="nama">Nama</th>
+      <th id="usia">Usia</th>
+      <th id="posisi">Posisi</th>
+    </tr>
+    <tr>
+      <td headers="nama">John Doe</td>
+      <td headers="usia">30</td>
+      <td headers="posisi">Manajer</td>
+    </tr>
+    <tr>
+      <td headers="nama">Jane Smith</td>
+      <td headers="usia">25</td>
+      <td headers="posisi">Pengembang</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <ul>
+    <li>
+      < td <b>rowspan</b>="2">John Doe< /td>
+    </li>
+  </ul>
+
+  <p>
+    Atribut rowspan pada elemen td> digunakan untuk menggabungkan beberapa baris menjadi satu sel dalam sebuah tabel.
+    Dengan atribut ini, Anda dapat membuat sel yang mencakup lebih dari satu baris, memberikan fleksibilitas dalam
+    desain tata letak tabel.
+  </p>
+
+  <table border="1">
+    <tr>
+      <th>Nama</th>
+      <th>Usia</th>
+      <th>Posisi</th>
+    </tr>
+    <tr>
+      <td rowspan="2">John Doe</td>
+      <td>30</td>
+      <td>Manajer</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Senior Manajer</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>25</td>
+      <td>Pengembang</td>
+    </tr>
+  </table>
+
+  <p>
+    Atribut rowspan memungkinkan Anda membuat tabel dengan tampilan yang lebih kompleks dan lebih terstruktur,
+    memudahkan pembaca untuk memahami data yang disajikan.
+  </p>
+</body>
+
+</html>

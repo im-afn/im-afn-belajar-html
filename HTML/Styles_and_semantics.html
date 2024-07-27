@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>style and semantics</title>
+  <link rel="stylesheet" href="../CSS/style_styles_and_semantics.css">
+</head>
+
+<body>
+
+  <h1>Element style</h1>
+
+  <p>
+    Tag style> dalam HTML digunakan untuk menyisipkan kode CSS langsung di dalam dokumen HTML. CSS yang ditulis di dalam
+    tag style> hanya akan mempengaruhi elemen-elemen dalam dokumen tersebut.
+  </p>
+
+  <p>
+    Pengujian Cepat: Ideal untuk pengujian cepat atau saat hanya ada beberapa aturan CSS yang perlu diterapkan.
+    <br><br>
+    Spesifikasi Lokal: Berguna untuk menerapkan gaya khusus pada halaman tertentu tanpa mempengaruhi halaman lainnya.
+    <br><br>
+    Kemudahan Penggunaan: Memungkinkan penulisan CSS langsung dalam file HTML tanpa perlu membuat file CSS terpisah.
+  </p>
+
+  <p>
+    Tag style> sangat berguna untuk menyisipkan aturan CSS langsung ke dalam dokumen HTML. Ini memungkinkan
+    fleksibilitas dalam mengatur tampilan halaman secara cepat dan efisien. Namun, untuk proyek besar atau kompleks,
+    disarankan menggunakan file CSS eksternal untuk manajemen gaya yang lebih baik dan terstruktur.
+  </p>
+
+  <h1 style="color: green;">Judul Halaman</h1>
+
+  <p>Ini adalah paragraf contoh. Paragraf ini memiliki teks berwarna abu-abu dan jarak antar baris 1.6.</p>
+
+  <p class="highlight">Ini adalah paragraf yang disorot dengan latar belakang kuning.</p>
+
+  <br>
+
+  <hr>
+
+  <h2>Attribut style</h2>
+
+  <ul>
+    <li>
+      @media
+    </li>
+  </ul>
+
+  <p>
+    Atribut media pada tag style> digunakan untuk menentukan jenis perangkat atau kondisi tertentu di mana aturan CSS
+    yang ada di dalam tag style> akan diterapkan. Atribut ini memungkinkan pengembang web untuk menargetkan perangkat
+    tertentu atau kondisi tampilan tertentu (seperti ukuran layar) langsung dari tag style>.
+  </p>
+
+  <hr>
+
+  <ul>
+    <li>
+      style> <b>type</b>="text/css"> < /style>
+    </li>
+  </ul>
+
+  <p>
+    Atribut type pada tag style> digunakan untuk menentukan jenis bahasa gaya yang digunakan di dalam tag style>. Dalam
+    HTML5, nilai yang paling umum dan default untuk atribut type adalah text/css, yang menunjukkan bahwa bahasa gaya
+    yang digunakan adalah CSS (Cascading Style Sheets).
+  </p>
+
+  <p>
+    Meskipun atribut type pada tag style> secara teknis tidak diperlukan dalam HTML5 karena nilai defaultnya adalah
+    text/css, Anda tetap dapat menggunakannya untuk kejelasan dan keterbacaan kode. Jika Anda menulis gaya dalam format
+    lain atau bekerja dalam lingkungan yang memerlukan kepatuhan ketat terhadap standar lama, menyertakan atribut type
+    adalah praktik yang baik.
+  </p>
+
+  <br>
+
+  <hr>
+
+  <h1>Element div</h1>
+
+  <p>
+    Tag div> dalam HTML adalah salah satu elemen blok (block-level element) yang paling umum digunakan untuk
+    mengelompokkan konten dan elemen lain dalam sebuah dokumen HTML. Tag ini tidak memiliki arti semantik khusus dan
+    digunakan untuk keperluan penataan dan pengelompokan elemen.
+  </p>
+
+  <div class="container">
+    <div class="header">
+      <h1>Judul Halaman</h1>
+    </div>
+    <div class="content">
+      <p>Ini adalah konten utama halaman.</p>
+    </div>
+    <div class="footer">
+      <p>Hak cipta &copy; 2024</p>
+    </div>
+  </div>
+
+  <p>
+    Hindari Penggunaan Berlebihan: Jangan menggunakan
+    div> secara berlebihan untuk elemen yang sudah memiliki makna semantik khusus, seperti header>, footer>,
+    article>, atau section>.
+  </p>
+
+  <p>
+    Tag div> adalah elemen HTML yang sangat serbaguna yang memungkinkan pengembang untuk membuat struktur dan tata letak
+    halaman web yang fleksibel dan terorganisir.
+  </p>
+
+  <hr>
+
+  <h1>Element span</h1>
+
+  <p>
+    Tag span> dalam HTML adalah elemen inline yang serbaguna yang digunakan untuk mengelompokkan dan menggaya
+    elemen-elemen inline. Berbeda dengan elemen blok seperti div>, yang membuat baris baru dan mengambil lebar penuh
+    yang tersedia, span> tidak membuat baris baru dan hanya mengambil lebar sesuai dengan kontennya.
+  </p>
+
+  <p>Ini adalah teks <span class="highlight">yang di-highlight</span>.</p>
+
+  <p>
+    Ini memungkinkan pemisahan yang lebih bersih antara konten dan presentasi, sehingga lebih mudah untuk memelihara dan
+    menata halaman web. Selain itu, span> dapat digunakan untuk manipulasi JavaScript, karena menyediakan cara untuk
+    menargetkan bagian-bagian tertentu dari konten teks.
+  </p>
+
+  <hr>
+
+  <h1>Element header</h1>
+
+  <p>
+    Tag header> dalam HTML digunakan untuk menentukan bagian kepala atau bagian atas dari sebuah halaman web atau sebuah
+    bagian dari halaman web tertentu. Ini biasanya berisi elemen-elemen yang secara konsisten muncul di bagian atas
+    halaman atau bagian tertentu dari situs web, seperti logo, judul, navigasi, dan elemen-elemen lain yang
+    mengidentifikasi atau memberikan konteks tentang halaman atau bagian tersebut.
+  </p>
+
+  <header>
+    <h1>Selamat Datang di Situs Web Kami</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <p>
+    Dalam contoh di atas, header> mengandung elemen-elemen seperti h1> sebagai judul utama situs dan elemen
+    nav> untuk navigasi. Ini membantu memisahkan konten utama dari bagian kepala situs, dan meningkatkan struktur dan
+    aksesibilitas halaman web.
+  </p>
+
+  <hr>
+
+  <h1>Element hgroup</h1>
+
+  <p>
+    Tag hgroup> dalam HTML digunakan untuk mengelompokkan beberapa elemen heading (h1> sampai h6>) yang berurutan dalam
+    satu kelompok. Ini adalah bagian dari spesifikasi HTML5, tetapi telah dihapus dari spesifikasi HTML pada versi
+    HTML5.1.
+  </p>
+
+  <p>
+    Tujuan utama hgroup> adalah memberikan struktur yang lebih terorganisir pada judul-judul halaman web yang kompleks.
+    Ini berguna ketika Anda memiliki beberapa tingkatan judul dalam suatu bagian yang saling terkait.
+  </p>
+
+  <hgroup>
+    <h1>Judul Utama</h1>
+    <h2>Sub Judul</h2>
+  </hgroup>
+
+  <p>Ini adalah paragraf yang mengikuti judul-judul di atas.</p>
+
+  <hr>
+
+  <h1>Element footer</h1>
+
+  <p>
+    Tag footer> dalam HTML digunakan untuk menentukan bagian bawah dari sebuah halaman web atau sebuah bagian tertentu
+    dari halaman web tersebut. Ini biasanya berisi informasi tambahan seperti informasi kontak, tautan ke halaman
+    terkait, hak cipta, atau kredit.
+  </p>
+
+  <footer style="background-color: rgb(196, 255, 206);">
+    <p>&copy; 2024 Nama Perusahaan. Hak cipta dilindungi.</p>
+    <nav>
+      <ul>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Kontak</a></li>
+        <li><a href="#">Syarat & Ketentuan</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <p>
+    Tag footer> memberikan petunjuk kepada mesin pencari bahwa informasi tertentu berada di bagian bawah halaman, yang
+    dapat berguna untuk indeks mesin pencari dan algoritme SEO.
+  </p>
+
+  <hr>
+
+  <h1>Element main</h1>
+
+  <p>
+    Tag main> dalam HTML digunakan untuk menandai konten utama dari sebuah halaman web. Ini membantu dalam meningkatkan
+    aksesibilitas dan struktur halaman web, karena memungkinkan pembaca layar dan mesin pencari untuk dengan jelas
+    mengidentifikasi area utama atau pusat dari sebuah halaman.
+  </p>
+
+  <main>
+    <h1>Selamat Datang di Halaman Utama</h1>
+    <p>Ini adalah konten utama dari halaman web kami.</p>
+    <section>
+      <h2>Artikel Terbaru</h2>
+      <!-- Daftar artikel terbaru -->
+    </section>
+    <section>
+      <h2>Produk Kami</h2>
+      <!-- Daftar produk -->
+    </section>
+  </main>
+
+  <hr>
+
+  <h1>Element section</h1>
+
+  <p>
+    Tag section> dalam HTML digunakan untuk menandai bagian independen atau bagian dari sebuah halaman web. Ini membantu
+    dalam membagi dan mengelompokkan konten secara semantik. Bagian-bagian ini biasanya memiliki judul atau topik
+    tertentu dan dapat berdiri sendiri secara logis.
+  </p>
+  <header>
+    <h1>Blog Kami</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Artikel</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Artikel Terbaru</h2>
+      <article>
+        <h3>Judul Artikel 1</h3>
+        <p>Deskripsi artikel 1...</p>
+      </article>
+      <article>
+        <h3>Judul Artikel 2</h3>
+        <p>Deskripsi artikel 2...</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Artikel Populer</h2>
+      <article>
+        <h3>Judul Artikel 3</h3>
+        <p>Deskripsi artikel 3...</p>
+      </article>
+      <article>
+        <h3>Judul Artikel 4</h3>
+        <p>Deskripsi artikel 4...</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog Kami. Hak cipta dilindungi.</p>
+  </footer>
+
+  <hr>
+
+  <h1>Element search</h1>
+
+  <p>
+    Dalam HTML, tidak ada tag search>. Namun, Anda dapat menggunakan elemen input> dengan atribut type="search" untuk
+    membuat kotak pencarian. Elemen input type="search"> biasanya digunakan dalam formulir untuk membuat kotak pencarian
+    yang terintegrasi dengan browser, yang dapat memberikan fitur-fitur tambahan seperti tombol "Clear" dan "Submit".
+  </p>
+
+  <form action="/search" method="get">
+    <label for="search">Cari:</label>
+    <input type="search" id="search" name="search" placeholder="Masukkan kata kunci pencarian">
+    <button type="submit">Cari</button>
+  </form>
+
+  <hr>
+
+  <h1>Element article</h1>
+
+  <p>
+    Tag article> dalam HTML digunakan untuk menandai konten independen atau konten yang bisa berdiri sendiri di dalam
+    sebuah halaman web. Konten yang diberi tanda dengan tag article> biasanya berdiri sendiri dan dapat dianggap sebagai
+    bagian yang dapat dipublikasikan secara independen dari halaman lainnya.
+  </p>
+
+  <header>
+    <h1>Blog Kami</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Judul Artikel 1</h2>
+      <p>Deskripsi artikel 1...</p>
+    </article>
+
+    <article>
+      <h2>Judul Artikel 2</h2>
+      <p>Deskripsi artikel 2...</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog Kami. Hak cipta dilindungi.</p>
+  </footer>
+
+  <hr>
+
+  <h1>Element aside</h1>
+
+  <p>
+    Tag aside> dalam HTML digunakan untuk menandai konten yang terkait secara tidak langsung dengan konten yang ada di
+    sekitarnya, dan dapat berdiri sendiri sebagai bagian dari halaman web.
+  </p>
+
+
+  <header>
+    <h1>Blog Kami</h1>
+  </header>
+
+  <main>
+    <article>
+      <h2>Judul Artikel 1</h2>
+      <p>Deskripsi artikel 1...</p>
+    </article>
+
+    <article>
+      <h2>Judul Artikel 2</h2>
+      <p>Deskripsi artikel 2...</p>
+    </article>
+
+    <aside>
+      <h2>Artikel Terkait</h2>
+      <ul>
+        <li><a href="#">Artikel Terkait 1</a></li>
+        <li><a href="#">Artikel Terkait 2</a></li>
+        <li><a href="#">Artikel Terkait 3</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Blog Kami. Hak cipta dilindungi.</p>
+  </footer>
+
+  <p>
+    Elemen aside> biasanya digunakan untuk konten tambahan, seperti sidebar, iklan, daftar terkait, atau informasi lain
+    yang dapat membantu atau melengkapi konten utama dari halaman.
+  </p>
+
+  <hr>
+
+  <h1>Element details</h1>
+
+  <p>
+    Tag details> dalam HTML digunakan untuk membuat sebuah widget yang dapat di-klik untuk menampilkan atau
+    menyembunyikan konten tambahan.
+  </p>
+
+  <h2>FAQ</h2>
+
+  <details>
+    <summary>Apa itu HTML?</summary>
+    <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web.</p>
+  </details>
+
+  <details>
+    <summary>Apa itu CSS?</summary>
+    <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan tata letak
+      elemen-elemen HTML di halaman web.</p>
+  </details>
+
+  <details>
+    <summary>Apa itu JavaScript?</summary>
+    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.</p>
+  </details>
+
+  <hr>
+
+  <h2>Attribut details</h2>
+
+  <ul>
+    <li>
+      < details <b>open</b>>< /details>
+    </li>
+  </ul>
+
+  <p>
+    Attribute open pada tag details> digunakan untuk menentukan apakah konten tambahan yang terkandung dalam elemen
+    details> akan ditampilkan secara default atau tidak saat halaman web dimuat.
+  </p>
+
+  <h2>FAQ</h2>
+
+  <details open>
+    <summary>Apa itu HTML?</summary>
+    <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web.</p>
+  </details>
+
+  <details>
+    <summary>Apa itu CSS?</summary>
+    <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan tata letak
+      elemen-elemen HTML di halaman web.</p>
+  </details>
+
+  <details open>
+    <summary>Apa itu JavaScript?</summary>
+    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.</p>
+  </details>
+
+  <hr>
+
+  <h1>Element dialog</h1>
+
+  <p>
+    Tag dialog> dalam HTML digunakan untuk menandai sebuah dialog atau sebuah jendela modal dalam sebuah halaman web.
+  </p>
+
+  <h1>Formulir Pendaftaran</h1>
+
+  <button id="showRegistrationBtn">Buka Formulir Pendaftaran</button>
+
+  <dialog id="registrationDialog">
+    <h2>Pendaftaran Akun</h2>
+    <form>
+      <input type="text" id="username" name="username" placeholder="Username" required>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <input type="password" id="password" name="password" placeholder="Password" required>
+      <button type="submit">Daftar</button>
+    </form>
+    <button id="closeDialogBtn">Tutup</button>
+  </dialog>
+
+  <br><br>
+
+
+  <h1>Contoh Dialog Sederhana</h1>
+
+  <button onclick="document.getElementById('myDialog').showModal()">Tampilkan Dialog</button>
+
+  <dialog id="myDialog">
+    <p>Ini adalah konten dalam dialog.</p>
+    <button onclick="document.getElementById('myDialog').close()">Tutup</button>
+  </dialog>
+
+  <p>
+    Dialog dalam HTML menggunakan tag dialog> sering digunakan untuk membuat jendela pop-up sederhana atau modul yang
+    muncul di atas halaman web utama. Ini memungkinkan pengguna untuk fokus pada konten penting atau tindakan tertentu
+    tanpa harus meninggalkan halaman utama.
+    <br><br>
+    Dalam konteks penggunaan umum, dialog biasanya muncul dalam tanggapan terhadap tindakan pengguna, seperti mengklik
+    tombol "Hapus", "Edit", atau "Buka Formulir". Ini membantu memastikan bahwa pengguna memperhatikan pesan atau
+    pilihan tambahan sebelum melanjutkan.
+  </p>
+
+  <br>
+
+  <hr>
+
+  <h2>Attribut dialog</h2>
+
+  <ul>
+    <li>
+      < dialog <b>open</b>>< /dialog>
+    </li>
+  </ul>
+
+  <p>
+    Attribute open pada tag dialog> dalam HTML digunakan untuk menentukan apakah dialog akan ditampilkan secara default
+    saat halaman web dimuat. Jika tag dialog> memiliki atribut open, maka dialog akan ditampilkan secara otomatis ketika
+    halaman dimuat.
+  </p>
+
+  <h1>Dialog Pop-up saat Halaman Dimuat</h1>
+
+  <p>Refres halaman untuk memunculkan dialog</p>
+
+  <dialog id="myDialog">
+    <p>Ini adalah konten dalam jendela pop-up.</p>
+    <button onclick="document.getElementById('myDialog').close()">Tutup</button>
+  </dialog>
+
+  <p>
+    dialog yang menggunakan tag dialog> akan memiliki tombol "Tutup" secara default. Ketika dialog ditampilkan dengan
+    atribut open, tombol "Tutup" akan muncul secara otomatis di dalamnya.
+    <br><br>
+    Ini adalah salah satu kegunaan utama dari elemen dialog>: untuk menampilkan sebuah dialog yang dapat ditutup oleh
+    pengguna dengan mudah menggunakan tombol "Tutup".
+    <br><br>
+    Jadi, saat Anda menggunakan dialog> dalam halaman web Anda, Anda tidak perlu menambahkan tombol "Tutup" secara
+    manual. Ini akan ditambahkan secara otomatis, dan pengguna dapat menutup dialog dengan mengklik tombol tersebut.
+  </p>
+
+  <p>
+    Anda bisa menambahkan tombol tambahan atau elemen lain di dalam dialog
+  </p>
+
+  <dialog id="popupDialog">
+    <p>Ini adalah konten dalam jendela pop-up.</p>
+    <button onclick="document.getElementById('popupDialog').close()">Tutup</button>
+    <button onclick="openNewPage()">Buka Halaman Baru</button>
+  </dialog>
+
+  <hr>
+
+  <h1>Element summary</h1>
+
+  <p>
+    Tag summary> digunakan bersama dengan elemen details> untuk menyediakan judul atau ringkasan dari konten yang
+    disembunyikan. Ini memungkinkan pengguna untuk melihat konten rinci dengan mengklik atau mengetuk judul atau
+    ringkasan yang diberikan.
+  </p>
+
+
+  <h1>FAQ</h1>
+
+  <details>
+    <summary>Apa itu HTML?</summary>
+    <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web.</p>
+  </details>
+
+  <details>
+    <summary>Apa itu CSS?</summary>
+    <p>CSS (Cascading Style Sheets) adalah bahasa stylesheet yang digunakan untuk mengatur tampilan dan tata letak
+      elemen-elemen HTML di halaman web.</p>
+  </details>
+
+  <details>
+    <summary>Apa itu JavaScript?</summary>
+    <p>JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web interaktif.</p>
+  </details>
+
+  <hr>
+
+  <h1>Element data</h1>
+
+  <p>
+    Tag data> dalam HTML digunakan untuk menambahkan konten data ke dokumen HTML. Ini adalah elemen inline yang
+    digunakan untuk menandai data yang akan di-render oleh browser sebagai teks, tetapi tidak diinterpretasikan oleh
+    browser sebagai teks HTML.
+  </p>
+
+  <p>Harga saat ini adalah: <data value="500">Rp. 500.000,-</data></p>
+
+  <p>Pendapatan bulanan: <data value="12000">$12,000</data></p>
+
+  <p>
+    Elemen data> dalam HTML biasanya digunakan untuk menyertakan data dalam dokumen HTML yang dapat diakses oleh program
+    JavaScript atau teknologi lainnya untuk pengolahan lebih lanjut.
+    <br><br>
+    Interaksi dengan JavaScript: Dengan menggunakan JavaScript, Anda dapat dengan mudah mengakses dan memanipulasi
+    nilai-nilai yang terkandung dalam elemen data>. Ini memungkinkan Anda untuk membuat situs web yang lebih dinamis dan
+    responsif.
+    <br><br>
+    Jadi, elemen data> memberikan cara yang efektif untuk menyertakan data tambahan dalam dokumen HTML yang dapat
+    diakses oleh program JavaScript atau teknologi lainnya untuk pengolahan lebih lanjut.
+  </p>
+
+
+
+
+
+  <script src="../JS/script_styles_semantics.js"></script>
+</body>
+
+</html>

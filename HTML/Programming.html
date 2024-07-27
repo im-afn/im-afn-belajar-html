@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programing</title>
+</head>
+
+<body>
+
+  <h1>Element Script</h1>
+
+  <p>
+    Tag script> dalam HTML digunakan untuk menyisipkan atau merujuk pada kode eksekusi, biasanya JavaScript, di dalam
+    dokumen HTML.
+  </p>
+
+  <b>
+    << script src="path/to/your/script.js">
+      < /script>
+  </b>
+  <br><br>
+  <b>
+    << script>
+      console.log('Skrip inline dijalankan');
+      < /script>
+  </b>
+
+  <p>
+    Letakkan tag script> di akhir tag body> jika tidak menggunakan async atau defer untuk meningkatkan kinerja halaman.
+    <br><br>
+    Gunakan skrip eksternal untuk memudahkan pemeliharaan dan memanfaatkan caching browser
+    <br><br>
+    Hindari penggunaan skrip inline jika memungkinkan untuk menjaga struktur HTML tetap bersih dan menjaga pemisahan
+    antara konten dan logika.
+  </p>
+
+  <h2>Attribut scirpt</h2>
+
+  <ul>
+    <li>
+      << script src="demo_async.js" <b>async</b>>
+        < /script>
+    </li>
+  </ul>
+
+  <p>
+    Atribut async pada tag script> dalam HTML digunakan untuk menginstruksikan browser agar mengunduh skrip secara
+    asinkron dengan proses pemuatan halaman. Ini berarti bahwa skrip akan diunduh dan dieksekusi tanpa memblokir
+    penguraian halaman HTML, memungkinkan konten halaman untuk dimuat lebih cepat.
+  </p>
+
+  <p>
+    async: Ketika atribut async digunakan, skrip akan diunduh bersamaan dengan pemuatan halaman dan dieksekusi segera
+    setelah unduhannya selesai, tanpa menunggu pemuatan seluruh halaman selesai. Hal ini cocok untuk skrip yang tidak
+    bergantung pada DOM atau skrip lain.
+  </p>
+
+  <!-- Skrip dengan atribut async -->
+  <!-- <script src="async-script.js" async></script> -->
+
+  <p>Paragraf ini akan ditampilkan sebelum skrip selesai diunduh dan dieksekusi.</p>
+
+  <ul>
+    <li>
+      << script src="https://example.com/script.js" <b>crossorigin</b>="anonymous">
+        < script />
+    </li>
+  </ul>
+
+  <p>
+    Atribut crossorigin pada tag script> dalam HTML digunakan untuk mengontrol bagaimana permintaan skrip eksternal
+    menangani lintas asal (cross-origin). Ini penting untuk situasi di mana skrip diambil dari domain berbeda dan
+    diperlukan kontrol yang lebih besar terkait dengan keamanan dan kebijakan sumber daya bersama (CORS).
+  </p>
+  <p>
+    <b> anonymous:</b> Meminta agar permintaan dilakukan tanpa kredensial (seperti cookie, sertifikat HTTP, atau header
+    otorisasi). Ini adalah pengaturan default yang memungkinkan browser untuk mendapatkan skrip dari domain lain, tetapi
+    tanpa mengirimkan informasi pengenal pengguna.
+    <br><br>
+    <b> use-credentials:</b> Meminta agar permintaan dilakukan dengan mengirimkan kredensial. Ini berarti cookie dan
+    header otorisasi akan dikirimkan dengan permintaan. Server harus mengatur header Access-Control-Allow-Credentials
+    menjadi true untuk mengizinkan hal ini.
+  </p>
+  <p>
+    Menggunakan crossorigin="anonymous": Saat Anda memuat skrip dari domain lain dan tidak ingin atau tidak perlu
+    mengirimkan kredensial pengguna. Contohnya, memuat pustaka JavaScript seperti jQuery dari CDN.
+    <br><br>
+    Menggunakan crossorigin="use-credentials": Saat skrip membutuhkan akses ke sumber daya yang memerlukan kredensial,
+    misalnya, jika skrip memerlukan otorisasi pengguna.
+  </p>
+  <p>
+    Dengan menggunakan atribut crossorigin secara tepat, Anda dapat mengelola keamanan dan kinerja aplikasi web Anda
+    saat memuat skrip dari domain eksternal.
+  </p>
+
+  <ul>
+    <li>
+      << script src="demo_defer.js" <b>defer</b>
+        < /script>
+    </li>
+  </ul>
+
+  <p>
+    Atribut defer pada tag script> dalam HTML digunakan untuk menunda eksekusi skrip sampai dokumen HTML sepenuhnya
+    diuraikan (di-parsing). Skrip yang menggunakan defer akan tetap diunduh bersamaan dengan pemuatan halaman, tetapi
+    akan dieksekusi hanya setelah seluruh konten halaman selesai diuraikan. Ini memungkinkan HTML untuk dimuat lebih
+    cepat dan memastikan bahwa skrip tidak mengganggu proses penguraian halaman.
+  </p>
+  <p>
+    defer: Ketika atribut defer digunakan, browser akan menunda eksekusi skrip sampai dokumen HTML sepenuhnya diuraikan.
+    Atribut ini hanya berlaku untuk skrip eksternal dan diabaikan pada skrip inline.
+  </p>
+
+  <ul>
+    <li>
+      << script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" <b>
+        integrity</b>="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+        < /script>
+    </li>
+  </ul>
+
+  <!-- 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+            integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl7/2tvIp43I5BS51Q5b64+e6cfCBB5YRIjB6S/jN7" 
+            crossorigin="anonymous"></>
+
+   -->
+
+  <p>
+    Atribut integrity pada tag script> dalam HTML digunakan untuk memastikan bahwa konten skrip yang diambil dari server
+    tidak dimodifikasi dan sesuai dengan versi yang diharapkan. Ini dilakukan dengan menggunakan nilai hash kriptografis
+    yang dikodekan dalam base64. Jika skrip yang diunduh tidak cocok dengan hash yang diberikan, maka browser akan
+    menolak untuk menjalankannya. Ini membantu melindungi terhadap serangan penyisipan konten berbahaya (content
+    injection attacks).
+  </p>
+
+  <p>
+    Skrip dari CDN: Sangat disarankan menggunakan atribut integrity saat mengambil skrip dari sumber eksternal seperti
+    CDN. Ini memastikan bahwa skrip yang diunduh belum dimodifikasi.
+    <br><br>
+    Keamanan Tambahan: Saat Anda ingin menambah lapisan keamanan ekstra untuk memastikan bahwa hanya versi tertentu dari
+    skrip yang digunakan pada halaman web Anda.
+  </p>
+
+  <ul>
+    <li>
+      << script src="myscripts.js" <b>referrerpolicy</b>="origin">< /script>
+    </li>
+  </ul>
+
+  <p>
+    Atribut referrerpolicy pada tag script> dalam HTML digunakan untuk mengontrol informasi referer yang dikirim bersama
+    dengan permintaan skrip. Ini memungkinkan pengembang untuk menentukan seberapa banyak informasi tentang URL sumber
+    (halaman yang memuat skrip) yang dikirimkan ke server ketika skrip eksternal diambil.
+  </p>
+  <p>
+    Dengan menggunakan atribut referrerpolicy, Anda dapat mengontrol lebih baik bagaimana dan kapan informasi referer
+    dikirimkan saat mengambil skrip eksternal, meningkatkan privasi dan keamanan aplikasi web Anda.
+  </p>
+
+  <ol>
+    <li>no-referrer: Tidak mengirimkan informasi referer.</li>
+    <li>no-referrer-when-downgrade: Mengirimkan informasi referer kecuali jika permintaan adalah dari HTTPS ke HTTP
+      (default)</li>
+    <li>origin: Mengirimkan hanya origin dari dokumen yang memuat (misalnya, mengirim https://example.com dari
+      https://example.com/page.html).</li>
+    <li>origin-when-cross-origin: Mengirimkan URL penuh saat permintaan bersifat same-origin, dan hanya origin saat
+      permintaan bersifat cross-origin.</li>
+    <li>same-origin: Mengirimkan referer penuh untuk permintaan same-origin dan tidak mengirimkan informasi referer
+      untuk permintaan cross-origin.</li>
+    <li>strict-origin: Mengirimkan hanya origin saat protokol keamanan sama (HTTPS→HTTPS), dan tidak mengirimkan referer
+      saat protokol berbeda (HTTPS→HTTP).</li>
+    <li>strict-origin-when-cross-origin: Mengirimkan referer penuh saat same-origin dan hanya origin saat cross-origin,
+      serta tidak mengirimkan referer saat downgrade (HTTPS→HTTP).</li>
+    <li>unsafe-url: Mengirimkan referer penuh dalam semua permintaan, tanpa memperhatikan protokol.</li>
+  </ol>
+
+  <ul>
+    <li>
+      << script <b>src</b>="myscripts.js">< /script>
+    </li>
+  </ul>
+
+  <p>
+    Atribut src pada tag script> dalam HTML digunakan untuk merujuk ke file eksternal yang berisi kode JavaScript.
+    Dengan menggunakan atribut ini, Anda dapat memisahkan kode JavaScript dari dokumen HTML, yang membantu dalam
+    pengorganisasian dan pemeliharaan kode.
+  </p>
+  <p>
+    src: Atribut ini memerlukan URL yang menunjukkan lokasi file JavaScript eksternal yang ingin Anda masukkan ke dalam
+    halaman HTML.
+  </p>
+
+  <ul>
+    <li>
+      << script <b>type</b>="text/javascript">
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        < /script>
+    </li>
+  </ul>
+
+  <p>
+    Atribut type pada tag script> dalam HTML digunakan untuk menentukan jenis konten skrip. Nilai atribut ini biasanya
+    merupakan tipe MIME (Multipurpose Internet Mail Extensions) yang menunjukkan bahasa atau format dari skrip tersebut.
+    Atribut type umumnya digunakan untuk mengindikasikan bahwa skrip tersebut adalah JavaScript, tetapi juga bisa
+    digunakan untuk jenis skrip lain atau bahkan untuk skrip template.
+  </p>
+
+  <ol>
+    <li>
+      << script type="text/javascript" src="script.js">
+        < /script>
+          <p>text/javascript: Nilai default untuk skrip JavaScript. Secara historis, ini adalah cara umum untuk
+            menentukan JavaScript, meskipun sekarang dianggap opsional karena HTML5 memperlakukan JavaScript sebagai
+            default.</p>
+    </li>
+    <li>
+      << script type="module" src="module-script.js">
+        < /script>
+          <p>module: Digunakan untuk mengindikasikan bahwa skrip adalah modul ES6. Modul ES6 mendukung impor dan ekspor
+            di JavaScript, memungkinkan modularisasi kode.</p>
+    </li>
+    <li>
+      << script type="application/ld+json"><br>
+        {<br>
+        "@context": "https://schema.org",<br>
+        "@type": "Organization",<br>
+        "name": "Example Inc.",<br>
+        "url": "https://www.example.com"<br>
+        } <br>
+        < /script>
+          <p>application/ld+json: Digunakan untuk skrip yang berisi data JSON-LD untuk pengkodean data terstruktur.</p>
+    </li>
+    <li>
+      << script type="text/babel">
+        // kode JSX di sini
+        < /script>
+          <p>text/babel: Digunakan untuk skrip yang ditulis dalam sintaks JSX (React). Ini sering digunakan dengan
+            Babel, sebuah alat yang mengubah kode JSX menjadi JavaScript yang dapat dijalankan oleh browser.</p>
+    </li>
+    <li>
+      << script type="text/template" id="template1"> <br>
+        < div> <br>
+          < h1>{{title}}< /h1> <br>
+              < p>{{description}}< /p> <br>
+                  < /div> <br>
+                    < /script>
+                      <p>text/template: Digunakan untuk skrip template yang biasanya akan diproses oleh JavaScript lain
+                        di halaman.</p>
+    </li>
+  </ol>
+
+  <b>Menggunakan type</b>
+  <p>
+    JavaScript Default: Untuk skrip JavaScript biasa, tidak perlu menambahkan type="text/javascript" karena ini adalah
+    nilai default di HTML5.
+    <br><br>
+    Modul JavaScript: Gunakan type="module" jika Anda menggunakan fitur modul ES6.
+    <br><br>
+    Skrip Khusus: Gunakan tipe MIME yang sesuai jika Anda menulis skrip dalam format atau bahasa lain seperti JSON-LD
+    atau JSX.
+    <br><br>
+    Template Skrip: Gunakan type="text/template" atau nilai khusus lain untuk skrip template yang akan diproses oleh
+    JavaScript.
+  </p>
+
+  <h1>Element noscript</h1>
+
+  <p>
+    Tag noscript> dalam HTML digunakan untuk menyediakan konten alternatif yang akan ditampilkan kepada pengguna yang
+    memiliki JavaScript dinonaktifkan di browser mereka atau jika browser mereka tidak mendukung JavaScript. Ini
+    memungkinkan pengembang web untuk memastikan bahwa halaman mereka tetap dapat diakses dan fungsional meskipun
+    JavaScript tidak tersedia.
+  </p>
+  <p>
+    Misalnya, Anda dapat menggunakan tag noscript> untuk menampilkan pesan kepada pengguna yang memberi tahu mereka
+    bahwa JavaScript diperlukan untuk melihat konten tertentu:
+  </p>
+
+  <p>
+    <b>
+      << script> document.write("Hello World!")< /script>
+    </b>
+    <br><br>
+    <b>
+      << noscript>Your browser does not support JavaScript!< /noscript>
+    </b>
+  </p>
+
+  <b>Menggunakan Tag noscript:</b>
+  <p>
+    Pesan Pemberitahuan: Untuk memberi tahu pengguna bahwa halaman web memerlukan JavaScript untuk fungsionalitas penuh.
+    <br><br>
+    Konten Alternatif: Untuk menyediakan alternatif statis atau fallback ketika fitur interaktif yang memerlukan
+    JavaScript tidak dapat digunakan.
+    <br><br>
+    SEO dan Aksesibilitas: Untuk memastikan bahwa konten penting tetap dapat diakses oleh pengguna dan mesin pencari
+    meskipun JavaScript dinonaktifkan.
+  </p>
+
+  <h1>Element embed</h1>
+
+  <p>
+    Tag embed> dalam HTML digunakan untuk menyematkan konten eksternal dalam dokumen HTML, seperti video, audio, dokumen
+    PDF, atau aplikasi interaktif. Tag ini mendukung berbagai jenis media dan format file, dan memungkinkan browser
+    untuk menampilkan konten tersebut secara langsung dalam halaman web.
+  </p>
+
+  <embed src="path/to/file" type="media_type" width="width_value" height="height_value">
+
+  <br><br>
+
+  <b>Contoh Menyematkan Video</b>
+  <embed src="../Video/Air Terjun Alam.mp4" type="video/mp4" width="640" height="360">
+
+  <h1>Element object</h1>
+
+  <p>
+    Tag object> dalam HTML digunakan untuk menyematkan objek eksternal ke dalam dokumen HTML. Ini bisa berupa berbagai
+    jenis konten seperti gambar, audio, video, animasi Flash, atau bahkan aplikasi interaktif seperti Java applets.
+  </p>
+
+  <object data="path/to/file" type="mime_type" width="width_value" height="height_value">
+    <!-- Fallback content -->
+    Konten alternatif yang akan ditampilkan jika browser tidak mendukung objek tersebut.
+  </object>
+  <br><br>
+  <object data="../Gambar/img_pink_flowers.jpg" type="image/jpeg" width="400" height="300">
+    <img src="../Gambar/img_pink_flowers.jpg" alt="Deskripsi Gambar">
+  </object>
+
+  <h1>Element param</h1>
+
+  <p>
+    Tag param> dalam HTML digunakan untuk menentukan parameter-parameter yang diperlukan oleh elemen object> atau
+    applet>. Tag ini biasanya digunakan dalam konteks menyematkan aplikasi atau objek yang memerlukan parameter khusus
+    untuk dikonfigurasi.
+  </p>
+  <p>
+    Tag param> adalah tag kosong, yang berarti tidak memiliki tag penutup, dan hanya menggunakan atribut untuk
+    menentukan parameter-parameter.
+  </p>
+
+  <object data="applet_example.jar" type="application/x-java-applet" width="400" height="300">
+    <param name="parameter1" value="value1">
+    <param name="parameter2" value="value2">
+    <!-- Konten alternatif jika browser tidak mendukung objek -->
+    Maaf, browser Anda tidak mendukung Java Applet.
+  </object>
+
+  <h2>Attribut param</h2>
+
+  <ul>
+    <li>
+      < param <b> name</b>="parameter_name" value="parameter_value">
+    </li>
+  </ul>
+
+  <p>
+    Atribut name pada tag param> dalam HTML digunakan untuk menentukan nama dari parameter yang akan dikonfigurasi untuk
+    aplikasi atau objek yang disematkan menggunakan tag object> atau applet>.
+  </p>
+
+  <ul>
+    <li>
+      < param name="parameter_name" <b>value</b>="parameter_value">
+    </li>
+  </ul>
+
+  <p>
+    Atribut value pada tag param> dalam HTML digunakan untuk menentukan nilai dari parameter yang ditentukan oleh
+    atribut name. Ini memungkinkan Anda untuk memberikan nilai yang spesifik untuk parameter yang diperlukan oleh
+    aplikasi atau objek yang disematkan menggunakan tag object> atau applet>.
+  </p>
+
+  <object data="applet_example.jar" type="application/x-java-applet" width="400" height="300">
+    <param name="backgroundColor" value="#FFFFFF">
+    <!-- Konten alternatif jika browser tidak mendukung objek -->
+    Maaf, browser Anda tidak mendukung Java Applet.
+  </object>
+
+</body>
+
+</html>

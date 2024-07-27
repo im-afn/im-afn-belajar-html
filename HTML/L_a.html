@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element a</h1>
+
+    <p>
+      Elemen a> dalam HTML, singkatan dari "anchor", digunakan untuk membuat tautan (link) ke halaman web lain, file,
+      atau lokasi dalam halaman yang sama.
+    </p>
+
+    <p>
+      Elemen a> sangat penting dalam pembuatan tautan di HTML. Mereka memungkinkan Anda untuk membuat navigasi antar
+      halaman web dan memperkaya konten Anda dengan memberikan pengguna kemampuan untuk mengakses sumber daya tambahan.
+    </p>
+
+    <a href="https://www.youtube.com/channel/UCgCBGpBD8n23bqkTjAUi03Q">Subscribe youtube saya</a>
+
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut a</h2>
+
+    <ul>
+      <li>
+        < a href="file.pdf" <b>download</b>>Unduh File PDF< /a>
+      </li>
+    </ul>
+
+    <p>
+      Dalam HTML digunakan untuk menentukan bahwa target tautan harus diunduh oleh pengguna ketika tautan tersebut
+      diklik, bukan dibuka dalam browser.
+    </p>
+
+    <p>
+      Memungkinkan Anda untuk menentukan bahwa target tautan harus diunduh oleh pengguna ketika tautan tersebut diklik,
+      bukan dibuka dalam browser. Ini adalah cara yang berguna untuk memberikan akses cepat ke file yang ingin Anda
+      bagikan dengan pengguna Anda.
+    </p>
+
+    <a href="../Gambar/w3html.gif" downloa>
+      <img src="../Gambar/w3html.gif" alt="W3Schools" width="104" height="142">
+    </a>
+
+    <br><br>
+
+    <a href="file.pdf" download>Unduh File PDF</a>
+
+    <p>
+      Perbaiki download nya agar berfungsi
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a <b> href</b>="https://www.example.com">Kunjungi Contoh.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Atribut href pada elemen a> dalam HTML digunakan untuk menentukan URL atau lokasi yang akan ditautkan oleh tautan
+      tersebut.
+    </p>
+
+    <p>
+      Atribut href harus selalu disertakan dalam elemen a>, karena tanpa atribut ini, tautan tidak akan memiliki tujuan
+      atau arah.
+      <br><br>
+      URL atau lokasi yang diberikan dalam atribut href bisa berupa URL eksternal, URL internal (misalnya ke halaman web
+      lain di situs Anda), atau path file lokal.
+    </p>
+
+    <a href="https://www.youtube.com/channel/UCgCBGpBD8n23bqkTjAUi03Q">Subscribe youtube saya</a>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="https://www.example.com" <b>hreflang</b>="en">Visit Example.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Atribut hreflang pada elemen a> dalam HTML digunakan untuk menentukan bahasa dari target tautan yang ditautkan.
+    </p>
+
+    <p>
+      Atribut hreflang biasanya digunakan untuk tautan yang mengarah ke halaman dalam bahasa tertentu, sehingga pengguna
+      tahu konten halaman yang ditautkan menggunakan bahasa apa.
+      <br><br>
+      Nilai atribut hreflang biasanya adalah kode bahasa ISO 639-1 atau ISO 639-2 yang mewakili bahasa yang digunakan
+      dalam halaman yang ditautkan.
+      <br><br>
+      Pastikan untuk menyertakan atribut hreflang ketika Anda menautkan ke halaman dalam bahasa tertentu, terutama jika
+      situs web Anda memiliki versi multibahasa.
+    </p>
+
+    <p><a hreflang="en" href="https://www.w3schools.com">W3Schools.com</a></p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="stylesheet" href="style.css" <b>media</b>="screen">
+      </li>
+    </ul>
+
+    <p>
+      Atribut media tidak digunakan pada elemen a> dalam HTML. Atribut ini umumnya digunakan dalam elemen link> untuk
+      menentukan media atau perangkat yang ditargetkan oleh tautan stylesheet.
+    </p>
+
+    <a href="https://example.com"
+      media="screen and (min-width: 768px) and (orientation: landscape) and (pointer: fine)">
+      Link for Large Landscape Screens with Fine Pointer
+    </a>
+
+    <ol>
+      <li>all: Aplikasi untuk semua jenis media.</li>
+      <li>print: Aplikasi untuk media cetak.</li>
+      <li>screen: Aplikasi untuk layar komputer atau perangkat lain dengan tampilan visual.</li>
+      <li>speech: Aplikasi untuk sintesis suara dan perangkat pembaca layar.</li>
+      <li>braille: Aplikasi untuk perangkat braille.</li>
+      <li>handheld: Aplikasi untuk perangkat mobile atau handheld.</li>
+      <li>tv: Aplikasi untuk perangkat televisi.</li>
+      <li>projection: Aplikasi untuk proyeksi tampilan.</li>
+      <li>aural: Aplikasi untuk keluaran suara, seperti sintesis suara atau speaker.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="https://www.example.com" <b>ping</b>="https://www.tracking-example.com">Visit Example.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan URL yang akan dipanggil secara asinkron ketika pengguna mengklik tautan tersebut. Ini
+      biasanya digunakan untuk melacak aktivitas pengguna, seperti ketika tautan diklik.
+    </p>
+
+    <p>
+      Atribut ping biasanya digunakan untuk melacak aktivitas pengguna, dan sebaiknya digunakan dengan bijak untuk
+      menghormati privasi pengguna dan kebijakan privasi.
+    </p>
+
+    <a href="file.pdf" ping="https://www.tracking-example.com/log/download">
+      Download File PDF
+    </a>
+
+    <p>
+      Pertama, bayangkan kamu memiliki sebuah situs web dan ingin melacak aktivitas pengguna, seperti saat mereka
+      mengklik tautan. Kamu ingin tahu berapa banyak orang yang mengunduh file dari situs webmu.
+
+      Nah, itulah saat kamu bisa menggunakan atribut ping. Misalnya, kamu memiliki tautan untuk mengunduh file PDF. Kamu
+      bisa menambahkan atribut ping ke tautan tersebut, dan setiap kali seseorang mengklik tautan itu, servermu akan
+      menerima pemberitahuan.
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="https://www.example.com" <b>referrerpolicy</b>="no-referrer">Visit Example.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol bagaimana informasi referer (referer header) dikirimkan ketika pengguna mengklik tautan
+      tersebut.
+    </p>
+
+    <p>
+      < a referrerpolicy="
+      no-referrer
+      no-referrer-when-downgrade
+      origin
+      origin-when-cross-origin
+      same-origin
+      strict-origin-when-cross-origin
+      unsafe-url
+      ">
+        < /a>
+    </p>
+
+    <a href="https://www.example.com" referrerpolicy="no-referrer">Visit Example.com</a>
+
+    <ol>
+      <li>no-referrer: Tidak mengirimkan referer header ketika pengguna mengklik tautan. Ini menjaga privasi pengguna,
+        tetapi mungkin mempengaruhi analisis situs web atau layanan yang bergantung pada informasi referer.</li>
+      <li>no-referrer-when-downgrade: Mengirimkan referer header jika protokol dari URL yang ditautkan lebih aman atau
+        sama dengan protokol yang digunakan pada halaman yang mengandung tautan. Jika protokolnya lebih tidak aman,
+        tidak akan ada referer yang dikirim.</li>
+      <li>origin: Mengirimkan hanya origin (domain) dari halaman yang mengandung tautan sebagai referer.</li>
+      <li>origin-when-cross-origin: Mengirimkan origin (domain) sebagai referer jika protokol, domain, dan port dari
+        halaman yang mengandung tautan sama dengan protokol, domain, dan port dari URL yang ditautkan. Jika tidak, tidak
+        ada referer yang dikirim.</li>
+      <li>unsafe-url: Mengirimkan referer header dengan lengkap, termasuk seluruh URL, bahkan jika berpotensi
+        membocorkan informasi sensitif.</li>
+      <li>same-origin: Mengirimkan referer hanya jika protokol, domain, dan port dari halaman yang mengandung tautan
+        sama dengan protokol, domain, dan port dari URL yang ditautkan. Jika tidak, tidak akan ada referer yang dikirim.
+      </li>
+      <li>strict-origin: Mengirimkan origin (domain) sebagai referer jika protokol, domain, dan port dari halaman yang
+        mengandung tautan sama dengan protokol, domain, dan port dari URL yang ditautkan. Jika tidak, tidak ada referer
+        yang dikirim. Jika referer adalah URL yang sama sekali berbeda, hanya akan dikirimkan origin (domain).</li>
+      <li>strict-origin-when-cross-origin: Sama seperti strict-origin, tetapi jika halaman yang mengandung tautan dan
+        URL yang ditautkan tidak berbagi origin, hanya akan dikirimkan origin (domain) dari halaman yang mengandung
+        tautan.</li>
+      <li>no-referrer-when-downgrade: Mengirimkan referer hanya jika protokol dari URL yang ditautkan lebih aman atau
+        sama dengan protokol yang digunakan pada halaman yang mengandung tautan. Jika tidak, tidak akan ada referer yang
+        dikirim.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="https://www.example.com" <b>rel</b>="noopener">Visit Example.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan hubungan antara halaman yang mengandung tautan dan halaman yang ditautkan.
+    </p>
+
+    <p>
+      Memungkinkan Anda untuk menentukan hubungan antara halaman yang mengandung tautan dan halaman yang ditautkan,
+      serta memberikan kontrol tambahan terhadap keamanan dan privasi.
+    </p>
+
+    <a href="https://www.example.com" rel="noopener">Visit Example.com</a>
+
+    <ol>
+      <li>alternate: Tautan mengarah ke versi alternatif dari halaman yang ditautkan.</li>
+      <li>author: Tautan mengarah ke halaman yang dibuat oleh penulis atau entitas yang bertanggung jawab atas halaman
+        yang mengandung tautan.</li>
+      <li>bookmark: Tautan merupakan bookmark atau anchor ke lokasi tertentu dalam halaman yang ditautkan.</li>
+      <li>external: Tautan mengarah ke halaman eksternal atau luar situs web.</li>
+      <li>help: Tautan merupakan bantuan atau sumber daya bantuan yang relevan.</li>
+      <li>license: Tautan mengarah ke informasi lisensi atau izin yang berkaitan dengan halaman yang mengandung tautan.
+      </li>
+      <li>next: Tautan mengarah ke halaman berikutnya dalam serangkaian halaman yang terkait.</li>
+      <li>nofollow: Mencegah mesin pencari mengikuti tautan dan mengambil tautan ke dalam perhitungan peringkat.</li>
+      <li>noreferrer: Mencegah browser dari mengirimkan informasi referer ketika pengguna mengklik tautan.</li>
+      <li>noopener: Mencegah halaman yang ditautkan dari mengakses window.opener dari halaman yang membuka tautan.</li>
+      <li>prev: Tautan mengarah ke halaman sebelumnya dalam serangkaian halaman yang terkait.</li>
+      <li>search: Tautan mengarah ke halaman pencarian atau hasil pencarian yang terkait dengan halaman yang mengandung
+        tautan.</li>
+      <li>tag: Tautan mengarah ke halaman yang berisi informasi terkait tag atau kategori yang terkait dengan halaman
+        yang mengandung tautan.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="https://www.example.com" <b>target</b>="_blank">Visit Example.com< /a>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan di mana hasil navigasi akan ditampilkan ketika pengguna mengklik tautan.
+    </p>
+
+    <p>
+      Memungkinkan Anda untuk menentukan di mana hasil navigasi akan ditampilkan ketika pengguna mengklik tautan. Dengan
+      menggunakan nilai yang sesuai, Anda dapat mengontrol apakah halaman yang ditautkan akan dibuka di jendela atau tab
+      baru, atau dalam frame atau jendela yang sama.
+    </p>
+
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+    <ol>
+      <li>_blank: Halaman yang ditautkan akan dibuka di jendela atau tab browser baru.
+      </li>
+      <li>_self: Halaman yang ditautkan akan dibuka di frame atau jendela yang sama seperti halaman yang mengandung
+        tautan.</li>
+      <li>_parent: Halaman yang ditautkan akan dibuka di frame induk dari frame yang mengandung tautan.</li>
+      <li>_top: Halaman yang ditautkan akan dibuka di jendela penuh browser, menggantikan semua frame yang ada.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="example.mp4" <b>type</b>="video/mp4">Watch Example Video< /a>
+      </li>
+    </ul>
+
+    <p>
+      Atribut type tidak umum digunakan dalam elemen a>. Atribut ini biasanya digunakan dalam elemen seperti input> atau
+      button> untuk menentukan jenis konten yang ditampilkan atau jenis tindakan yang diambil oleh elemen tersebut.
+    </p>
+
+    <p>
+      Namun, jika kita ingin memberikan informasi tentang jenis media yang ditautkan oleh elemen a>, kita bisa
+      menggunakan atribut type dengan nilai media untuk menentukan jenis media. Ini berguna jika kita memiliki tautan
+      yang mengarah ke file media seperti gambar, audio, atau video.
+    </p>
+
+    <p>
+      Meskipun penggunaan atribut type seperti ini bukanlah praktik yang umum, itu bisa bermanfaat untuk memberikan
+      informasi tambahan kepada browser atau pengguna tentang jenis konten yang diharapkan dari tautan tersebut.
+    </p>
+
+    <a href="https://www.w3schools.com" type="text/html">W3Schools</a>
+
+    <br>
+
+    <a href="example.mp4" type="video/mp4">Watch Example Video</a>
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>

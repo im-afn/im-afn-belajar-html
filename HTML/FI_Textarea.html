@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Textarea</title>
+  <link rel="stylesheet" href="../CSS/style_textarea.css" />
+</head>
+
+<body>
+  <div class="textareabg">
+
+    <h1>Elemen Textarea</h1>
+
+    <p>
+      Digunakan untuk membuat bidang input teks multi-baris, di mana pengguna
+      dapat memasukkan jumlah teks yang besar.
+    </p>
+
+    <form>
+      <label for="pesan">Pesan:</label><br />
+      <textarea id="pesan" name="pesan" rows="4" cols="50"> Masukkan pesan Anda di sini...</textarea>
+      <br />
+      <input type="submit" value="Kirim" />
+    </form>
+
+    <hr />
+
+    <h2>Attribut Textarea</h2>
+
+    <ul>
+      <li>
+        < textarea id="pesan" name="pesan" rows="4" cols="50" <b> autofocus</b>>< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk membuat area teks tersebut secara otomatis mendapatkan
+      fokus saat halaman dimuat. Ini berarti ketika halaman dimuat, kursor
+      akan langsung berada di dalam area teks tersebut, sehingga pengguna
+      dapat langsung mulai mengetik tanpa harus mengklik area teks terlebih
+      dahulu.
+    </p>
+
+    <p>
+      Buka codingan untuk mengaktifkan autofokus karna ini saya nonaktifkan,
+      tambahkan s pada autofokus
+    </p>
+
+    <form>
+      <label for="pesan">Pesan:</label><br />
+      <textarea id="pesan" name="pesan" rows="4" cols="50" autofocu> </textarea><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="pesan" name="pesan" rows="4" <b>cols</b>="50">< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jumlah kolom teks yang akan ditampilkan secara horizontal di dalam area teks. Satu
+      kolom adalah sekitar lebar satu karakter.
+      <br><br>
+      Misalnya, jika Anda mengatur cols ke nilai 25, maka area teks akan memiliki lebar yang cukup untuk menampilkan
+      sekitar 25 karakter horizontal.
+    </p>
+
+    <form>
+      <label for="pesan">Pesan:</label><br>
+      <textarea id="pesan" name="pesan" rows="4" cols="25"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="pesan" name="pesan" rows="4" cols="50" <b>dirname</b>="ltr">< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      digunakan dalam konteks formulir untuk menentukan arah penulisan teks yang akan dimasukkan pengguna. Ini terutama
+      berguna dalam kasus formulir yang ditulis dari kanan ke kiri, seperti dalam bahasa Arab
+    </p>
+
+    <form>
+      <label for="pesan">Pesan:</label><br>
+      <textarea id="pesan" name="pesan" rows="4" cols="50" dirname="rtl"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b> disabled</b>>< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menonaktifkan interaksi dengan sebuah elemen, sehingga elemen tersebut tidak dapat diakses atau
+      dimodifikasi oleh pengguna. Ini sering digunakan untuk mengindikasikan bahwa sebuah elemen tidak aktif atau tidak
+      dapat digunakan dalam suatu konteks.
+    </p>
+
+    <form>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" disabled>This textarea is disabled.</textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < <b>form</b> action="/action_page.php" id="usrform">
+          < /<b>form</b>>
+      </li>
+    </ul>
+
+    <p>
+      Biasanya ditempatkan di dalam sebuah formulir menggunakan tagnya sendiri, dan nilai yang dimasukkan ke dalam
+      textarea secara default akan termasuk dalam data formulir ketika formulir tersebut dikirim.
+    </p>
+
+    <form action="/submit" method="post">
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b> maxlength</b>="100">< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk membatasi jumlah karakter yang dapat dimasukkan pengguna ke dalam area teks tersebut. Ini berguna
+      ketika Anda ingin membatasi panjang maksimum teks yang dimasukkan,
+    </p>
+
+    <form>
+      <label for="message">Message (max 100 characters):</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" maxlength="100"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" <b> name</b>="user_message" rows="4" cols="50">< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan nama (identifier) pada textarea tersebut.
+    </p>
+
+    <form action="/submit" method="post">
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="user_message" rows="4" cols="50"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b> placeholder</b>="Enter your message here..."> <
+            /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menampilkan teks placeholder (teks contoh) di dalam area teks. Ini memberikan petunjuk kepada
+      pengguna tentang jenis informasi yang diharapkan atau format yang diinginkan untuk dimasukkan ke dalam textarea.
+    </p>
+
+    <form>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"
+        placeholder="Enter your message here..."></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b>readonly</b> >This textarea is read-only.<
+            /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk membuat textarea hanya bisa dibaca dan tidak dapat diedit oleh pengguna. Ini berguna ketika Anda
+      ingin menampilkan teks yang tidak dapat diubah oleh pengguna, tetapi masih memungkinkan mereka untuk melihat
+      isinya.
+    </p>
+
+    <form>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" readonly>This textarea is read-only.</textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b> required </b> >< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menandai bahwa pengisian textarea tersebut wajib dilakukan sebelum formulir dapat dikirimkan. Ini
+      berguna untuk memastikan bahwa pengguna memberikan masukan yang diperlukan sebelum data formulir dikirimkan ke
+      server.
+    </p>
+
+    <form>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" <b> rows</b> ="8" cols="50">
+          < /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jumlah baris (tinggi) yang akan ditampilkan dalam area teks tersebut secara default.
+    </p>
+
+    <form>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="8" cols="50"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <ul>
+      <li>
+        < textarea id="message" name="message" rows="4" cols="50" <b>wrap</b> ="soft" / "hard">< /textarea>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan bagaimana teks dalam textarea akan dibungkus (wrap) saat melebihi lebar textarea
+      tersebut. Nilai dari atribut wrap dapat berupa "soft" atau "hard".
+    </p>
+    <p>
+      <b>Wrap Soft</b> (wrap="soft"): Saat menggunakan wrap="soft", teks dalam textarea akan terlihat seperti dibungkus
+      ke baris baru secara visual saat mencapai batas lebar textarea. Namun, secara logis, teks tersebut tetap dalam
+      satu baris. Ketika formulir dikirim, teks akan tetap dalam satu baris.
+    </p>
+    <p>
+      <b>Wrap Hard</b> (wrap="hard"): Saat menggunakan wrap="hard", teks dalam textarea akan dibagi secara logis ke
+      baris baru saat mencapai batas lebar textarea. Ketika formulir dikirim, setiap baris baru dalam textarea akan
+      dianggap sebagai entitas yang berbeda.
+    </p>
+
+    <form>
+      <label for="message">Message (soft wrap):</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" wrap="soft"></textarea><br><br>
+      <label for="notes">Notes (hard wrap):</label><br>
+      <textarea id="notes" name="notes" rows="4" cols="50" wrap="hard"></textarea><br><br>
+      <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+  </div>
+</body>
+
+</html>

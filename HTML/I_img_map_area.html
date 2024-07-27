@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>img map area</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element img</h1>
+
+    <p>
+      Dalam HTML digunakan untuk menyematkan gambar ke dalam halaman web.
+    </p>
+
+    <img src="../Gambar/img_girl.jpg" alt="Girl in a jacket" width="300" height="400">
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut alt</h2>
+
+    <ul>
+      <li>
+        < img src="gambar.jpg" <b>alt</b>="Deskripsi gambar" />
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan teks alternatif bagi gambar. Teks ini akan ditampilkan jika gambar tidak bisa dimuat
+      dan juga digunakan oleh pembaca layar untuk mendeskripsikan gambar bagi pengguna dengan gangguan penglihatan.
+    </p>
+
+    <img src="../Gambar/img_girl.jpg" alt="Girl in a jacket" width="300" height="400">
+
+    <p>
+      Coba rusak kan linknya maka akan terlihat alt nya deskripsi tentang gambar
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="gunung.jpg" alt="Pemandangan gunung" <b>height</b>="400" />
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tinggi gambar dalam piksel atau sebagai persentase dari elemen induknya.
+    </p>
+
+    <img src="../Gambar/img_girl.jpg" alt="Girl in a jacket" width="300" height="400">
+
+    <hr>
+
+    <ul>
+      <li>
+        < a href="http://example.com/process_click">
+          < img src="peta.jpg" alt="Peta Interaktif" <b>ismap</b> />
+            < /a>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk membuat gambar menjadi peta gambar server-side (server-side image map). Ini memungkinkan area
+      gambar untuk bertindak sebagai tautan yang mengirimkan koordinat klik ke server, di mana skrip server-side
+      kemudian dapat memproses koordinat ini untuk menentukan tindakan yang tepat.
+    </p>
+
+    <a href="/action_page.php">
+      <img src="../Gambar/w3html.gif" alt="W3Schools.com" width="100" height="132" ismap>
+    </a>
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="image.jpg" alt="Deskripsi" <b>loading</b>="lazy">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol perilaku pemuatan gambar di halaman web. Atribut ini membantu meningkatkan kinerja
+      halaman web dengan menunda pemuatan gambar yang berada di luar layar hingga pengguna menggulir mendekati mereka,
+      sebuah teknik yang dikenal sebagai pemuatan malas atau lazy loading.
+    </p>
+
+    <p>
+      Menggunakan loading="lazy" adalah strategi yang baik untuk mengoptimalkan kinerja halaman web dengan gambar banyak
+      atau besar. Ini membantu mengurangi waktu muat awal dan penggunaan data, memberikan pengalaman pengguna yang lebih
+      baik terutama pada perangkat dengan koneksi internet lambat.
+    </p>
+
+    <!-- Terlihat di ViewPort -->
+    <img src="../Gambar/wedding.jpg" alt="Wedding" style="width:100%">
+    <img src="../Gambar/rocks.jpg" alt="Rocks" style="width:100%">
+
+    <!--     Gambar di luar layar -->
+    <img src="../Gambar/paris.jpg" alt="Paris" style="width:100%" loading="lazy">
+    <img src="../Gambar/nature.jpg" alt="Nature" style="width:100%" loading="lazy">
+    <img src="../Gambar/underwater.jpg" alt="Underwater" style="width:100%" loading="lazy">
+    <img src="../Gambar/ocean.jpg" alt="Ocean" style="width:100%" loading="lazy">
+    <img src="../Gambar/mountainskies.jpg" alt="Mountains" style="width:100%" loading="lazy">
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="contoh.jpg" alt="Gambar Contoh" <b>longdesc</b> ="deskripsi-contoh.html">
+
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menyediakan URL yang menghubungkan ke deskripsi panjang sebuah gambar. Deskripsi panjang ini
+      menawarkan informasi tambahan tentang gambar bagi pengguna yang mungkin memerlukan konteks lebih lanjut, seperti
+      pengguna yang menggunakan pembaca layar atau teknologi bantu lainnya.
+    </p>
+
+    <p>
+      Atribut longdesc pada elemen < img> memungkinkan Anda untuk menautkan ke halaman web mana pun yang berisi
+        deskripsi panjang tentang gambar tersebut. Ini memberikan fleksibilitas dalam menentukan di mana deskripsi
+        panjang gambar tersebut akan ditemukan.
+    </p>
+
+    <!-- Deskripsi ada di halaman yang sama dengan gambar -->
+    <img src="../Gambar/w3html.gif" alt="W3Schools.com" width="100" height="132" longdesc="#w3htmlExplained">
+
+    <!-- Deskripsi ada di halaman eksternal -->
+    <img src="../Gambar/w3html.gif" alt="W3Schools.com" width="100" height="132" longdesc="w3html.txt">
+
+    <!-- Deskripsi adalah salah satu dari beberapa dalam halaman eksternal-->
+    <img src="../Gambar/w3html.gif" alt="W3Schools.com" width="100" height="132"
+      longdesc="http://example.com/desc#item3">
+
+    <!-- Deskripsi disertakan dalam data:URI -->
+    <img src="../Gambar/w3html.gif" alt="W3Schools.com" width="100" height="132"
+      longdesc="data:text/html;charset=utf-8;,%3C!DOCTYPE%20html%3E%3Chtml%3E%3Chead%3E%3Ctitle%3EDescription%20of%20the%20Logo%3C/title%3E%3C/head%3E%3Cbody%3E%3Cp%3ESome%20description%20goes%20here%3C/body%3E%3C/html%3E">
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="gambar.jpg" alt="Deskripsi" <b>referrerpolicy</b>="no-referrer">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol bagaimana informasi referer (referrer) dikirimkan saat mengambil gambar. Referrer
+      adalah URL dari halaman web yang mengarah ke sumber daya yang diminta.
+    </p>
+
+    <p>
+      Berguna untuk mengontrol pertimbangan privasi dan keamanan terkait pengiriman informasi referer saat mengambil
+      gambar. Misalnya, Anda mungkin ingin mencegah URL referer dikirimkan ke server pihak ketiga untuk alasan privasi,
+      atau untuk memastikan bahwa informasi sensitif tidak secara tidak sengaja bocor.
+    </p>
+
+    <ol>
+      <li>no-referrer: URL referer tidak akan dikirim.</li>
+      <li>no-referrer-when-downgrade: URL referer akan dikirim kecuali jika terjadi penurunan dari HTTPS ke HTTP.</li>
+      <li>origin: Hanya kirim asal (domain) dari URL referer.</li>
+      <li>origin-when-cross-origin: Kirim URL referer lengkap jika dari asal yang sama, tetapi hanya asal untuk
+        permintaan lintas asal.</li>
+      <li>same-origin: Kirim URL referer lengkap untuk permintaan dari asal yang sama, tetapi tidak ada referer untuk
+        permintaan lintas asal.</li>
+      <li>strict-origin: Kirim asal (domain) dari URL referer untuk permintaan dari asal yang sama, dan tidak ada
+        referer untuk permintaan lintas asal.</li>
+      <li>strict-origin-when-cross-origin: Kirim asal (domain) dari URL referer untuk permintaan dari asal yang sama,
+        dan URL referer lengkap untuk permintaan lintas asal.</li>
+      <li>unsafe-url: Selalu kirim URL referer lengkap.</li>
+    </ol>
+
+    <img src="../Gambar/mountainskies.jpg" alt="Gambar Contoh" width="300" height="150" referrerpolicy="no-referrer">
+
+    <hr>
+
+    <ul>
+      <li>
+        < img <b> src</b>="gambar.jpg" alt="Deskripsi">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan lokasi (URL) dari file gambar yang akan dimuat. Ini mengindikasikan alamat dari file
+      gambar yang akan ditampilkan di halaman web.
+    </p>
+
+    <img src="../Gambar/img_girl.jpg" alt="Girl in a jacket" width="500" height="600">
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="gambar.jpg" alt="Deskripsi" <b>usemap</b>="#mapname">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan sebuah peta gambar (image map) yang akan digunakan untuk menjadikan beberapa area di
+      dalam gambar dapat di klik atau diinteraksi dengan cara lain.
+    </p>
+
+    <img src="../Gambar/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <p>
+      Klik pada komputer, telepon, atau secangkir kopi untuk pergi ke halaman baru dan membaca lebih lanjut tentang
+      topik tersebut:
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < img src="gambar.jpg" alt="Deskripsi" <b> width</b>="300">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan lebar gambar dalam piksel (pixel). Ini memungkinkan Anda untuk mengendalikan ukuran
+      gambar yang ditampilkan di halaman web.
+    </p>
+
+    <p>
+      Atribut width digunakan untuk mengontrol ukuran gambar secara langsung di dalam elemen HTML tanpa menggunakan CSS.
+      <br><br>
+      Ini membantu dalam mengoptimalkan tata letak halaman web, karena Anda dapat memastikan bahwa gambar memiliki
+      ukuran yang tepat sesuai dengan desain.
+    </p>
+
+    <p>
+      Jika hanya atribut width yang disetel tanpa atribut height, gambar akan menyesuaikan proporsinya secara otomatis
+      agar tidak terdistorsi.
+    </p>
+
+    <img src="../Gambar/nature.jpg" alt="Deskripsi" width="300">
+
+    <br><br>
+
+    <hr>
+
+    <h1>Element map</h1>
+
+    <p>
+      Digunakan untuk mendefinisikan sebuah peta gambar (image map) yang berisi area-area interaktif di dalam gambar
+      yang terhubung dengan tindakan atau hyperlink tertentu.
+    </p>
+
+    <img src="../Gambar/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <br>
+    <div>
+      <b>map</b> ="mapname"><br>
+      < area shape="rect" coords="0,0,50,50" href="link1.html" alt="Area 1"><br>
+        < /<b>map</b>>
+
+          <h2>Attribut map</h2>
+
+          < map <b>name</b>="mapname"><br>
+            < area shape="rect" coords="0,0,50,50" href="link1.html" alt="Area 1"><br>
+              < /map>
+    </div>
+    <br><br>
+
+    <hr>
+
+    <h1>Element area</h1>
+
+    <p>
+      Digunakan dalam konteks peta gambar (image map) untuk menentukan area yang dapat di klik atau diinteraksi dengan
+      cara lain di dalam gambar.
+    </p>
+
+    <img src="../Gambar/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <p>
+      < <b>area</b> shape="rect" coords="0,0,50,50" href="link1.html" alt="Area 1">
+    </p>
+
+
+    <hr>
+
+    <h2>Attribut area</h2>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,82,126" <b>alt</b>="Sun" href="sun.htm">
+      </li>
+    </ul>
+
+    <p>
+      Dalam tag HTML area, atribut alt tidak digunakan seperti yang biasanya ditemukan dalam tag img.
+
+      Atribut alt digunakan untuk memberikan teks alternatif yang akan ditampilkan ketika gambar tidak dapat dimuat
+      atau
+      untuk memberikan informasi tambahan kepada pengguna yang menggunakan pembaca layar. Namun, karena tag area
+      tidak
+      memiliki konten visual sendiri, melainkan hanya mendefinisikan area di dalam peta gambar (image map),
+      penggunaan
+      atribut alt menjadi tidak relevan.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+
+    <p>
+      Klik pada matahari atau di salah satu planet untuk melihatnya lebih dekat:
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" <b>coords</b>="0,0,50,50" href="link1.html" alt="Area 1">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan koordinat area di dalam peta gambar (image map). Koordinat ini menentukan lokasi dan
+      bentuk area yang akan diinteraksi dengan pengguna.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+
+    <p>
+      Klik pada matahari atau di salah satu planet untuk melihatnya lebih dekat:
+    </p>
+
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,82,126" alt="Sun" href="information_about_the_sun.htm" <b>download</b>>
+      </li>
+    </ul>
+
+    <p>
+      Atribut download dalam tag HTML area tidak umum digunakan, karena area biasanya digunakan untuk mendefinisikan
+      area
+      di dalam peta gambar (image map) yang dihubungkan dengan tautan atau hyperlink tertentu. Atribut download lebih
+      umum
+      digunakan dalam tag a (anchor) untuk mengindikasikan bahwa saat tautan tersebut diklik, sumber daya yang ditautkan
+      harus diunduh oleh pengguna, bukan ditampilkan di browser.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="information_about_the_sun.htm" download>
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="merglobe.gif" download>
+      <area shape="circle" coords="124,58,8" alt="Venus" href="information_about_the_planet_venus.txt" download>
+    </map>
+
+    <p>
+      Klik pada matahari atau di salah satu planet untuk melihatnya lebih dekat:
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,50,50" <b>href</b>="halaman.html" alt="Area 1">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan URL atau tindakan yang akan dijalankan saat area tersebut diklik. Ini memungkinkan
+      pengguna untuk berpindah ke halaman web lain atau menjalankan skrip JavaScript ketika area di dalam peta gambar
+      (image map) diklik.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="information_about_the_sun.htm" download>
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="merglobe.gif" download>
+      <area shape="circle" coords="124,58,8" alt="Venus" href="information_about_the_planet_venus.txt" download>
+    </map>
+
+    <p>
+      Klik pada matahari atau di salah satu planet untuk melihatnya lebih dekat:
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,50,50" href="halaman.html" <b>hreflang</b>="id" alt="Area 1">
+      </li>
+    </ul>
+
+    <p>
+      Menentukan bahasa dari halaman web yang ditautkan saat area tersebut di klik dalam peta gambar (image map). Ini
+      membantu mesin pencari dan peramban untuk menafsirkan konten yang ditautkan dengan benar berdasarkan bahasa yang
+      dipilih.
+    </p>
+
+    <p>
+      Pastikan untuk menggunakan kode bahasa yang valid sesuai dengan standar ISO 639 untuk nilai atribut hreflang.
+      <br><br>
+      Penggunaan atribut hreflang tidak mempengaruhi perilaku area di dalam peta gambar, tetapi membantu dalam
+      menafsirkan konten yang ditautkan oleh mesin pencari dan peramban.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" hreflang="en">
+    </map>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" <b>media</b>="screen and
+          (min-color-index:256)">
+      </li>
+    </ul>
+
+    <p>
+      Atribut media dalam tag HTML area digunakan untuk menentukan kondisi media yang harus dipenuhi agar tautan di
+      dalam area tersebut dapat diakses oleh pengguna. Namun, penting untuk dicatat bahwa atribut media umumnya
+      digunakan dalam tag
+      link untuk menentukan stylesheet yang berhubungan dengan dokumen.
+
+      Pada dasarnya, atribut media dalam tag area mungkin tidak akan memiliki pengaruh karena area di dalam peta
+      gambar (image map) tidak memiliki konten visual sendiri. Atribut ini lebih cocok digunakan untuk menautkan dengan
+      sumber daya seperti stylesheet.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" media="screen and (min-color-index:256)">
+    </map>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus" <b>referrerpolicy</b>="same-origin">
+      </li>
+    </ul>
+
+    <p>
+      Atribut referrerpolicy dalam tag HTML area tidak umum digunakan, karena area di dalam peta gambar (image map)
+      biasanya digunakan untuk menentukan area yang dapat di klik atau diinteraksi dengan pengguna.
+
+      Atribut referrerpolicy biasanya digunakan dalam tag seperti a (anchor) atau img untuk mengontrol bagaimana
+      informasi referer (referrer) dikirimkan saat sumber daya yang ditautkan diakses. Ini memengaruhi perilaku
+      referrer ketika pengguna mengklik tautan atau mengakses sumber daya tertentu.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" referrerpolicy="same-origin">
+      <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury" referrerpolicy="same-origin">
+      <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus" referrerpolicy="same-origin">
+    </map>
+
+    <ol>
+      <li>no-referrer: URL referer tidak akan dikirim.</li>
+      <li>no-referrer-when-downgrade: URL referer akan dikirim kecuali jika terjadi penurunan dari HTTPS ke HTTP.</li>
+      <li>origin: Hanya kirim asal (domain) dari URL referer.</li>
+      <li>origin-when-cross-origin: Kirim URL referer lengkap jika dari asal yang sama, tetapi hanya asal untuk
+        permintaan lintas asal.</li>
+      <li>same-origin: Kirim URL referer lengkap untuk permintaan dari asal yang sama, tetapi tidak ada referer untuk
+        permintaan lintas asal.</li>
+      <li>strict-origin: Kirim asal (domain) dari URL referer untuk permintaan dari asal yang sama, dan tidak ada
+        referer untuk permintaan lintas asal.</li>
+      <li>strict-origin-when-cross-origin: Kirim asal (domain) dari URL referer untuk permintaan dari asal yang sama,
+        dan URL referer lengkap untuk permintaan lintas asal.</li>
+      <li>unsafe-url: Selalu kirim URL referer lengkap.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" <b>rel</b>="alternate">
+      </li>
+    </ul>
+
+    <p>
+      Atribut rel dalam tag HTML area menentukan hubungan antara halaman saat ini dan halaman atau sumber daya yang
+      ditautkan. Namun, perlu dicatat bahwa atribut rel umumnya digunakan dalam tag seperti a (anchor) atau link untuk
+      menentukan hubungan seperti "nofollow", "noopener", atau "noreferrer".
+
+      Dalam konteks tag area, penggunaan atribut rel mungkin kurang relevan karena area tersebut tidak langsung mengacu
+      pada sumber daya eksternal yang memerlukan atribut rel untuk mengontrol perilaku tautan.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" rel="alternate">
+    </map>
+
+    <ol>
+      <li>alternate: Menunjukkan bahwa tautan merujuk pada versi alternatif dari halaman saat ini.</li>
+      <li>stylesheet: Menunjukkan bahwa tautan merujuk pada sebuah stylesheet (lembar gaya) untuk dokumen saat ini.</li>
+      <li>nofollow: Menunjukkan bahwa mesin pencari tidak harus mengikuti tautan.</li>
+      <li>noopener: Menunjukkan bahwa tautan harus membuka halaman yang ditautkan dalam konteks browsing yang terpisah.
+      </li>
+      <li>noreferrer: Menunjukkan bahwa saat mengikuti tautan, referer tidak boleh dikirimkan kepada halaman yang
+        ditautkan.</li>
+      <li>canonical: Menunjukkan bahwa halaman saat ini adalah versi utama atau asli dari halaman yang sama atau serupa.
+      </li>
+      <li>author: Menunjukkan bahwa halaman saat ini adalah halaman yang ditulis oleh penulis yang ditautkan.</li>
+      <li>prev dan next: Menunjukkan urutan halaman dalam suatu rangkaian, seperti halaman sebelumnya dan halaman
+        berikutnya dalam serangkaian halaman.</li>
+      <li>first dan last: Menunjukkan halaman pertama dan halaman terakhir dalam suatu kumpulan halaman.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area <b>shape</b>="rect" coords="0,0,50,50" href="link1.html" alt="Area 1">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan bentuk dari area yang akan diinteraksi di dalam peta gambar (image map). Bentuk ini
+      menentukan bagaimana area tersebut akan dipetakan pada gambar.
+    </p>
+
+    <p>
+      Dengan menggunakan atribut shape, Anda dapat menentukan bentuk dari area yang akan diinteraksi di dalam peta
+      gambar, memberikan kontrol yang lebih tepat terhadap interaksi pengguna dengan gambar.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map id="planetmap" name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="poly" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+
+    <ol>
+      <li>rect (persegi panjang):
+
+        Bentuk ini memungkinkan Anda untuk menentukan area sebagai persegi panjang dengan menggunakan empat koordinat:
+        koordinat kiri atas (x1, y1) dan koordinat kanan bawah (x2, y2).</li>
+      <li>circle (lingkaran):
+
+        Bentuk ini memungkinkan Anda untuk menentukan area sebagai lingkaran dengan menggunakan tiga koordinat:
+        koordinat pusat (x, y) dan jari-jari lingkaran (r).
+      </li>
+      <li>poly (poligon):
+
+        Bentuk ini memungkinkan Anda untuk menentukan area sebagai poligon dengan menggunakan lebih dari tiga koordinat,
+        yang menentukan titik-titik sudut poligon.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,50,50" href="halaman.html" <b>target</b>="_blank" alt="Area 1">
+      </li>
+    </ul>
+
+    <p>
+      Menentukan di mana halaman atau sumber daya yang ditautkan harus dibuka saat area tersebut di klik.
+    </p>
+
+    <p>
+      Dengan menggunakan atribut target, Anda dapat mengontrol perilaku navigasi saat area di dalam peta gambar diklik,
+      memberikan pengguna opsi untuk membuka tautan dalam tab atau jendela baru jika diinginkan.
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" target="_blank">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+
+    <ol>
+      <li>_blank: Membuka tautan dalam tab atau jendela baru.</li>
+      <li>_self: Membuka tautan di tab atau jendela yang sama.</li>
+      <li>_parent: Membuka tautan di bingkai induk dari bingkai tempat tautan itu berada.</li>
+      <li>_top: Membuka tautan di jendela penuh, menggantikan seluruh halaman.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" <b>type</b>="rect">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tipe area dalam peta gambar (image map). Atribut ini digunakan khususnya saat shape
+      memiliki nilai circle atau rect
+    </p>
+
+    <img src="../Gambar/planets.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+
+    <map name="planetmap">
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="/images/sun.gif" type="image/gif">
+    </map>
+
+  </div>
+
+</body>
+
+</html>

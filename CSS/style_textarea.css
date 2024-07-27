@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.textareabg {
+  background-color: rgb(226, 255, 219);
+  padding: 2rem;
+}
+

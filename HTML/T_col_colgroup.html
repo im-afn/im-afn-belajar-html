@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>col colgroup</title>
+  <link rel="stylesheet" href="../CSS/style_col_colgroup.css">
+</head>
+
+<body>
+
+  <h1>Element col</h1>
+
+  <p>
+    Elemen col> dalam HTML digunakan untuk menentukan properti kolom dalam tabel. Elemen ini ditempatkan di dalam elemen
+    colgroup> dan membantu dalam menetapkan gaya dan atribut khusus untuk satu atau lebih kolom dalam tabel.
+  </p>
+
+  <table border="1">
+    <colgroup>
+      <col class="col-1">
+      <col class="col-2">
+      <col class="col-3">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+
+  <table border="1">
+    <colgroup>
+      <col span="3" class="col-all">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <p>
+    Tujuan: Mengatur properti (seperti warna, lebar, atau gaya) untuk seluruh kolom dalam tabel.
+    <br><br>
+    Penempatan: Harus berada di dalam elemen colgroup>, yang pada gilirannya berada di dalam elemen table>.
+  </p>
+
+  <table border="1">
+    <colgroup>
+      <col span="2" class="col-all">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Dengan elemen col> dan colgroup>, Anda dapat dengan mudah mengatur gaya dan atribut kolom dalam tabel, membuat kode
+    lebih bersih dan lebih mudah dikelola.
+  </p>
+
+  <br><br>
+
+  <hr>
+
+  <h2>Attribut col</h2>
+
+  <ul>
+    <li>
+      < col <b>span</b>="2" class="col-span">
+    </li>
+  </ul>
+
+  <p>
+    Atribut span pada elemen col> digunakan untuk menetapkan jumlah kolom yang akan dipengaruhi oleh gaya atau properti
+    yang ditentukan pada elemen col>. Ini sangat berguna ketika Anda ingin menerapkan gaya yang sama pada beberapa kolom
+    dalam tabel sekaligus.
+  </p>
+
+  <table border="1">
+    <colgroup>
+      <col span="2" class="col-span">
+      <col class="col-unique">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <hr>
+
+  <h1>Element colgroup</h1>
+
+  <p>
+    Tag colgroup> dalam HTML digunakan untuk mengelompokkan elemen col> dalam tabel, yang memungkinkan Anda untuk
+    menerapkan gaya atau atribut ke seluruh kolom dalam kelompok tersebut. Elemen colgroup> ditempatkan langsung di
+    dalam tag table> dan sebelum elemen-elemen seperti thead>, tbody>, atau tfoot>.
+  </p>
+
+  <table border="1">
+    <colgroup>
+      <col class="col1">
+      <col class="col2">
+      <col class="col3">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Tag colgroup> digunakan untuk mengelompokkan kolom dalam tabel dan menerapkan gaya atau atribut ke seluruh kolom
+    dalam kelompok tersebut.
+    <br><br>
+    Elemen col> di dalam colgroup> digunakan untuk menetapkan gaya atau atribut ke kolom tertentu.
+    <br><br>
+    Atribut span pada elemen col> memungkinkan Anda untuk menerapkan gaya ke beberapa kolom sekaligus, membuat kode
+    lebih efisien dan mudah dikelola.
+  </p>
+
+  <br>
+
+  <hr>
+
+  <h2>Attribut colgroup</h2>
+
+  <ul>
+    <li>
+      < colgroup <b>span</b>="2" class="colgroup-span-2">< /colgroup>
+    </li>
+  </ul>
+
+  <p>
+    Atribut span pada elemen colgroup> digunakan untuk menentukan berapa banyak kolom yang akan dipengaruhi oleh grup
+    kolom tersebut. Ini berguna ketika Anda ingin mengelompokkan beberapa kolom dan menerapkan atribut atau gaya
+    tertentu pada mereka sekaligus, tanpa harus mendefinisikan masing-masing kolom secara terpisah.
+  </p>
+
+  <table border="1" class="tab1">
+    <colgroup span="2" class="colgroup-span-2"></colgroup>
+    <colgroup span="3" class="colgroup-span-3"></colgroup>
+    <thead>
+      <tr>
+        <th>Nama</th>
+        <th>Usia</th>
+        <th>Posisi</th>
+        <th>Departemen</th>
+        <th>Kota</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>30</td>
+        <td>Manajer</td>
+        <td>Keuangan</td>
+        <td>Jakarta</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>25</td>
+        <td>Pengembang</td>
+        <td>IT</td>
+        <td>Bandung</td>
+      </tr>
+      <tr>
+        <td>Mark Taylor</td>
+        <td>28</td>
+        <td>Desainer</td>
+        <td>Marketing</td>
+        <td>Surabaya</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Atribut span pada elemen colgroup> sangat berguna untuk mengelompokkan beberapa kolom dalam tabel dan menerapkan
+    gaya atau atribut yang sama pada mereka. Ini mempermudah penerapan gaya yang konsisten dan efisien, terutama dalam
+    tabel yang kompleks dengan banyak kolom.
+  </p>
+
+</body>
+
+</html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List</title>
+  <link rel="stylesheet" href="../CSS/style_list.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element menu</h1>
+
+    <p>
+      digunakan untuk mendefinisikan daftar atau menu. Dalam HTML5, elemen ini dapat digunakan untuk membuat konteks
+      menu (seperti menu konteks klik kanan), menu untuk aplikasi, atau daftar tugas. Meskipun demikian, penggunaan
+      elemen menu> tidak terlalu umum dibandingkan dengan elemen lain seperti ul> atau nav>.
+    </p>
+
+    <p>
+      <<b> menu</b>> <br>
+        < li>Coffee
+          < li /> <br>
+          < li>Tea
+            < li /> <br>
+            < li>Milk
+              < li /> <br>
+              < /<b> menu</b>>
+    </p>
+
+    <menu>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </menu>
+
+    <p>
+      Elemen menu> dalam HTML dapat digunakan untuk membuat berbagai jenis menu dan daftar, baik itu untuk aplikasi,
+      menu kontekstual, atau daftar tugas. Meskipun tidak sering digunakan, elemen ini memiliki kegunaan khusus dalam
+      konteks yang tepat. Untuk daftar navigasi umum, elemen
+      ul> atau nav> lebih sering digunakan dan lebih didukung oleh berbagai alat dan perangkat.
+    </p>
+
+    <hr>
+
+    <h1>Element ul</h1>
+
+    <p>
+      Elemen ul> dalam HTML digunakan untuk membuat daftar tidak terurut (unordered list), di mana item dalam daftar
+      biasanya ditandai dengan bullet points atau simbol lainnya. Elemen ini berguna untuk menampilkan informasi dalam
+      bentuk daftar yang tidak memerlukan urutan tertentu.
+    </p>
+
+    <p>
+      Elemen ul> digunakan bersama dengan elemen li> (list item) untuk membuat daftar. Setiap item dalam daftar
+      ditempatkan di dalam elemen li>
+    </p>
+
+    <p>
+      <<b>ul</b>> <br>
+        < li>Apples
+          < li /> <br>
+          < li>Bananas
+            < li /> <br>
+            < li>Carrots
+              < li /> <br>
+              < li>Bread
+                < li /> <br>
+                < /<b>ul</b>>
+    </p>
+
+    <ul>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Carrots</li>
+      <li>Bread</li>
+    </ul>
+
+    <ul>
+      <li>Fruits
+        <ul>
+          <li>Apples</li>
+          <li>Bananas</li>
+          <li>Oranges</li>
+        </ul>
+      </li>
+      <li>Vegetables
+        <ul>
+          <li>Carrots</li>
+          <li>Broccoli</li>
+          <li>Spinach</li>
+        </ul>
+      </li>
+      <li>Bread</li>
+      <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:circle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:disc">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <ul style="list-style-type:square">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+
+    <p>
+      disc (default): Bulat penuh. <br>
+      circle: Bulat kosong. <br>
+      square: Kotak. <br>
+      none: Tanpa bullet points. <br>
+    </p>
+
+    <hr>
+
+    <h1>Element ol</h1>
+
+    <p>
+      lemen ol> dalam HTML digunakan untuk membuat daftar terurut (ordered list), di mana item dalam daftar ditandai
+      dengan angka atau huruf, menunjukkan urutan atau rangkaian tertentu. Elemen ini cocok digunakan ketika urutan item
+      penting atau ketika Anda ingin membuat daftar langkah-langkah.
+    </p>
+
+    <p>
+      Elemen ol> digunakan bersama dengan elemen li> (list item) untuk membuat daftar. Setiap item dalam daftar
+      ditempatkan di dalam elemen li>
+    </p>
+
+    <b>langkah-langkah membuat sandwich</b>
+    <ol>
+      <li>Kumpulkan semua bahan.</li>
+      <li>Oleskan mustard pada satu sisi roti.</li>
+      <li>Letakkan daging kalkun di atas roti yang sudah diolesi mustard.</li>
+      <li>Tambahkan selada dan tomat di atas daging kalkun.</li>
+      <li>Tutup dengan irisan roti yang lain.</li>
+    </ol>
+
+    <b>Rencana proyek</b>
+    <ol>
+      <li>Menentukan Ruang Lingkup Proyek
+        <ol>
+          <li>Identifikasi tujuan</li>
+          <li>Tentukan deliverable</li>
+          <li>Tetapkan jadwal</li>
+        </ol>
+      </li>
+      <li>Merakit Tim</li>
+      <li>Menetapkan Tugas</li>
+      <li>Memantau Kemajuan</li>
+      <li>Menyerahkan Proyek</li>
+    </ol>
+
+    <b>langkah-langkah membuat sandwich</b>
+    <ol type="A">
+      <li>Kumpulkan semua bahan.</li>
+      <li>Oleskan mustard pada satu sisi roti.</li>
+      <li>Letakkan daging kalkun di atas roti yang sudah diolesi mustard.</li>
+      <li>Tambahkan selada dan tomat di atas daging kalkun.</li>
+      <li>Tutup dengan irisan roti yang lain.</li>
+    </ol>
+
+    <p>
+      Elemen ol> digunakan untuk membuat daftar terurut yang cocok untuk langkah-langkah atau urutan tertentu. Dengan
+      elemen ol> dan li>, Anda bisa menyusun informasi dalam bentuk daftar yang jelas dan terstruktur. Atribut type dan
+      CSS memungkinkan penyesuaian gaya penomoran sesuai kebutuhan.
+    </p>
+
+    <br>
+
+    <hr>
+
+    <h2>Attribut ol</h2>
+
+    <ul>
+      <li>
+        < ol <b>reversed</b>><br>
+          < li>
+            < /li> <br>
+              < /ol>
+      </li>
+    </ul>
+
+    <p>
+      Atribut reversed pada elemen ol> dalam HTML digunakan untuk menampilkan daftar terurut dalam urutan terbalik.
+      Artinya, jika biasanya item dalam daftar ditampilkan dari 1 hingga n, dengan atribut reversed, item akan
+      ditampilkan dari n hingga 1.
+    </p>
+
+    <b>langkah-langkah membuat sandwich</b>
+    <ol reversed>
+      <li>Tutup dengan irisan roti yang lain.</li>
+      <li>Tambahkan selada dan tomat di atas daging kalkun.</li>
+      <li>Letakkan daging kalkun di atas roti yang sudah diolesi mustard.</li>
+      <li>Oleskan mustard pada satu sisi roti.</li>
+      <li>Kumpulkan semua bahan.</li>
+    </ol>
+
+    <p>
+      Atribut reversed pada elemen ol> berguna untuk menampilkan daftar terurut dalam urutan terbalik. Ini bisa sangat
+      berguna untuk menampilkan langkah-langkah atau item dalam urutan mundur. Anda juga bisa mengkombinasikan atribut
+      reversed dengan atribut start untuk menentukan nomor awal daftar terbalik.
+    </p>
+
+    <hr>
+
+    <ul>
+      <li>
+        < ol <b> start</b>="50"> <br>
+          < li>Coffee
+            < li /> <br>
+            < li>Tea
+              < li /> <br>
+              < li>Milk
+                < li /> <br>
+                < /ol>
+      </li>
+    </ul>
+
+    <p>
+      Atribut start pada elemen ol> dalam HTML digunakan untuk menentukan nomor awal dari daftar terurut. Dengan
+      menggunakan atribut start, Anda dapat menetapkan nomor awal yang berbeda daripada nomor default yang dimulai dari
+      1.
+    </p>
+
+    <p>
+      Atribut start pada elemen ol> berguna untuk menentukan nomor awal dari daftar terurut. Ini memungkinkan Anda untuk
+      memulai daftar dari nomor yang berbeda sesuai kebutuhan Anda. Atribut start dapat digunakan sendiri atau dalam
+      kombinasi dengan atribut reversed untuk menyesuaikan nomor awal dan urutan daftar.
+    </p>
+
+    <b>langkah-langkah membuat sandwich</b>
+    <ol start="5">
+      <li>Tambahkan selada dan tomat di atas daging kalkun.</li>
+      <li>Tutup dengan irisan roti yang lain.</li>
+    </ol>
+
+    <b>langkah-langkah membuat sandwich</b>
+    <ol start="5" reversed>
+      <li>Tambahkan selada dan tomat di atas daging kalkun.</li>
+      <li>Tutup dengan irisan roti yang lain.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < ol <b>type</b>="I"> <br>
+          < li>Coffee< /li> <br>
+              < li>Tea< /li> <br>
+                  < li>Milk< /li> <br>
+                      < /ol>
+      </li>
+    </ul>
+
+    <p>
+      Atribut type pada elemen ol> dalam HTML digunakan untuk menentukan jenis penomoran yang akan digunakan dalam
+      daftar terurut. Jenis penomoran ini bisa berupa angka, huruf, atau angka Romawi.
+    </p>
+
+    <ul>
+      <li>1: Angka (default)</li>
+      <li>A: Huruf besar</li>
+      <li>a: Huruf kecil</li>
+      <li>I: Angka Romawi besar</li>
+      <li>i: Angka Romawi kecil</li>
+    </ul>
+
+    <b>Steps to Make a Sandwich (Roman Numerals)</b>
+    <ol type="I">
+      <li>Gather all ingredients.</li>
+      <li>Spread mustard on one slice of bread.</li>
+      <li>Place the turkey on the mustard-covered bread.</li>
+      <li>Put lettuce and tomato on top of the turkey.</li>
+      <li>Cover with the second slice of bread.</li>
+    </ol>
+
+    <p>
+      Atribut type pada elemen ol> memungkinkan Anda untuk menentukan jenis penomoran yang akan digunakan dalam daftar
+      terurut. Dengan menggunakan atribut ini, Anda dapat menyesuaikan tampilan daftar sesuai kebutuhan, baik itu
+      menggunakan angka, huruf, atau angka Romawi.
+    </p>
+
+    <hr>
+
+    <h1>Element li</h1>
+
+    <p>
+      Elemen li> dalam HTML digunakan untuk menandai setiap item dalam sebuah daftar, baik itu daftar terurut (ol>) atau
+      daftar tidak terurut (ul>). Elemen ini merupakan singkatan dari "list item".
+    </p>
+
+    <p>
+      Elemen Sli> dapat menggunakan semua atribut global HTML, seperti class, id, dan style, serta atribut lainnya yang
+      relevan dengan konteks penggunaannya.
+    </p>
+
+    <b>Important Tasks</b>
+    <ul>
+      <li class="highlight">Finish report</li>
+      <li>Attend meeting</li>
+      <li class="highlight">Call client</li>
+    </ul>
+
+    <p>
+      Elemen li> digunakan untuk menandai setiap item dalam daftar, baik itu daftar terurut atau tidak terurut. Anda
+      dapat menggunakan elemen ini bersama dengan atribut dan gaya CSS untuk menyesuaikan tampilan dan perilaku
+      item-item dalam daftar sesuai kebutuhan.
+    </p>
+
+    <ol>
+      <li>Gather all ingredients.</li>
+      <li>Spread mustard on one slice of bread.</li>
+      <li>Place the turkey on the mustard-covered bread.</li>
+      <li>Put lettuce and tomato on top of the turkey.</li>
+      <li>Cover with the second slice of bread.</li>
+    </ol>
+
+    <ul>
+      <li>Apples</li>
+      <li>Bananas</li>
+      <li>Carrots</li>
+      <li>Bread</li>
+    </ul>
+
+    <hr>
+
+    <h1>Element dl</h1>
+
+    <p>
+      Elemen dl> dalam HTML digunakan untuk membuat daftar deskripsi atau definisi. Dalam sebuah dl>, setiap elemen dt>
+      (Definition Term) digunakan untuk menandai kata yang didefinisikan, sedangkan setiap elemen dd> (Definition
+      Description) digunakan untuk menuliskan definisi dari kata tersebut.
+    </p>
+
+    <ul>
+      <li>
+        < dl>: Memulai daftar deskripsi.
+      </li>
+      <li>
+        < dt>: Mendefinisikan istilah yang akan dijelaskan.
+      </li>
+      <li>
+        < dd>: Memberikan definisi atau deskripsi dari istilah yang didefinisikan sebelumnya.
+      </li>
+    </ul>
+
+    <b>Glossary</b>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JavaScript</dt>
+      <dd>A programming language that adds interactivity to websites.</dd>
+    </dl>
+
+    <hr>
+
+    <h1>Element dt</h1>
+
+    <p>
+      Elemen dt> dalam HTML digunakan dalam konteks sebuah Sdl> (Definition List) untuk menandai istilah atau kata yang
+      akan didefinisikan atau dijelaskan dalam daftar deskripsi.
+    </p>
+
+    <p>
+      dt>: Elemen ini menandai sebuah istilah atau kata yang akan dijelaskan atau didefinisikan dalam daftar deskripsi.
+    </p>
+
+    <p>
+      Setiap elemen dt> biasanya diikuti oleh elemen dd> (Definition Description) yang memberikan definisi atau
+      penjelasan dari istilah tersebut.
+    </p>
+
+    <b>Glossary</b>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JavaScript</dt>
+      <dd>A programming language that adds interactivity to websites.</dd>
+    </dl>
+
+    <hr>
+
+    <h1>Element dd</h1>
+
+    <p>
+      Elemen dd> dalam HTML digunakan dalam konteks sebuah dl> (Definition List) untuk memberikan definisi atau
+      deskripsi dari istilah atau kata yang ditandai oleh elemen dt> (Definition Term).
+    </p>
+
+    <p>
+      dd>: Elemen ini digunakan untuk memberikan definisi atau deskripsi dari istilah yang ditandai oleh elemen dt>
+      dalam sebuah daftar deskripsi.
+    </p>
+
+    <p>
+      Setiap elemen dd> biasanya mengikuti elemen dt> yang sesuai dengan istilah yang didefinisikan.
+    </p>
+
+    <b>Glossary</b>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HyperText Markup Language</dd>
+
+      <dt>CSS</dt>
+      <dd>Cascading Style Sheets</dd>
+
+      <dt>JavaScript</dt>
+      <dd>A programming language that adds interactivity to websites.</dd>
+    </dl>
+
+  </div>
+
+</body>
+
+</html>

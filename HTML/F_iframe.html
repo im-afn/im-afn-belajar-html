@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iframe</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element Iframe</h1>
+
+    <p>
+      Dalam HTML digunakan untuk menyisipkan dokumen HTML lain ke dalam dokumen HTML utama. Ini memungkinkan Anda untuk
+      menampilkan halaman web atau konten lain di dalam halaman web yang sedang Anda buat.
+    </p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21232.771213312932!2dLONGITUDE!3dLATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zLATITUDE!4zLONGITUDE!5e0!3m2!1sen!2sus!4v1620212824821!5m2!1sen!2sus"
+      width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+
+    <br><br>
+
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/FuSCDM8e6_s" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <br><br>
+
+    <hr>
+
+    <h2>Attribut iframe</h2>
+
+    <ul>
+      <li>
+        < iframe src="/default.asp" width="200" <b>height</b>="200">
+          < /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tinggi dari iframe yang disematkan di dalam halaman web. Ini mengatur tinggi area yang
+      akan ditempati oleh iframe dalam piksel.
+    </p>
+
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="500" height="300" name="iframe1"></iframe>
+
+    <hr>
+
+    <ul>
+      <li>
+        < iframe src="/default.asp" <b>width</b>="200" height="200">
+          < /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan lebar dari iframe yang disematkan di dalam halaman web. Ini mengatur lebar area yang
+      akan ditempati oleh iframe dalam piksel.
+    </p>
+
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="500" height="300" name="iframe1"></iframe>
+    <hr>
+
+    <ul>
+      <li>
+        < iframe src="https://" <b>name</b>="iframe1" width="600" height="400" title="Contoh">< /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk memberikan sebuah nama unik kepada iframe. Ini memungkinkan Anda untuk menargetkan atau merujuk
+      iframe tersebut dari elemen-elemen lain dalam halaman web Anda, seperti link atau form target.
+    </p>
+
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" width="500" height="300" name="iframe1"></iframe>
+    <br><br>
+    <a href="https://en.wikipedia.org/wiki/Main_Page" target="iframe1">Buka di dalam iframe</a>
+
+
+    <hr>
+
+    <ul>
+      <li>
+        < iframe src="https://" width="600" height="400" <b>referrerpolicy</b>="no-referrer">< /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol bagaimana informasi referer (URL asal) disertakan dalam permintaan saat iframe memuat
+      sumber daya yang diambil dari luar halaman asalnya. Ini penting untuk privasi, terutama ketika iframe memuat
+      konten dari domain yang berbeda.
+    </p>
+
+    <p>
+      ketika sebuah halaman web (A) memiliki sebuah iframe yang memuat sumber daya dari halaman web lain (B), saat
+      iframe di halaman A memuat sumber daya dari halaman B, ada potensi bahwa halaman B dapat mengetahui URL dari
+      halaman A (referer) dari mana permintaan itu berasal.
+
+      Atribut referrerpolicy memungkinkan pengendalian atas bagaimana informasi referer ini disertakan atau tidak
+      disertakan dalam permintaan yang dibuat oleh iframe saat memuat sumber daya dari luar halaman asalnya.
+    </p>
+
+    <iframe src="https://www.wikipedia.org" width="500" height="300" referrerpolicy="unsafe-url"></iframe>
+
+
+    <ol>
+      <li>no-referrer: Tidak menyertakan informasi referer dalam permintaan.</li>
+      <li>no-referrer-when-downgrade: Hanya menyertakan informasi referer ketika permintaan terjadi dari HTTPS ke HTTPS,
+        dan tidak menyertakan informasi referer ketika permintaan terjadi dari HTTPS ke HTTP.</li>
+      <li>origin: Menyertakan hanya informasi origin dalam permintaan.</li>
+      <li>origin-when-cross-origin: Menyertakan informasi origin ketika permintaan terjadi dari domain yang sama, dan
+        tidak menyertakan informasi referer ketika permintaan terjadi dari domain yang berbeda.</li>
+      <li>same-origin: Menyertakan informasi referer hanya ketika permintaan terjadi dari halaman web dengan origin yang
+        sama.</li>
+      <li>strict-origin: Menyertakan informasi referer ketika permintaan terjadi dari halaman web dengan origin yang
+        sama, tetapi tidak menyertakan informasi referer ketika permintaan terjadi dari domain yang berbeda.</li>
+      <li>strict-origin-when-cross-origin: Sama seperti strict-origin kecuali ketika permintaan terjadi dari domain yang
+        berbeda, tidak menyertakan informasi referer sama sekali.</li>
+      <li>unsafe-url: Selalu menyertakan informasi referer, bahkan ketika permintaan terjadi dari domain yang berbeda.
+      </li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < iframe src="https://" width="500" height="300" <b>sandbox</b>="allow-scripts allow-forms">< /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk membuat konten di dalam iframe berjalan dalam "mode pasir" atau "mode terisolasi". Ini membantu
+      meningkatkan keamanan halaman web dengan membatasi akses dan perilaku konten yang dimuat dalam iframe. Dengan
+      menggunakan mode pasir, Anda dapat mengontrol dengan lebih baik bagaimana konten tersebut berinteraksi dengan
+      halaman utama dan sumber daya eksternal.
+    </p>
+
+    <p>
+      Jadi, misalnya jika Anda ingin memuat konten dalam iframe yang memungkinkan penggunaan formulir tetapi tidak
+      menjalankan skrip, Anda bisa menggunakan sandbox
+    </p>
+
+    <iframe src="https://www.wikipedia.org" width="500" height="300" sandbox="allow-same-origin allow-scripts"></iframe>
+
+    <ol>
+      <li>allow-scripts: Memungkinkan eksekusi skrip di dalam iframe.</li>
+      <li>allow-forms: Memungkinkan penggunaan formulir di dalam iframe.</li>
+      <li>allow-same-origin: Memungkinkan konten di dalam iframe berbagi origin dengan dokumen utama.</li>
+      <li>allow-modals: Memungkinkan penggunaan dialog modal seperti alert(), confirm(), dan prompt().</li>
+      <li>allow-popups: Memungkinkan pembukaan jendela popup.</li>
+      <li>allow-popups-to-escape-sandbox: Memungkinkan jendela popup untuk melewati mode pasir dan membuka jendela di
+        luar iframe.</li>
+      <li>allow-top-navigation: Memungkinkan navigasi top-level (bukan dalam iframe) ke URL yang disediakan dalam
+        atribut src.</li>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < iframe <b>src</b>="/default.asp">< /iframe>
+      </li>
+    </ul>
+
+    <p>
+      digunakan untuk menentukan alamat URL dari halaman atau sumber daya yang akan dimuat dalam iframe. Ini menentukan
+      konten yang akan ditampilkan di dalam iframe.
+    </p>
+
+    <iframe src="https://www.wikipedia.org" width="500" height="200"></iframe>
+    <br>
+    <iframe src="Basic.html" width="500" height="200"></iframe>
+    <br>
+    <iframe src="data:text/html;base64,PGh0bWw+PGJvZHk+VGhpcyBpcyBhIGxvY2FsPC9ib2R5PjwvaHRtbD4=" width="500"
+      height="200"></iframe>
+
+    <hr>
+
+    <ul>
+      <li>
+        < iframe <b>srcdoc</b>="<p>Hello, world!</p>" width="500" height="300">< /iframe>
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menyediakan konten HTML yang akan ditampilkan di dalam iframe secara langsung melalui atribut
+      tersebut, bukan melalui sebuah URL. Ini berguna ketika Anda ingin menampilkan konten HTML yang sederhana secara
+      langsung di dalam halaman web tanpa harus memuatnya dari sumber eksternal.
+    </p>
+
+    <iframe srcdoc="
+      <html>
+        <head>
+          <title>Contoh</title>
+        </head>
+        <style>
+          body {
+              background-color: lightblue; /* Ubah warna latar belakang */
+          }
+      </style>
+        <body>
+          <h1>Selamat datang!</h1>
+          <p>Ini adalah contoh halaman web yang sederhana.</p>
+        </body>
+      </html>
+    " width="500" height="300">
+    </iframe>
+
+  </div>
+
+</body>
+
+</html>

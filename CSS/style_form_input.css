@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.formbg {
+  background-color: rgb(226, 255, 219);
+  padding: 2rem;
+}
+.inputbg {
+  background-color: rgb(229, 242, 252);
+  padding: 2rem;
+}
+.popover {
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+}

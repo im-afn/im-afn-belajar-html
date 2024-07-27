@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Link</title>
+  <link rel="stylesheet" href="../CSS/style_all.css">
+</head>
+
+<body>
+  <div class="allbg">
+
+    <h1>Element link</h1>
+
+    <p>
+      Dalam HTML digunakan untuk mendefinisikan hubungan antara dokumen HTML dan sumber daya eksternal. Elemen ini
+      paling sering digunakan untuk menautkan ke stylesheet, tetapi juga dapat digunakan untuk berbagai jenis hubungan
+      lainnya, seperti ikon, prefetching, dan banyak lagi.
+    </p>
+
+    <p>
+      Elemen link> sangat berguna untuk menautkan dokumen HTML ke berbagai sumber daya eksternal, termasuk stylesheet,
+      ikon, font, dan prefetching/prerendering. Atribut-atribut seperti rel, href, type, dan media memungkinkan Anda
+      untuk mengontrol cara sumber daya tersebut digunakan dan ditampilkan.
+    </p>
+
+    <div>
+      < head> <br>
+        < title>Document< /title> <br>
+            < !-- Link to stylesheet --> <br>
+              < link rel="stylesheet" href="styles.css"> <br>
+                < !-- Link to favicon --> <br>
+                  < link rel="icon" href="favicon.ico" type="image/x-icon"> <br>
+                    < !-- Link to Google Fonts --> <br>
+                      < link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans"> <br>
+                        < !-- Prefetching a resource --> <br>
+                          < link rel="prefetch" href="https://example.com/resource"> <br>
+                            < !-- Prerendering a page --> <br>
+                              < link rel="prerender" href="https://example.com/page"> <br>
+                                < /head>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <h2>Attribut link</h2>
+
+    <ul>
+      <li>
+        < link rel="stylesheet" <b>href</b>="styles.css">
+      </li>
+    </ul>
+
+    <p>
+      Atribut href pada elemen link> digunakan untuk menentukan URL dari sumber daya eksternal yang ditautkan oleh
+      dokumen HTML. Atribut ini penting karena memberitahu browser di mana menemukan sumber daya yang ingin Anda
+      sertakan dalam halaman web Anda.
+    </p>
+
+    <p>
+      href pada elemen link> adalah kunci untuk menautkan dokumen HTML Anda ke sumber daya eksternal seperti stylesheet,
+      ikon, font, dan sumber daya lainnya. Ini memungkinkan Anda untuk memisahkan konten dan presentasi serta
+      meningkatkan kinerja dan fungsionalitas halaman web Anda dengan memanfaatkan sumber daya eksternal.
+    </p>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="alternate" href="https://www.example.com/en" <b>hreflang</b>="en">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan bahasa utama dari dokumen yang ditautkan. Ini sangat berguna ketika Anda memiliki situs
+      web multibahasa dan ingin menunjukkan kepada mesin pencari dan pengguna bahasa apa yang digunakan dalam dokumen
+      yang ditautkan.
+    </p>
+
+    <p>
+      Sangat berguna untuk situs web multibahasa, membantu mesin pencari dan pengguna memahami bahasa utama dari dokumen
+      yang ditautkan. Dengan menggunakan atribut ini, Anda dapat meningkatkan SEO, pengalaman pengguna, dan menghindari
+      masalah duplikasi konten.
+    </p>
+
+    <link rel="alternate" href="https://www.example.com/en" hreflang="en">
+    <link rel="alternate" href="https://www.example.com/fr" hreflang="fr">
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="stylesheet" href="print.css" <b>media</b>="print">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan jenis perangkat atau kondisi media queries di mana sumber daya yang ditautkan akan
+      diterapkan. Ini memungkinkan Anda untuk mengoptimalkan halaman web Anda dengan mengatur kapan dan bagaimana sumber
+      daya seperti stylesheet diterapkan berdasarkan perangkat atau ukuran layar pengguna.
+    </p>
+
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 601px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 1024px)">
+
+    <p>
+      Sangat berguna untuk membuat halaman web yang responsif dan dioptimalkan. Dengan menggunakan atribut ini, Anda
+      dapat mengontrol kapan dan bagaimana sumber daya seperti stylesheet diterapkan berdasarkan perangkat atau kondisi
+      media tertentu, meningkatkan kinerja dan pengalaman pengguna.
+    </p>
+
+    <p>
+      Pelajari lebih lagi untuk value media
+    </p>
+
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="stylesheet" href="styles.css" <b>referrerpolicy</b>="no-referrer">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk mengontrol informasi referer yang dikirim bersama permintaan yang dibuat untuk memuat sumber daya
+      yang ditentukan dalam elemen link>. Ini sangat berguna untuk meningkatkan privasi pengguna dan mengontrol data
+      referer yang dikirim ke server tujuan.
+    </p>
+
+    <p>
+      Atribut referrerpolicy pada elemen link> memberikan kontrol tambahan atas informasi referer yang dikirimkan
+      bersama permintaan sumber daya. Dengan menggunakan atribut ini, Anda dapat meningkatkan privasi pengguna dan
+      menentukan kebijakan referer yang sesuai dengan kebutuhan keamanan aplikasi Anda.
+    </p>
+
+    <ol>
+      <li>no-referrer: Tidak mengirimkan informasi referer sama sekali.</li>
+      <li>no-referrer-when-downgrade: Nilai default. Mengirimkan informasi referer ke target yang menggunakan HTTPS,
+        tetapi tidak mengirimkan informasi referer ke target yang menggunakan HTTP.</li>
+      <li>origin: Mengirimkan referer tanpa jalur spesifik, hanya origin (misalnya, hanya https://example.com).</li>
+      <li>origin-when-cross-origin: Mengirimkan referer lengkap untuk permintaan same-origin, tetapi hanya mengirimkan
+        origin untuk permintaan cross-origin.</li>
+      <li>same-origin: Mengirimkan referer lengkap untuk permintaan same-origin, tetapi tidak mengirimkan informasi
+        referer untuk permintaan cross-origin.</li>
+      <li>strict-origin: Mengirimkan referer origin hanya untuk permintaan HTTPS, dan tidak mengirimkan referer untuk
+        permintaan dari HTTPS ke HTTP.</li>
+      <li>strict-origin-when-cross-origin: Mengirimkan referer lengkap untuk permintaan same-origin, origin untuk
+        permintaan cross-origin HTTPS, dan tidak mengirimkan referer untuk permintaan dari HTTPS ke HTTP.</li>
+      <li>unsafe-url: Mengirimkan referer lengkap untuk semua permintaan (mengabaikan protokol keamanan).</li>
+    </ol>
+
+    <head>
+      <title>Document</title>
+
+      <!-- Link to stylesheet with no referrer information sent -->
+      <link rel="stylesheet" href="styles-no-referrer.css" referrerpolicy="no-referrer">
+
+      <!-- Link to stylesheet with only origin information sent -->
+      <link rel="stylesheet" href="styles-origin.css" referrerpolicy="origin">
+
+      <!-- Link to stylesheet with full referrer for same-origin requests -->
+      <link rel="stylesheet" href="styles-same-origin.css" referrerpolicy="same-origin">
+    </head>
+
+    <hr>
+
+    <ul>
+      <li>
+        < link <b>rel</b>="stylesheet" href="styles.css">
+      </li>
+    </ul>
+
+    <p>
+      Atribut rel pada elemen link> menentukan hubungan antara dokumen saat ini dan sumber daya yang ditautkan. Ini
+      adalah atribut penting yang digunakan untuk berbagai keperluan, seperti menautkan stylesheet, ikon, dokumen
+      terkait, dan banyak lagi.
+    </p>
+
+    <ol>
+      <li>stylesheet: Menautkan ke file stylesheet CSS yang digunakan untuk menentukan tampilan dokumen.</li>
+      <p>
+        < link rel="stylesheet" href="styles.css">
+      </p>
+      <li>icon: Menautkan ke ikon situs (favicon).</li>
+      <p>
+        < link rel="icon" href="favicon.ico" type="image/x-icon">
+      </p>
+      <li>alternate: Menyediakan alternatif untuk dokumen saat ini, seperti versi cetak atau bahasa lain.</li>
+      <p>
+        < link rel="alternate" href="print-version.html" media="print">
+          < link rel="alternate" href="es-version.html" hreflang="es">
+      </p>
+      <li>manifest: Menautkan ke file manifest untuk aplikasi web.</li>
+      <p>
+        < link rel="manifest" href="/manifest.json">
+      </p>
+      <li>preload: Menginstruksikan browser untuk memuat sumber daya lebih awal untuk meningkatkan kinerja.</li>
+      <p>
+        < link rel="preload" href="styles.css" as="style">
+      </p>
+      <li>prefetch: Menunjukkan kepada browser untuk mengambil sumber daya yang mungkin dibutuhkan di masa depan.</li>
+      <p>
+        < link rel="prefetch" href="next-page.html">
+      </p>
+      <li>dns-prefetch: Meminta browser untuk melakukan resolusi DNS sebelumnya.</li>
+      <p>
+        < link rel="dns-prefetch" href="//example.com">
+      </p>
+      <li>preconnect: Meminta browser untuk memulai koneksi lebih awal tanpa mengirimkan data.</li>
+      <p>
+        < link rel="preconnect" href="//example.com">
+      </p>
+      <li>canonical: Menunjukkan URL kanonis dari dokumen saat ini.</li>
+      <p>
+        < link rel="canonical" href="https://www.example.com/current-page">
+      </p>
+      <li>author: Menunjukkan bahwa URL berisi informasi tentang penulis dokumen.</li>
+      <p>
+        < link rel="author" href="humans.txt">
+      </p>
+      <li>license: Menunjukkan bahwa URL berisi informasi tentang lisensi dokumen.</li>
+      <p>
+        < link rel="license" href="license.txt">
+      </p>
+      <li>me: Menautkan ke URL yang menunjukkan identitas diri penulis.</li>
+      <p>
+        < link rel="me" href="https://www.example.com/about-me">
+      </p>
+      <li>next: Menunjukkan URL dari halaman berikutnya dalam urutan dokumen.</li>
+      <p>
+        < link rel="next" href="page2.html">
+      </p>
+      <li>
+        prev: Menunjukkan URL dari halaman sebelumnya dalam urutan dokumen.
+      </li>
+      <p>
+        < link rel="prev" href="page1.html">
+      </p>
+      <li>nofollow: Memberitahu mesin pencari untuk tidak mengikuti tautan ini.</li>
+      <p>
+        < link rel="nofollow" href="https://www.example.com/unimportant-page">
+      </p>
+    </ol>
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="icon" href="favicon.svg" <b>sizes</b>="any" type="image/svg+xml">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan terutama ketika menautkan ke ikon situs (favicon) atau ikon aplikasi untuk berbagai perangkat dan ukuran
+      layar. Ini menentukan ukuran ikon yang ditautkan sehingga browser dapat memilih ukuran yang paling sesuai untuk
+      digunakan.
+    </p>
+
+    <p>
+      Atribut sizes pada elemen link> memberikan informasi kepada browser tentang ukuran ikon yang ditautkan, sehingga
+      browser dapat memilih ikon yang paling sesuai berdasarkan konteks penggunaan dan ukuran layar. Dengan menyediakan
+      berbagai ukuran ikon, Anda dapat memastikan ikon situs Anda tampil optimal di berbagai perangkat dan resolusi
+      layar.
+    </p>
+
+    <head>
+      <title>Example of link sizes Attribute</title>
+
+      <!-- Link to various sizes of favicon -->
+      <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+      <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+      <link rel="icon" href="favicon-48x48.png" sizes="48x48" type="image/png">
+      <link rel="icon" href="favicon-96x96.png" sizes="96x96" type="image/png">
+      <link rel="icon" href="favicon-192x192.png" sizes="192x192" type="image/png">
+
+      <!-- Link to flexible size favicon -->
+      <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+    </head>
+
+    <hr>
+
+    <ul>
+      <li>
+        < link rel="stylesheet" href="styles.css" <b>type</b>="text/css">
+      </li>
+    </ul>
+
+    <p>
+      Digunakan untuk menentukan tipe MIME dari sumber daya yang ditautkan. Ini membantu browser memahami jenis konten
+      yang diharapkan dari sumber daya yang ditautkan, sehingga dapat menangani sumber daya tersebut dengan cara yang
+      benar.
+    </p>
+
+    <p>
+      Atribut type biasanya digunakan dengan sumber daya seperti stylesheet, ikon, dan lainnya untuk menentukan jenis
+      konten yang akan diambil. Format nilai untuk atribut type adalah tipe MIME (Multipurpose Internet Mail
+      Extensions).
+    </p>
+
+    <p>
+      Atribut type pada elemen link> memberikan informasi penting tentang tipe MIME dari sumber daya yang ditautkan. Ini
+      memungkinkan browser untuk menangani sumber daya tersebut dengan benar, memastikan bahwa stylesheet, ikon, dan
+      file manifest dapat dimuat dan digunakan sebagaimana mestinya. Penggunaan yang tepat dari atribut type dapat
+      membantu mengoptimalkan kinerja dan kompatibilitas situs web Anda.
+    </p>
+
+    <head>
+      <title>Example of link type Attribute</title>
+
+      <!-- Link to stylesheet with type attribute -->
+      <link rel="stylesheet" href="styles.css" type="text/css">
+
+      <!-- Link to favicon with type attribute -->
+      <link rel="icon" href="favicon.png" type="image/png">
+
+      <!-- Link to manifest with type attribute -->
+      <link rel="manifest" href="/manifest.json" type="application/json">
+    </head>
+
+
+
+
+  </div>
+</body>
+
+</html>
